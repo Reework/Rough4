@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_2sdp"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textmealtime_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="12:30 PM"
+            android:drawableStart="@drawable/ic_clock_new"
+
+            android:textColor="@color/colorPremiumBlack"
+            android:textSize="12sp"
+            android:gravity="end"
+
+            android:layout_marginTop="@dimen/size3"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/size5"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/size2"
+            android:layout_toLeftOf="@+id/textmeaccccl_edit"
+
+            android:textStyle="bold"
+            android:drawablePadding="@dimen/size5"
+
+
+            />
+        <TextView
+            android:id="@+id/textmeaccccl_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+
+            android:text="  Edit  "
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/size10"
+
+            android:background="@color/dark_red"
+
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:gravity="end"
+
+            android:layout_marginTop="@dimen/size3"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/size5"
+            android:padding="@dimen/size5"
+
+            android:textStyle="bold"
+            android:drawablePadding="@dimen/size5"
+
+
+            />
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linItem"
+        >
+
+        <ImageView
+            android:id="@+id/imgAllMeal_item_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="@dimen/size10"
+            android:src="@drawable/ic_home_food"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView android:id="@+id/textAllMealRowName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textColor="@color/colorPremiumBlack"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/imgAllMeal_item_image"
+            app:layout_constraintStart_toEndOf="@id/imgAllMeal_item_image"
+            app:layout_constraintTop_toTopOf="@id/imgAllMeal_item_image" />
+
+
+
+        <TextView
+            android:id="@+id/textAllMealCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="1800 calories"
+            android:textColor="@color/colorPremiumBlack"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/imgAllMeal_item_image"
+            app:layout_constraintLeft_toRightOf="@id/imgAllMeal_item_image"
+            app:layout_constraintStart_toEndOf="@+id/imgAllMeal_item_image" />
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/textAllMealQty"
+            style="@style/TextStyle.CoolveticaRegular"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:text=""
+            android:layout_marginTop="@dimen/size5"
+            android:textColor="@color/colorPremiumBlack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_history_qnty"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qty "
+            android:layout_marginTop="@dimen/size5"
+
+            android:textColor="@color/colorPremiumBlack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/textAllMealQty"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/size5"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textmeal_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/textmeal_delte"
+
+            android:text="    Edit    "
+            android:layout_marginLeft="@dimen/size10"
+
+            android:background="#00D5BC"
+
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:gravity="end"
+
+            android:layout_marginTop="@dimen/size3"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/size5"
+            android:padding="@dimen/size5"
+
+            android:textStyle="bold"
+            android:drawablePadding="@dimen/size5"
+
+
+            />
+
+        <TextView
+            android:id="@+id/textmeal_delte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+
+            android:text="  Delete  "
+            android:layout_marginLeft="@dimen/size10"
+
+            android:background="#FF7C9A"
+
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:gravity="end"
+
+            android:layout_marginTop="@dimen/size3"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/size5"
+            android:padding="@dimen/size5"
+
+            android:textStyle="bold"
+            android:drawablePadding="@dimen/size5"
+
+
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

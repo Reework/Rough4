@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/size4">
+
+    <TextView
+        android:id="@+id/txt_when"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size4"
+        android:layout_marginBottom="@dimen/size4"
+        android:layout_marginRight="@dimen/size4"
+        android:textSize="@dimen/text_size_16"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPremiumBlack"
+        android:padding="@dimen/size4"
+        android:layout_marginEnd="@dimen/size4" />
+
+</LinearLayout>

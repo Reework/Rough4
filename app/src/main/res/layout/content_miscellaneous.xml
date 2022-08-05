@@ -1,0 +1,3063 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_miscellaneous"
+    android:background="@color/gray_recipe"
+    android:orientation="vertical">
+
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:id="@+id/custom_toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:weightSum="11">
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_nut"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="0dp">
+
+                <Button
+                    android:id="@+id/btn_pathologist"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:background="@color/green_recipe"
+                    android:text="Pathologist"
+                    android:textAllCaps="false"
+
+
+                    android:textColor="@color/white_recipe"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_ing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+
+                android:layout_weight="1"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="0dp">
+
+                <Button
+                    android:id="@+id/btn_schedulepathologytest"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:background="@color/white_recipe"
+                    android:text=" Schedule Pathology Test "
+                    android:textAllCaps="false"
+
+
+                    android:textColor="@color/black_recipe"
+                    android:textStyle="bold" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_rec"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="0dp">
+
+                <Button
+                    android:id="@+id/btn_testimonials"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:background="@color/white_recipe"
+                    android:gravity="center"
+                    android:text="Testimonials"
+                    android:textAllCaps="false"
+
+                    android:textColor="@color/black_recipe"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="0dp">
+
+                <Button
+                    android:id="@+id/btn_externaldevices"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:background="@color/white_recipe"
+                    android:gravity="center"
+                    android:text=" External Devices "
+                    android:textAllCaps="false"
+
+                    android:textColor="@color/black_recipe"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="0dp">
+
+                <Button
+                    android:id="@+id/btn_analytics"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:background="@color/white_recipe"
+                    android:gravity="center"
+                    android:text="Analytics"
+                    android:textAllCaps="false"
+
+                    android:textColor="@color/black_recipe"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="0dp">
+
+                <Button
+                    android:id="@+id/btn_reeplaceitems"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:background="@color/white_recipe"
+                    android:gravity="center"
+                    android:text=" REEplace Items "
+                    android:textAllCaps="false"
+
+                    android:textColor="@color/black_recipe"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="0dp">
+
+                <Button
+                    android:id="@+id/btn_foodguide"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:background="@color/white_recipe"
+                    android:gravity="center"
+                    android:text=" Food Guide "
+                    android:textAllCaps="false"
+
+                    android:textColor="@color/black_recipe"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="0dp">
+
+                <Button
+                    android:id="@+id/btn_paymenthistory"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:background="@color/white_recipe"
+                    android:gravity="center"
+                    android:text=" Payment History "
+                    android:textAllCaps="false"
+
+                    android:textColor="@color/black_recipe"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="0dp">
+
+                <Button
+                    android:id="@+id/btn_eshoping"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:background="@color/white_recipe"
+                    android:gravity="center"
+                    android:text=" E-Shopping "
+                    android:textAllCaps="false"
+
+                    android:textColor="@color/black_recipe"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="0dp">
+
+                <Button
+                    android:id="@+id/btn_wellnesslibrary"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:background="@color/white_recipe"
+                    android:gravity="center"
+                    android:text=" Wellness Library "
+                    android:textAllCaps="false"
+
+                    android:textColor="@color/black_recipe"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="0dp">
+
+                <Button
+                    android:id="@+id/btn_foodtrip"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:background="@color/white_recipe"
+                    android:gravity="center"
+                    android:text=" Food Tripe "
+                    android:textAllCaps="false"
+
+                    android:textColor="@color/black_recipe"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+    <LinearLayout
+        android:id="@+id/layout_pathologist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:visibility="visible"
+        >
+
+        <RelativeLayout
+            android:id="@+id/layout_pathologist1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:visibility="visible"
+            >
+
+
+
+
+
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/btn_change_reecoach"
+
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bkgr_button_green_no_radius"
+                    >
+                    <RadioGroup
+                        android:id="@+id/radioGroup_sleep"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/size8"
+                        android:padding="@dimen/size3"
+                        android:orientation="horizontal"
+                        >
+
+                        <RadioButton
+                            android:id="@+id/rd_button__reecoach_profile"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/cutom_rect_radio"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:padding="@dimen/size5"
+                            android:gravity="center"
+                            android:checked="true"
+                            android:text="Profile" />
+
+                        <RadioButton
+                            android:id="@+id/rd_button_reecoach_appointment"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:layout_weight="1"
+                            android:padding="@dimen/size5"
+                            android:background="@drawable/cutom_rect_radio"
+                            android:gravity="center"
+                            android:layout_marginRight="15dp"
+                            android:button="@null"
+                            android:text="Appointment" />
+                        <RadioButton
+                            android:id="@+id/rd_button_patho_plan"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:layout_weight="1"
+                            android:padding="@dimen/size5"
+                            android:background="@drawable/cutom_rect_radio"
+                            android:gravity="center"
+                            android:layout_marginRight="15dp"
+                            android:button="@null"
+                            android:text="Pathology Plan" />
+
+
+                        <RadioButton
+                            android:id="@+id/rd_button_chat"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:layout_weight="1"
+                            android:padding="@dimen/size5"
+                            android:visibility="gone"
+                            android:background="@drawable/cutom_rect_radio"
+                            android:gravity="center"
+                            android:layout_marginRight="15dp"
+                            android:button="@null"
+                            android:text="Chat" />
+
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <ViewFlipper
+                    android:id="@+id/vp_reecoach"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2">
+
+                                <ImageView
+                                    android:id="@+id/imageView_ReecoachProfile_Photo_bg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="gone"
+                                    android:scaleType="fitXY" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorGreyLight_Transparent">
+
+                                    <TextView
+                                        android:id="@+id/text_ReecoachProfile_Name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:gravity="center"
+                                        android:padding="@dimen/size5"
+                                        android:layout_marginStart="-10dp"
+                                        android:background="@drawable/squarebtn_blue"
+                                        android:layout_marginTop="5dp"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/text_normal"
+                                        android:textStyle="bold" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView_ReecoachProfile_Photo"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:scaleType="fitCenter"
+                                        android:layout_above="@id/text_ReecoachProfile_Name"
+                                        android:layout_centerHorizontal="true" />
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+                            <androidx.core.widget.NestedScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:visibility="visible"
+
+                                android:layout_weight="2.5">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="visible"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="15dp"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_marginLeft="25dp"
+                                            android:layout_marginRight="25dp"
+                                            android:src="@drawable/smartphone" />
+
+                                        <TextView
+                                            android:id="@+id/text_ReecoachProfile_Mobile"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/colorPremiumBlack"
+                                            android:textSize="@dimen/text_small" />
+                                    </LinearLayout><LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginLeft="25dp"
+                                        android:layout_marginRight="25dp"
+                                        android:src="@drawable/email_logo" />
+
+                                    <TextView
+                                        android:id="@+id/text_ReecoachProfile_Email"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/colorPremiumBlack"
+                                        android:textSize="@dimen/text_small" />
+                                </LinearLayout><LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_marginLeft="25dp"
+                                        android:layout_marginRight="25dp"
+                                        android:src="@drawable/location" />
+
+                                    <TextView
+                                        android:id="@+id/text_ReecoachProfile_RegAddress"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/colorPremiumBlack"
+                                        android:textSize="@dimen/text_small" />
+                                </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="15dp"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="25dp"
+                                            android:layout_marginRight="25dp"
+                                            android:src="@drawable/ic_reecoach_location" />
+
+                                        <TextView
+                                            android:id="@+id/text_ReecoachProfile_NewAddress"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/colorPremiumBlack"
+                                            android:textSize="@dimen/text_small"
+                                            android:visibility="gone" />
+                                    </LinearLayout>
+
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/_10sdp"
+                                        app:cardUseCompatPadding="true">
+                                        <TextView
+                                            android:id="@+id/txt_description_reecoach"
+                                            android:layout_width="match_parent"
+                                            android:padding="@dimen/size3"
+                                            android:layout_height="wrap_content"
+                                            android:textStyle="bold"
+                                            android:justificationMode="inter_word"
+
+                                            android:layout_marginTop="@dimen/size5"
+                                            android:layout_marginEnd="@dimen/size15"
+                                            android:layout_marginStart="@dimen/size24"
+
+
+                                            android:textSize="@dimen/text_tiny"
+                                            android:visibility="gone" />
+
+                                    </androidx.cardview.widget.CardView>
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:cardElevation="@dimen/size3"
+                                        android:visibility="gone"
+
+                                        android:layout_margin="@dimen/size15">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:padding="@dimen/size3"
+                                                android:layout_height="wrap_content"
+                                                android:textStyle="bold"
+
+                                                android:text="Additional Information"
+
+                                                android:background="@drawable/squarebtn"
+
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/text_small"
+                                                android:visibility="visible" />
+
+
+                                            <androidx.recyclerview.widget.RecyclerView
+                                                android:id="@+id/recyler_reecoach_add_info"
+                                                android:layout_width="match_parent"
+                                                android:orientation="vertical"
+                                                android:nestedScrollingEnabled="false"
+                                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                                android:layout_height="match_parent">
+
+                                            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+                                        </LinearLayout>
+                                    </androidx.cardview.widget.CardView>
+
+                                </LinearLayout>
+                            </androidx.core.widget.NestedScrollView>
+                            <TextView
+                                android:layout_above="@+id/btn_change_reecoach"
+                                android:layout_width="match_parent"
+                                android:text="Rate your Reecoach"
+
+                                android:id="@+id/txt_rate_reecoach1"
+                                android:padding="@dimen/size8"
+                                android:textColor="@color/white"
+                                android:elevation="@dimen/size10"
+                                android:visibility="gone"
+
+                                android:gravity="center"
+                                android:layout_marginBottom="@dimen/size8"
+                                android:layout_marginRight="@dimen/size30"
+                                android:background="@color/dark_grey_blue"
+                                android:layout_marginLeft="@dimen/size30"
+                                style="@style/TextStyle.CoolveticaRegular"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_appointemnt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <include
+                            android:id="@+id/no_internet"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/custom_toolbar"
+                            layout="@layout/no_internet_screen"
+                            android:visibility="gone"/>
+                        <TextView
+                            android:id="@+id/txt_path_plam_my"
+                            android:layout_width="match_parent"
+                            android:text="My Pathology Plan"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:textColor="@android:color/white"
+                            android:background="@android:color/holo_orange_dark"
+                            android:padding="@dimen/size5"
+
+                            android:layout_margin="@dimen/size5"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:id="@+id/mainLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_above="@id/buttonScheduleAppointment"
+                                android:layout_below="@id/custom_toolbar"
+                                android:background="@color/colorPremiumWhite"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:id="@+id/lg"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center_horizontal"
+                                        android:src="@drawable/reeplan"
+                                        />
+
+                                    <TextView
+                                        style="@style/TextStyle.CoolveticaRegular"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@+id/lg"
+                                        android:id="@+id/hddd"
+
+                                        android:layout_centerVertical="true"
+                                        android:text="Schedule Appointments"
+                                        android:textColor="@color/colorPremiumBlack"
+                                        android:layout_toEndOf="@+id/lg" />
+
+                                    <LinearLayout
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:gravity="center"
+                                        android:id="@+id/buttonScheduleAppointment"
+                                        android:layout_alignParentRight="true"
+                                        android:background="@drawable/fab_bg"
+                                        android:layout_alignParentEnd="true">
+
+                                        <ImageView
+                                            android:layout_width="34dp"
+                                            android:layout_height="34dp"
+
+                                            android:src="@drawable/ic_add_black_24dp" />
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/txtNoData"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:dividerHeight="5dp"
+                                    android:text="No Appointments for the day."
+                                    android:textColor="@color/black_overlay_dark"
+                                    android:textStyle="bold"
+                                    android:visibility="visible"
+                                    android:gravity="center"
+                                    android:layout_weight="1"/>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rvAppoinments"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white"
+                                    android:divider="@color/white"
+                                    android:dividerHeight="5dp"
+                                    android:overScrollMode="never"
+                                    android:scrollbars="none"
+                                    android:visibility="gone"
+                                    android:layout_weight="1"/>
+
+
+                                <Button
+                                    android:id="@+id/buttonScheduleAppointments"
+                                    style="@style/button_Style_cal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:visibility="gone"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="Schedule Appointment"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </ViewFlipper>
+
+
+
+
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:id="@+id/imgViewNext_roacoach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/next_arrow"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="108dp"
+                android:visibility="visible" />
+
+
+            <Button
+                android:id="@+id/btn_change_reecoach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/button_Style_cal"
+                android:padding="@dimen/size10"
+
+                android:layout_marginLeft="@dimen/size30"
+                android:layout_marginRight="@dimen/size30"
+                android:layout_marginBottom="@dimen/size5"
+                android:text="Change Pathologist"
+
+
+                android:layout_alignParentBottom="true"/>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_schedulept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:id="@+id/layout_pathologist12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:visibility="visible"
+            >
+
+
+
+            <include
+                android:id="@+id/no_internet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                layout="@layout/no_internet_screen"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/mainLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:visibility="visible"
+                android:layout_above="@+id/buttonScheduleRemindwer"
+                android:orientation="vertical">
+
+                <!--        <RelativeLayout-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_margin="10dp"-->
+                <!--            android:gravity="center_horizontal"-->
+                <!--            android:orientation="horizontal">-->
+
+                <!--            <ImageView-->
+                <!--                android:layout_width="40dp"-->
+                <!--                android:layout_height="40dp"-->
+                <!--                android:id="@+id/img_logo_reminder"-->
+                <!--                android:layout_centerHorizontal="true"-->
+                <!--                android:src="@drawable/reeplan" />-->
+
+                <!--            <TextView-->
+                <!--                style="@style/TextStyle.CoolveticaRegular"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_gravity="center_vertical"-->
+                <!--                android:layout_toRightOf="@+id/img_logo_reminder"-->
+                <!--                android:text="All Reminders"-->
+                <!--                android:textColor="@color/colorPremiumBlack" />-->
+                <!--            <LinearLayout-->
+                <!--                android:layout_width="50dp"-->
+                <!--                android:layout_height="50dp"-->
+                <!--                android:gravity="center"-->
+                <!--                android:layout_alignParentEnd="true"-->
+                <!--                android:id="@+id/buttonScheduleAppointment"-->
+                <!--                android:background="@drawable/fab_bg"-->
+                <!--                android:layout_alignParentRight="true">-->
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="34dp"-->
+                <!--                    android:layout_height="34dp"-->
+
+                <!--                    android:src="@drawable/ic_add_black_24dp" />-->
+                <!--            </LinearLayout>-->
+
+                <!--        </RelativeLayout>-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/lg1"
+                        android:layout_marginLeft="@dimen/size40"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/reeplan"
+                        android:layout_marginStart="@dimen/size40" />
+
+                    <TextView
+                        style="@style/TextStyle.CoolveticaRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/lg1"
+                        android:id="@+id/hddd1"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="Schedule Pathology Test"
+                        android:textColor="@color/colorPremiumBlack"
+                        android:layout_toEndOf="@+id/lg1" />
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:id="@+id/buttonScheduleReminder"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/fab_bg"
+                        android:layout_alignParentEnd="true">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:src="@drawable/ic_add_black_24dp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:background="#F4F4F4"
+                    android:divider="@color/white"
+                    android:dividerHeight="5dp"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/buttonScheduleRemindwer"
+                style="@style/button_Style_cal"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="5dp"
+                android:text="Schedule Your Reminder"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/relLay_MyReminder_AddClock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:visibility="gone"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/labelScheduleReminder"
+                    style="@style/TextStyle.CoolveticaRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:text="No schedule Pathology Test to show"
+                    android:textColor="@color/colorPremiumBlack" />
+
+                <ImageView
+                    android:id="@+id/imageView_ScheduleReminder_AddClock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/labelScheduleReminder"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_testimonials"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:orientation="vertical"
+                android:id="@+id/recler_testimals"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_add_testimals"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_add_black"
+                android:layout_margin="@dimen/size20"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_externaldevice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coming Soon"
+            android:textColor="@color/black_recipe"
+            android:textSize="26dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_analytics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/bkgr_view_line_light" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_5sdp"
+
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+
+                    app:columnCount="2">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+
+                        app:layout_columnWeight="1"
+                        android:layout_margin="@dimen/_5sdp"
+                        app:cardElevation="@dimen/_15sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardBackgroundColor="@android:color/holo_green_light"
+
+
+                        android:layout_height="@dimen/height_grid_layout_item"
+
+
+                        >
+                        <RelativeLayout
+                            android:id="@+id/rlReescore"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:background="@drawable/custom_shadow"
+                            app:layout_columnWeight="1"
+                            android:padding="@dimen/_10sdp"
+
+
+
+                            android:elevation="@dimen/_10sdp"
+                            app:layout_gravity="fill_horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="10dp"
+                                android:maxLines="2"
+                                android:id="@+id/txtrescore"
+                                android:text="My Reescore (PWS-Personal Wellness Score)"
+                                android:textAlignment="center"
+                                android:singleLine="true"
+                                android:letterSpacing="0.1"
+                                style="@style/TextStyle.CoolveticaRegular"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:ellipsize="marquee"
+
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="@dimen/size40"
+                                android:layout_height="@dimen/size40"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/reescore_white" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+
+                        app:layout_columnWeight="1"
+                        android:layout_margin="@dimen/_5sdp"
+                        app:cardElevation="@dimen/_5sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+
+
+                        android:layout_height="@dimen/height_grid_layout_item"
+
+
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/rlNutrition"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_grid_layout_item"
+                            android:background="@drawable/custom_shadow"
+                            app:layout_columnWeight="1"
+                            app:layout_gravity="fill_horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="10dp"
+                                android:maxLines="2"
+                                android:letterSpacing="0.1"
+                                style="@style/TextStyle.CoolveticaRegular"
+                                android:text="Macro Nutrients"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/nutrition_white" />
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+
+                        app:layout_columnWeight="1"
+                        android:layout_margin="@dimen/_5sdp"
+                        app:cardElevation="@dimen/_15sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+
+
+                        android:layout_height="@dimen/height_grid_layout_item">
+                        <RelativeLayout
+                            android:id="@+id/rlCaloriesConsumption"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_grid_layout_item"
+
+                            android:background="@drawable/custom_shadow"
+                            app:layout_columnWeight="1"
+                            app:layout_gravity="fill_horizontal">
+
+                            <TextView
+                                android:id="@+id/txt_CaloriesConsumption"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="10dp"
+                                android:singleLine="true"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:ellipsize="marquee"
+                                android:letterSpacing="0.1"
+                                style="@style/TextStyle.CoolveticaRegular"
+                                android:text="Trend Calories Consumption"
+
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="@dimen/size40"
+                                android:layout_height="@dimen/size40"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/calories_white" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+
+                        app:layout_columnWeight="1"
+                        android:layout_margin="@dimen/_5sdp"
+                        app:cardElevation="@dimen/_15sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+
+
+                        android:layout_height="@dimen/height_grid_layout_item">
+                        <RelativeLayout
+                            android:id="@+id/rlMyActivity"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_grid_layout_item"
+                            android:background="@drawable/custom_shadow"
+                            app:layout_columnWeight="1"
+                            app:layout_gravity="fill_horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="10dp"
+                                android:maxLines="2"
+                                android:text="Activity Discipline"
+                                android:textAlignment="center"
+                                android:letterSpacing="0.1"
+                                style="@style/TextStyle.CoolveticaRegular"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="@dimen/size40"
+                                android:layout_height="@dimen/size40"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/activity_white" />
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+
+                        app:layout_columnWeight="1"
+                        android:layout_margin="@dimen/_5sdp"
+                        app:cardElevation="@dimen/_15sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+
+
+                        android:layout_height="@dimen/height_grid_layout_item">
+                        <RelativeLayout
+                            android:id="@+id/rlWater"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_grid_layout_item"
+                            android:background="@drawable/custom_shadow"
+                            app:layout_columnWeight="1"
+                            app:layout_gravity="fill_horizontal">
+
+                            <TextView
+                                android:id="@+id/txt_trend_water"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="10dp"
+                                android:text="Trend Water Consumption"
+                                android:textAlignment="center"
+                                android:singleLine="true"
+                                android:letterSpacing="0.1"
+                                style="@style/TextStyle.CoolveticaRegular"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:ellipsize="marquee"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="@dimen/size40"
+                                android:layout_height="@dimen/size40"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/water_white" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+
+                        app:layout_columnWeight="1"
+                        android:layout_margin="@dimen/_5sdp"
+                        app:cardElevation="@dimen/_15sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+
+
+                        android:layout_height="@dimen/height_grid_layout_item">
+                        <RelativeLayout
+                            android:id="@+id/rlSleep"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_grid_layout_item"
+                            android:background="@drawable/custom_shadow"
+                            app:layout_columnWeight="1"
+                            app:layout_gravity="fill_horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="10dp"
+                                android:maxLines="2"
+                                android:text="Trend Sleep Quota"
+                                android:textAlignment="center"
+                                android:letterSpacing="0.1"
+                                style="@style/TextStyle.CoolveticaRegular"
+                                android:textColor="@color/white"
+
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="@dimen/size40"
+                                android:layout_height="@dimen/size40"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/sleep_white" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+
+                        app:layout_columnWeight="1"
+                        android:layout_margin="@dimen/_5sdp"
+                        app:cardElevation="@dimen/_15sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+
+
+                        android:layout_height="@dimen/height_grid_layout_item">
+                        <RelativeLayout
+                            android:id="@+id/rlStress"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_grid_layout_item"
+                            android:background="@drawable/custom_shadow"
+                            app:layout_columnWeight="1"
+                            app:layout_gravity="fill_horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="10dp"
+                                android:maxLines="2"
+                                android:text="Mind"
+                                android:letterSpacing="0.1"
+                                style="@style/TextStyle.CoolveticaRegular"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="@dimen/size40"
+                                android:layout_height="@dimen/size40"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/mind_white" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+
+                        app:layout_columnWeight="1"
+                        android:layout_margin="@dimen/_5sdp"
+                        app:cardElevation="@dimen/_15sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+
+
+                        android:layout_height="@dimen/height_grid_layout_item">
+                        <RelativeLayout
+                            android:id="@+id/rlweightsanalysis"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_grid_layout_item"
+                            android:background="@drawable/custom_shadow"
+                            app:layout_columnWeight="1"
+                            android:visibility="visible"
+                            app:layout_gravity="fill_horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="10dp"
+                                android:maxLines="2"
+                                android:text="Weight"
+                                android:letterSpacing="0.1"
+                                style="@style/TextStyle.CoolveticaRegular"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="@dimen/size40"
+                                android:layout_height="@dimen/size40"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/weight_scale_white" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+
+                        app:layout_columnWeight="1"
+                        android:layout_margin="@dimen/_5sdp"
+                        app:cardElevation="@dimen/_15sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+
+
+                        android:layout_height="@dimen/height_grid_layout_item">
+
+                        <RelativeLayout
+                            android:id="@+id/rlReeplan"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_grid_layout_item"
+                            android:background="@drawable/custom_shadow"
+                            app:layout_columnWeight="1"
+
+                            android:visibility="visible"
+                            app:layout_gravity="fill_horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="10dp"
+                                android:maxLines="2"
+                                android:letterSpacing="0.1"
+                                style="@style/TextStyle.CoolveticaRegular"
+                                android:text="Sleep Discipline"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="@dimen/size40"
+                                android:layout_height="@dimen/size40"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/sleep_white" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+
+                        app:layout_columnWeight="1"
+                        android:layout_margin="@dimen/_5sdp"
+                        app:cardElevation="@dimen/_15sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+
+
+
+                        android:layout_height="@dimen/height_grid_layout_item">
+                        <RelativeLayout
+                            android:id="@+id/rlBloodReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_grid_layout_item"
+                            app:layout_columnWeight="1"
+
+                            android:background="@drawable/custom_shadow"
+
+                            android:visibility="visible"
+                            app:layout_gravity="fill_horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="10dp"
+                                android:maxLines="2"
+                                android:text="Food Discipline"
+                                android:textAlignment="center"
+                                android:letterSpacing="0.1"
+                                style="@style/TextStyle.CoolveticaRegular"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="@dimen/size40"
+                                android:layout_height="@dimen/size40"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/food_white" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.gridlayout.widget.GridLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_15sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardBackgroundColor="@android:color/holo_green_light"
+
+
+                    android:layout_height="@dimen/height_grid_layout_item"
+
+
+                    >
+                    <RelativeLayout
+                        android:id="@+id/rlReeevaluate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+
+                        android:background="@drawable/custom_shadow"
+                        app:layout_columnWeight="1"
+                        android:padding="@dimen/_10sdp"
+
+
+
+                        android:elevation="@dimen/_10sdp"
+                        app:layout_gravity="fill_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:maxLines="2"
+                            android:gravity="center"
+                            android:text="Reevaluate"
+                            android:textAlignment="center"
+                            android:singleLine="true"
+                            android:letterSpacing="0.1"
+                            style="@style/TextStyle.CoolveticaRegular"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:ellipsize="marquee"
+
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/size40"
+                            android:layout_height="@dimen/size40"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/reescore_white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_reeplaceitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_MyPlan_Category"
+                        style="@style/TextStyle.CoolveticaRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Today's Plan"
+                        android:textColor="@color/colorPremiumBlack" />
+
+                    <TextView
+                        android:id="@+id/text_MyPlan_Date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_MyPlan_Category"
+                        android:text="Today's Plan"
+                        android:textColor="@color/colorRobinEggBlue"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <Spinner
+                    android:id="@+id/spinner_MyPlan_Category"
+                    style="@style/MySpinner"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_cheat_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:textColor="@android:color/black"
+                        style="@style/TextStyle.CoolveticaRegular"
+                        android:text="Select Occasion :"/>
+                    <Spinner
+                        android:id="@+id/spinner_occasion"
+                        style="@style/MySpinnerWeight"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:textColor="@android:color/black"
+                        style="@style/TextStyle.CoolveticaRegular"
+                        android:text="Select Category :"/>
+                    <Spinner
+                        android:id="@+id/spinner_category"
+                        style="@style/MySpinnerWeight"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/txt_no_cheaet"
+                android:layout_width="match_parent"
+                android:text="No Cheat Plan available"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+
+                android:layout_height="match_parent">
+
+            </TextView>
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/recyler_plansData"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <SearchView
+            android:id="@+id/search_chaet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@color/white"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:queryHint="Search Item"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/squarebtn"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_3sdp"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/squarebtn"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_group_name"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_horizontal"
+                        android:letterSpacing="0.1"
+                        style="@style/TextStyle.CoolveticaRegular"
+
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:layout_marginTop="@dimen/size8"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:text="Item"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_height="match_parent"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:background="@color/haldi"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:id="@+id/txt_test_name"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_horizontal"
+                        android:letterSpacing="0.1"
+                        style="@style/TextStyle.CoolveticaRegular"
+
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:layout_marginTop="@dimen/size8"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:text="Reeplace Item"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_height="match_parent"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:background="@color/haldi"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:id="@+id/txt_avalable"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:textColor="@color/black"
+                        android:letterSpacing="0.1"
+                        style="@style/TextStyle.CoolveticaRegular"
+                        android:layout_marginBottom="@dimen/size8"
+                        android:layout_marginTop="@dimen/size8"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:text="Energy Saved/100kg"
+                        android:textSize="@dimen/_11sdp"
+
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/haldi"
+                    android:layout_height="@dimen/_5sdp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyler_newcheat"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/row_newcheat"
+
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_paymentHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recylerview_payment"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_foodguide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+
+
+        <LinearLayout
+            android:id="@+id/custom_too"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="0dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_greenfood"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="0dp">
+
+                <Button
+                    android:id="@+id/btn_greenfood"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:background="@color/green_recipe"
+                    android:text="Green food"
+                    android:textAllCaps="false"
+
+
+                    android:textColor="@color/white_recipe"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_orangefood"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="0dp">
+
+                <Button
+                    android:id="@+id/btn_orangefood"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:background="@color/white_recipe"
+                    android:text="Orange food"
+                    android:textAllCaps="false"
+
+
+                    android:textColor="@color/black_recipe"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_redfood"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="0dp">
+
+                <Button
+                    android:id="@+id/btn_redfood"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:background="@color/white_recipe"
+                    android:text="Red food"
+                    android:textAllCaps="false"
+
+
+                    android:textColor="@color/black_recipe"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_greenfood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+
+
+            android:layout_margin="5dp"
+            android:visibility="visible"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/layout_greenf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_margin="5dp"
+
+                android:layout_marginRight="5dp"
+                android:weightSum="4"
+                >
+
+                <TextView
+
+                    android:id="@+id/txt_greenall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="All"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+
+                    android:id="@+id/txt_greenvegetable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Vegetables"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+
+                <TextView
+
+                    android:id="@+id/txt_greenfruits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fruits"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+
+                <TextView
+
+                    android:id="@+id/txt_greenNutsseeds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nuts and seeds"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_greenallfood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible"
+
+                >
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_greenvegetablefood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+
+                >
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_greenfruitsfood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+
+                >
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_greennutsfood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+
+                >
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_orangefood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/layout_green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:weightSum="4"
+                >
+
+                <TextView
+
+                    android:id="@+id/txt_orangeall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="All"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+
+                    android:id="@+id/txt_orangevegetable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Vegetables"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+
+                <TextView
+
+                    android:id="@+id/txt_orangefruits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fruits"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+
+                <TextView
+
+                    android:id="@+id/txt_orangeNutsseeds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nuts and seeds"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_orangeallfood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible"
+
+                >
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_orangevegetablefood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+
+                >
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_orangefruitsfood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+
+                >
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_orangenutsfood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+
+                >
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_redfood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:id="@+id/layout_gre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:weightSum="4"
+                >
+
+                <TextView
+
+                    android:id="@+id/txt_redall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="All"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+
+                    android:id="@+id/txt_redvegetable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Vegetables"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+
+                <TextView
+
+                    android:id="@+id/txt_redfruits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fruits"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+
+                <TextView
+
+                    android:id="@+id/txt_redNutsseeds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nuts and seeds"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_redallfood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible"
+
+                >
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_redvegetablefood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+
+                >
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_redfruitsfood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+
+                >
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_rednutsfood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+
+                >
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt_food_search"
+            android:layout_width="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:hint="Search here"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/edit_text_frame_normal"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyler_food_guide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+
+            android:layout_marginStart="@dimen/size10"
+            android:layout_marginEnd="@dimen/size10"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_eshoping"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_nt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="0dp">
+
+                <Button
+                    android:id="@+id/btn_medicine"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:background="@color/green_recipe"
+                    android:text="Medicines"
+                    android:textAllCaps="false"
+
+
+                    android:textColor="@color/white_recipe"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_ng"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+
+                android:layout_weight="1"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="0dp">
+
+                <Button
+                    android:id="@+id/btn_food"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:background="@color/white_recipe"
+                    android:text="Food"
+                    android:textAllCaps="false"
+
+
+                    android:textColor="@color/black_recipe"
+                    android:textStyle="bold" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_ec"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="0dp">
+
+                <Button
+                    android:id="@+id/btn_restaurant"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:background="@color/white_recipe"
+                    android:gravity="center"
+                    android:text="REEstaurants"
+                    android:textAllCaps="false"
+
+                    android:textColor="@color/black_recipe"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_medicine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="visible"
+            >
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coming Soon"
+                android:textColor="@color/black_recipe"
+                android:textSize="26dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_food"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            >
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coming Soon"
+                android:textColor="@color/black_recipe"
+                android:textSize="26dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_restaurant"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            >
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coming Soon"
+                android:textColor="@color/black_recipe"
+                android:textSize="26dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_wellnesslibrary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recylcer_spiritual_category"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/white"
+
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recylcer_spiritual_list"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/white"
+
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txt_no_data_spiritual"
+            android:layout_width="match_parent"
+            android:text="No videos available"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_foodtripe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <!--                <androidx.cardview.widget.CardView-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="40dp"-->
+                    <!--                    app:cardCornerRadius="5dp"-->
+                    <!--                    app:cardElevation="5dp"-->
+                    <!--                    android:layout_weight="1"-->
+                    <!--                    android:layout_margin="1dp"-->
+                    <!--                    android:background="@drawable/border_button_round"-->
+
+                    <!--                    >-->
+
+
+
+                    <TextView
+                        android:id="@+id/food1"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="Foods"
+                        android:gravity="center"
+
+                        android:fontFamily="@font/mulishbold"
+                        android:textStyle="bold"
+
+                        android:textColor="@color/white"
+
+                        android:background="@drawable/border_new_black"
+                        android:layout_height="40dp"/>
+
+                    <!--                </androidx.cardview.widget.CardView>-->
+
+
+
+                    <!--                <androidx.cardview.widget.CardView-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="40dp"-->
+                    <!--                    app:cardCornerRadius="5dp"-->
+                    <!--                    app:cardElevation="5dp"-->
+                    <!--                    android:layout_weight="1"-->
+
+                    <!--                    android:background="#F3F6F8"-->
+                    <!--                    >-->
+
+                    <TextView
+
+                        android:id="@+id/txt_rbFoodSnapping"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginStart="-5dp"
+                        android:text="Food Snapping"
+                        android:gravity="center"
+                        android:textColor="@color/shadegray"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/mulishbold"
+                        android:background="@drawable/border_new_line"
+                        android:layout_height="40dp"/>
+
+                    <!--                </androidx.cardview.widget.CardView>-->
+
+
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorLightWhite">
+
+                    <ImageView
+                        android:id="@+id/imgFilter"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_analysis_replan"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="invisible"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"/>
+
+                    <RadioGroup
+                        android:id="@+id/relfood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center">
+
+                        <RadioButton
+                            android:id="@+id/rbFood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:button="@null"
+                            android:checked="true"
+                            android:text="Daily entry"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                        <RadioButton
+                            android:id="@+id/rbFoodreplace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:button="@null"
+                            android:text="Food replace"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/rbHistory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:button="@null"
+                            android:text="History"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/rbFoodSnapping"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:button="@null"
+                            android:visibility="gone"
+                            android:text="Food snapping"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </RadioGroup>
+
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fabs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="gone"
+
+                        android:src="@drawable/upload_pic"
+                        android:layout_margin="@dimen/size3"
+
+
+
+                        android:layout_alignParentRight="true" />
+
+
+
+
+                </RelativeLayout>
+
+                <SearchView
+                    android:id="@+id/searchRecipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:queryHint="Search"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/border_button"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+                <LinearLayout
+                    android:id="@+id/layout_daily"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView_All_Meal_TodaysMeal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:background="#F3F6F8"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginRight="0dp" />
+
+
+                    <TextView
+                        android:id="@+id/txt_nodata"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray"
+                        android:text="No Daily Entry Found"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_foodrec"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvRecipies"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:overScrollMode="never"
+                        android:scrollbars="none"
+                        android:visibility="gone"
+                        android:background="@color/colorPremiumWhite"/>
+
+                    <TextView
+                        android:id="@+id/txt_nodata1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray"
+                        android:text="Coming Soon"
+
+                        />
+
+                </LinearLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvFoodSnipping"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    android:visibility="gone"
+                    android:layout_marginBottom="80dp"
+                    android:background="#F3F6F8"/>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/layot_foodhistory"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="match_parent">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView_All_Meal_Weekly"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_height="wrap_content" />
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:id="@+id/fab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@drawable/bg_green_button_new"
+                    android:text="Upload Photo"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="20dp"
+                    android:layout_above="@+id/fabsccc"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/fabsccc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Upload"
+                android:background="#00D5BC"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/fab_margin"
+                android:layout_alignParentRight="true" />
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

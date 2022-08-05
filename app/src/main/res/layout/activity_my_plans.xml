@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_myplan"
+
+    android:layout_height="match_parent"
+    android:background="@color/colorPremiumWhite"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPremiumWhite">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingStart="0dp"
+                android:paddingLeft="0dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="8dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:src="@drawable/back_arrow" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/TextStyle.CoolveticaRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgLeft"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorPremiumBlack"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/img_user"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentEnd="true"
+                android:paddingStart="0dp"
+                android:paddingLeft="0dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="8dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:src="@drawable/food_default" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/txt_all_plan_data"
+            android:background="@drawable/squarebtn_newds"
+            android:padding="@dimen/size5"
+            style="@style/TextStyle.CoolveticaRegular"
+            android:gravity="center"
+            android:letterSpacing="0.1"
+            android:textSize="@dimen/text_tiny"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/size5"
+            android:text="Full Week Plan "
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/txt_all_glosary"
+            android:letterSpacing="0.1"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+
+            android:background="@drawable/squarebtn_newds"
+            style="@style/TextStyle.CoolveticaRegular"
+            android:padding="@dimen/size5"
+            android:gravity="center"
+            android:textSize="@dimen/text_tiny"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/size5"
+            android:text="Grocery List"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            -
+
+            <LinearLayout
+                android:id="@+id/ll_plan_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/text_MyPlan_Category"
+                    style="@style/TextStyle.CoolveticaRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today's Plan"
+                    android:textColor="@color/colorPremiumBlack" />
+
+                <TextView
+                    android:id="@+id/text_MyPlan_Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_MyPlan_Category"
+                    android:drawableEnd="@drawable/calender"
+                    android:drawablePadding="@dimen/size3"
+                    android:text="Today's Plan"
+                    android:textColor="@color/colorRobinEggBlue"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinner_MyPlan_Category"
+                style="@style/MySpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size40"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+        -
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btn_add_activtity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size5"
+                android:background="@drawable/sqaure_blue"
+                android:gravity="center"
+                android:text="Add Activity"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+
+            -
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                -
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPremiumWhite"
+                        android:divider="@color/colorGreyLight_BgListView"
+                        android:dividerHeight="5dp"
+                        android:overScrollMode="never"
+                        android:scrollbars="none"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                    <TextView
+                        android:id="@+id/txt_main_remark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size15"
+                        android:layout_marginTop="@dimen/size15"
+                        android:layout_marginRight="@dimen/size15"
+                        android:background="@drawable/green_border"
+                        android:padding="@dimen/size10"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+            <Button
+                android:id="@+id/btnSave"
+                style="@style/button_Style_cal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="@dimen/size10"
+                android:layout_marginBottom="6dp"
+                android:padding="6dp"
+                android:text="Save Changes"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!--<ExpandableListViewandroid:id="@+id/listViewMyPlans"android:layout_width="match_parent"android:layout_height="match_parent"android:childDivider="@color/colorPremiumWhite"android:divider="@color/colorPremiumWhite"android:dividerHeight="5dp"android:groupIndicator="@null"android:listSelector="@color/colorTransparent"android:overScrollMode="never"android:paddingBottom="4dp"android:paddingLeft="10dp"android:paddingRight="10dp"android:paddingTop="10dp"android:scrollbars="none"android:layout_weight="1"/><Buttonandroid:id="@+id/btnSave"style="@style/button_Style_cal"android:layout_width="wrap_content"android:layout_height="wrap_content"android:layout_marginBottom="10dp"android:layout_marginTop="10dp"android:text="Save Changes"android:layout_gravity="center"android:padding="6dp"android:textStyle="bold" /> -->
+
+
+    </LinearLayout>
+
+</LinearLayout>

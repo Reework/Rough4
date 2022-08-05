@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffd900</color>
+    <!--<color Name="colorPrimaryDark">#303F9F</color>-->
+    <color name="colorPrimaryDark">#00e1b1</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorRobinEggBlue">#00CEC5</color>
+    <color name="colorMediumSpringGreen">#00F88B</color>
+    <color name="colorPremiumWhite">#ffffff</color>
+    <color name="colorLightWhite">#f7f4f4</color>
+    <color name="colorPremiumBlack">#000000</color>
+    <color name="colorGrey900">#212121</color>
+    <color name="colorRobinEggBlueLight">#a7ffeb</color>
+    <color name="denimblue">#3b5998</color>
+
+    <color name="colorGrey">#70999D</color>
+    <color name="colorGreyLight">#AAC3C5</color>
+    <color name="colorGreyLight2">#c9d9da</color>
+    <color name="holo_green_darks">#ff669900</color>
+
+    <color name="very_dark_grey">#777777</color>
+
+
+    <color name="stpi_default_circle_color">#b3bdc2</color>
+    <color name="stpi_default_primary_color">#00b47c</color>
+    <color name="stpi_default_line_color">#b3bdc2</color>
+    <color name="stpi_default_text_color">#000</color>
+
+    <color name="gray">#b2b2b2</color>
+    <color name="colorBlue1">#00af97</color>
+    <color name="colorBlue2">#00b89f</color>
+    <color name="colorBlue3">#00c9ad</color>
+    <color name="colorBlue4">#00dbba</color>
+    <color name="colorBlue5">#00e1b1</color>
+    <color name="colorBlueGreen1">#00c188</color>
+    <color name="colorBlueGreen2">#00d08a</color>
+    <color name="colorBlueGreen3">#00dc8c</color>
+    <color name="colorBlueGreen4">#00e48d</color>
+    <color name="colorBlueGreen5">#00f48e</color>
+    <color name="colorGreen1">#00f88b</color>
+    <color name="colorGreen2">#00d089</color>
+    <color name="colorGreen3">#00c193</color>
+    <color name="colorGreen4">#00ac93</color>
+    <color name="colorGreen5">#00d2c9</color>
+    <color name="colorBlue">#1534CF</color>
+    <color name="colorYellow">#fb8c00</color>
+
+    <color name="colorNavigationMenu">#01D1BB</color>
+
+    <color name="colorGrey_LL">#30000000</color>
+    <color name="colorGreyWhite">#EBEBEB</color>
+
+    <color name="colorReescore_SkyBlue">#00BCFA</color>
+    <color name="colorReescore_BlueYellow">#62A798</color>
+
+    <color name="colorReescore_Current_Primary">#9275F0</color>
+    <color name="colorReescore_Current_Secondary">#F1EEFE</color>
+    <color name="colorReescore_Daily_Primary">#00CFC2</color>
+    <color name="colorReescore_Daily_Secondary">#E5F3F6</color>
+    <color name="colorReescore_Future_Primary">#fb8c00</color>
+    <color name="colorReescore_Future_Secondary">#DAF5E9</color>
+
+    <color name="colorInterpretation_CurrentState">#BAEAE4</color>
+    <color name="colorInterpretation_IdealState">#00D0CD</color>
+
+    <color name="colorInterpretation_ViewMore">#EBEBEB</color>
+
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorGreyLight_Transparent">#c7e7e7e7</color>
+    <color name="colorGreyLight_BgTransparent">#e7e7e7</color>
+
+    <color name="colorGreyLight_BgListView">#d2d2d2</color>
+    <color name="grey_glass_transparent">#50f4f4f4</color>
+
+    <color name="color_graph_bg">#212121</color>
+    <color name="color_graph_orange">#fb8c00</color>
+    <color name="color_smooth_red">#ff1744</color>
+    <color name="dark_red">#ffcc0000</color>
+    <color name="dark_red1">#DF6E6E</color>
+
+    <!--CHAT RELATED COLORS-->
+    <color name="actionbar">#3cb879</color>
+    <color name="body_background">#e8e8e8</color>
+    <color name="body_background_green">#82e783</color>
+    <color name="server_status_bar">#2b2b2b</color>
+    <color name="title_gray">#434343</color>
+    <color name="white">#ffffff</color>
+    <color name="bg_msg_you">#FF6E00</color>
+    <color name="bg_msg_from">#e5e7eb</color>
+    <color name="msg_border_color">#a1a1a1</color>
+    <color name="bg_btn_join">#1e6258</color>
+    <color name="bg_msg_input">#e8e8e8</color>
+    <color name="text_msg_input">#626262</color>
+    <color name="lblFromName">#777777</color>
+    <color name="haldi">#FFCC00</color>
+    <color name="black_overlay">#66000000</color>
+
+
+
+    <color name="color_1">#66000000</color>
+    <color name="color_2">#66D85B5B</color>
+    <color name="color_3">#F1992D</color>
+    <color name="color_4">#B1950A</color>
+    <color name="color_5">#9C27B0</color>
+    <color name="color_6">#4CAF50</color>
+    <color name="color_7">#0BC8A2</color>
+    <color name="color_8">#4A45E6</color>
+    <color name="color_9">#D50F00</color>
+    <color name="color_10">#FFF600</color>
+    <color name="color_11">#5A313F</color>
+    <color name="color_12">#50E41B</color>
+    <color name="color_13">#B4B0ED</color>
+    <color name="color_14">#DC2D6A</color>
+    <color name="color_15">#009688</color>
+    <color name="color_16">#FF6E00</color>
+    <color name="color_17">#A3BDFF22</color>
+    <color name="color_18">#CF933B</color>
+    <color name="color_19">#B8A5BC</color>
+    <color name="color_20">#254A00</color>
+    <color name="color_21">#FFB8A5BC</color>
+    <color name="color_22">#90E9F4</color>
+    <color name="color_23">#EC408F</color>
+    <color name="color_24">#90AF95</color>
+    <color name="color_25">#8F7E63</color>
+    <color name="color_26">#9EA8E4</color>
+    <color name="color_27">#E6EAC4</color>
+    <color name="color_28">#F8D6E2</color>
+    <color name="color_29">#F4E3AF</color>
+    <color name="color_30">#E8EFA4</color>
+
+
+    <!--    //NEw-->
+    <color name="gray_recipe">#F3F6F8</color>
+    <color name="green_recipe">#00D5BC</color>
+    <color name="white_recipe">#FFFFFF</color>
+    <color name="black_recipe">#231F20</color>
+
+    <color name="p1">#58C960</color>
+    <color name="p2">#FFBF67</color>
+    <color name="p3">#7E6CE0</color>
+    <color name="ree_gray">#92989B</color>
+
+    <color name="green_light">#1A00D5BC</color>
+    <color name="black_light">#66263238</color>
+    <color name="black_light1">#1A92989B</color>
+
+    <color name="shadegray">#707070</color>
+
+    <color name="lightgreen">#9932CD32</color>
+    <color name="lightorange">#99FFA500</color>
+    <color name="lightred">#99FF0000</color>
+
+    <color name="feelingunselect">#80231F20</color>
+
+    <color name="lightblack">#99231F20</color>
+</resources>

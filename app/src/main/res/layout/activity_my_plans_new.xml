@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPremiumWhite"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPremiumWhite">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingStart="0dp"
+                android:paddingLeft="0dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="8dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:src="@drawable/back_arrow" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/TextStyle.CoolveticaRegular"
+                android:layout_width="wrap_content"
+                android:layout_toEndOf="@+id/imgLeft"
+                android:text=""
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorPremiumBlack"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/img_user"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:paddingStart="0dp"
+                android:paddingLeft="0dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="8dp"
+                android:layout_alignParentEnd="true"
+
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:src="@drawable/food_default" />
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/squarebtn_newds"
+            android:padding="@dimen/size5"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:gravity="center"
+            style="@style/TextStyle.CoolveticaRegular"
+            android:visibility="visible"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/size5"
+            android:text="Summary "
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txt_details"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/squarebtn_newds"
+            android:padding="@dimen/size5"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            style="@style/TextStyle.CoolveticaRegular"
+            android:visibility="visible"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/size5"
+            android:text="Details"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/squarebtn_newds"
+            android:padding="@dimen/size5"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:gravity="center"
+            style="@style/TextStyle.CoolveticaRegular"
+            android:visibility="visible"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/size5"
+            android:text="Summary "
+            android:layout_height="4dp"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/squarebtn_newds"
+            android:padding="@dimen/size5"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            style="@style/TextStyle.CoolveticaRegular"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/size5"
+            android:text="Details"
+            android:layout_height="2dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/txt_all_plan_data"
+            android:background="@drawable/squarebtn"
+            android:padding="@dimen/size5"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/size5"
+            android:text="Summery "
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/txt_all_glosary"
+            android:background="@drawable/squarebtn"
+            android:padding="@dimen/size5"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/size5"
+            android:text="Grocery List"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/haldi"
+            android:padding="@dimen/_8sdp"
+            android:weightSum="2">
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_plan_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/text_MyPlan_Category"
+                    style="@style/TextStyle.CoolveticaRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today's Plan"
+                    android:textColor="@color/colorPremiumBlack" />
+
+                <TextView
+                    android:id="@+id/text_MyPlan_Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_MyPlan_Category"
+                    android:drawableEnd="@drawable/calender"
+                    android:drawablePadding="@dimen/size3"
+                    android:text="Today's Plan"
+                    android:textColor="@color/primary_dark"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinner_MyPlan_Category"
+                android:layout_width="0dp"
+
+                android:spinnerMode="dialog"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size40"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btn_add_activtity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size5"
+                android:background="@drawable/sqaure_blue"
+                android:gravity="center"
+                android:text="Add Activity"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rel_no_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:background="@color/dark_grey_blue">
+
+                    <ImageView
+                        android:id="@+id/img_logo"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_100sdp"
+                        android:src="@drawable/logo"/>
+
+                    <TextView
+                        android:id="@+id/fffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_logo"
+                        android:textColor="@color/white"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/text_normal"
+                        style="@style/TextStyle.CoolveticaRegular"
+                        android:text="It's look like no data added for this date"/>
+
+                    <Button
+                        android:id="@+id/changedate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fffff"
+                        android:letterSpacing="0.1"
+                        style="@style/TextStyle.CoolveticaRegular"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@drawable/squarebtn_haldi"
+                        android:shadowRadius="@integer/large_text"
+                        android:layout_centerHorizontal="true"
+                        android:text="      Change date     "/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/haldi"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+
+                    android:layout_height="5dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorPremiumWhite"
+                    android:divider="@color/colorGreyLight_BgListView"
+                    android:dividerHeight="5dp"
+                    android:visibility="visible"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                <TextView
+                    android:id="@+id/txt_main_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size15"
+                    android:layout_marginTop="@dimen/size15"
+                    android:layout_marginRight="@dimen/size15"
+                    android:background="@drawable/green_border"
+                    android:padding="@dimen/size10"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSave"
+                style="@style/button_Style_cal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="@dimen/size10"
+                android:layout_marginBottom="6dp"
+                android:padding="6dp"
+                android:text="Save Changes"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!--<ExpandableListViewandroid:id="@+id/listViewMyPlans"android:layout_width="match_parent"android:layout_height="match_parent"android:childDivider="@color/colorPremiumWhite"android:divider="@color/colorPremiumWhite"android:dividerHeight="5dp"android:groupIndicator="@null"android:listSelector="@color/colorTransparent"android:overScrollMode="never"android:paddingBottom="4dp"android:paddingLeft="10dp"android:paddingRight="10dp"android:paddingTop="10dp"android:scrollbars="none"android:layout_weight="1"/><Buttonandroid:id="@+id/btnSave"style="@style/button_Style_cal"android:layout_width="wrap_content"android:layout_height="wrap_content"android:layout_marginBottom="10dp"android:layout_marginTop="10dp"android:text="Save Changes"android:layout_gravity="center"android:padding="6dp"android:textStyle="bold" /> -->
+
+
+    </LinearLayout>
+
+</LinearLayout>

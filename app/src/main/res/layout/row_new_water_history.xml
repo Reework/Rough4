@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ll_main_total_sleep"
+            android:padding="@dimen/size5"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="Date : "
+
+
+                android:gravity="start"
+                android:textStyle="bold"
+                android:fontFamily="@font/mulishbold"
+                android:textColor="#231F20"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1-4-44"
+                android:fontFamily="@font/mulishbold"
+                android:layout_marginLeft="@dimen/size5"
+                android:id="@+id/txt_water_histry_entry_Date"
+                android:gravity="start"
+                android:textStyle="bold"
+                android:textColor="#231F20"
+                android:textSize="16dp"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2.2"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Intake(Litres):"
+
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/size5"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size5"
+                    android:textStyle="bold"
+
+                    android:id="@+id/txt_total_water"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_power_nap"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:visibility="gone"
+                android:background="@color/line_color"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size10"
+                android:layout_marginRight="@dimen/size10"
+                android:layout_marginLeft="@dimen/size10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=" Intake"
+
+                    android:fontFamily="@font/mulishsemibold"
+                    android:textStyle="bold"
+                    android:textColor="#99231F20"
+                    android:textSize="12dp"
+                    android:layout_weight="0.3"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Unit"
+
+                    android:fontFamily="@font/mulishsemibold"
+                    android:paddingLeft="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#99231F20"
+                    android:textSize="12dp"
+                    android:layout_weight="1.2"/>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recler_power_nap_water"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

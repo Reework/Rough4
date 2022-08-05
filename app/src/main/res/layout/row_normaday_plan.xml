@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/time_tvv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size12"
+            android:text="Time"
+
+            android:textStyle="bold"
+            android:textSize="@dimen/size12"
+            android:gravity="start"
+            android:textColor="@color/colorPremiumBlack"
+            android:layout_weight="1.2"/>
+        <View
+            android:layout_width="1dp"
+            android:background="@color/dark_grey_blue"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textSize="@dimen/size14"
+            android:id="@+id/activity_tvd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size10"
+            android:text="Activity"
+            android:gravity="start"
+
+            android:textStyle="bold"
+            android:textColor="@color/colorPremiumBlack"
+            android:layout_weight="2"/>
+        <View
+            android:layout_width="1dp"
+            android:background="@color/dark_grey_blue"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textSize="@dimen/size12"
+            android:id="@+id/duration_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="1"
+
+            android:layout_weight="1.2"
+            android:textStyle="bold"
+            android:textColor="@color/colorPremiumBlack"
+            />
+
+        <ImageView
+
+            android:id="@+id/img_edit_plans"
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"/>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="@dimen/size12"
+            android:id="@+id/duratiovvn_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1"
+            android:textStyle="bold"
+            android:textColor="@color/colorPremiumBlack"
+            />
+        <TextView
+            android:id="@+id/mins"
+            android:textSize="@dimen/size12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size10"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/colorPremiumBlack"
+            />
+    </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp">
+        <RelativeLayout
+            android:id="@+id/relain"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_weight="0.8"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_weight="1.4"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="end|center"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/img_medicine_logo"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:src="@drawable/healthylifestyle"
+                            app:srcCompat="@mipmap/ic_launcher"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+                            />
+
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_weight="0.6"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/activity_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:ellipsize="marquee"
+                            android:textSize="14dp"
+                            android:text="jbjhbjbjb"
+                            android:singleLine="true"
+                            android:textColor="@color/colorPremiumBlack"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/time_tv"
+                            android:layout_width="wrap_content"
+                            android:fontFamily="@font/mulishsemibold"
+                            android:textStyle="bold"
+                            android:textColor="#99231F20"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:text="1800 calories"
+
+                            android:textSize="12sp"
+                            />
+
+
+
+                        <TextView
+                            android:id="@+id/txt_duration"
+                            android:fontFamily="@font/mulishsemibold"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="jhjjhvjvjvj"
+                            android:textSize="12sp"
+                            android:layout_marginStart="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:visibility="visible"
+                            android:textStyle="bold"
+                            android:textColor="#99231F20"
+                            />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_weight="1.2"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="2"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+
+                            android:gravity="end"
+
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="39dp"
+                                android:background="@drawable/bg_green_button"
+                                android:layout_margin="@dimen/size3"
+                                android:id="@+id/lay_edit"
+
+                                android:layout_height="23dp">
+                                <TextView
+                                    android:id="@+id/img_edit_plan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_3sdp"
+                                    android:textColor="#FFFFFF"
+                                    android:padding="3dp"
+
+                                    style="@style/TextStyle.mulishsemibold"
+                                    android:text="Edit"
+                                    android:gravity="center"
+                                    android:textSize="12dp"
+
+                                    android:layout_height="wrap_content"
+
+                                    />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+
+                            android:gravity="center"
+
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+
+                                android:layout_width="55dp"
+                                android:background="@drawable/bg_pink_button"
+                                android:layout_margin="@dimen/size3"
+                                android:id="@+id/lay_current"
+
+                                android:layout_height="23dp">
+
+                                <TextView
+                                    android:id="@+id/img_delete_plan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_3sdp"
+                                    android:textColor="#FFFFFF"
+                                    android:padding="3dp"
+
+                                    style="@style/TextStyle.mulishsemibold"
+                                    android:text="Delete"
+                                    android:gravity="center"
+                                    android:textSize="12dp"
+
+                                    android:layout_height="wrap_content"
+
+                                    />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>

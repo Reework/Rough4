@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="@color/white"
+        app:layout_collapseMode="pin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgView_Back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingStart="0dp"
+                android:paddingLeft="0dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="8dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:onClick="onClick"
+                android:src="@drawable/back_arrow" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="REEplace Items"
+                android:textColor="@color/colorPremiumBlack"
+                android:textSize="@dimen/text_x_x_xlarge" />
+
+            <ImageView
+                android:id="@+id/imgView_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingEnd="20dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="20dp"
+                android:paddingStart="0dp"
+                android:visibility="gone"
+                android:paddingTop="5dp"
+                android:src="@drawable/download_folder"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/llAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar"
+        >
+
+    <LinearLayout
+        android:id="@+id/linOccasion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvOccasion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_spinner_bg"
+            android:paddingTop="8dp"
+            android:onClick="onClick"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:text="Select Occasion" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/bkgr_view_line_light" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linWishToEat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvWishToEat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_spinner_bg"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:text="Select wish to eat"
+                android:onClick="onClick"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/bkgr_view_line_light" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linCheatPlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCheatPlan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_spinner_bg"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:text="Select cheat plan"
+                android:onClick="onClick"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/bkgr_view_line_light" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

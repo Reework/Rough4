@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />
+
+    <include
+        android:id="@+id/no_internet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/custom_toolbar"
+        layout="@layout/no_internet_screen"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/custom_toolbar"
+
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginBottom="@dimen/size10"
+
+            android:layout_marginTop="@dimen/size20"
+            android:layout_marginLeft="@dimen/size10">
+
+            <RelativeLayout
+                android:id="@+id/txt_header"
+                android:background="@color/white"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size10"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/labelMyProgress"
+                    style="@style/TextStyle.CoolveticaRegular"
+                    android:background="@drawable/round_rect_green"
+                    android:text=" Export "
+                    android:padding="@dimen/size4"
+
+                    android:textColor="@color/black_overlay"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/green_date"
+                    android:id="@+id/img_add_sleep_date"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_15sdp"
+
+                    android:layout_gravity="end"
+                    />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_sleep_date"
+                android:background="@color/white"
+
+                android:layout_marginTop="@dimen/size5"
+                android:layout_below="@+id/txt_header">
+
+                <ImageView
+                    android:layout_width="@dimen/_17sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:src="@drawable/grey_date"/>
+
+                <TextView
+                    android:id="@+id/txt_show_sleep_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size10"
+                    android:text=""/>
+
+                <ImageView
+                    android:layout_width="@dimen/_17sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:layout_marginLeft="@dimen/size15"
+                    android:src="@drawable/red_date"/>
+
+                <TextView
+                    android:id="@+id/txt_show_sleep_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size10"
+                    android:text=""/>
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@drawable/list_divider_line_grey_20_full_width"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/labelMyProgress1"
+                style="@style/TextStyle.CoolveticaRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Export "
+                android:padding="@dimen/size4"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/size5"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/size5"
+                android:layout_marginBottom="@dimen/size5"
+
+                android:background="@drawable/round_rect_green"
+
+                android:textColor="@color/black_overlay" />
+            <Spinner
+                android:id="@+id/spinner_Weight_Months"
+                style="@style/MySpinnerWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size5"
+                android:paddingRight="@dimen/spinner_padding_right"
+                android:prompt="@string/select_month"
+                android:visibility="visible" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/line_grey_20"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/size10">
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/lineChart"
+                    android:paddingStart="@dimen/size10"
+                    android:paddingEnd="@dimen/size10"
+                    android:background="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_below="@+id/custom_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:layout_width="@dimen/size60"
+                android:layout_height="@dimen/size60"
+                android:src="@drawable/ic_weight" />
+
+            <TextView
+                android:id="@+id/labelCalculateWeight"
+                style="@style/TextStyle.CoolveticaRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Calculate Weight"
+                android:textColor="@color/colorPremiumBlack" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextLayoutHint">
+
+                <EditText
+                    android:id="@+id/editText_WeightCurrent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:hint="Initial Weight"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextLayoutHint">
+
+                <EditText
+                    android:id="@+id/editText_WeightIdeal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:hint="Ideal Body Weight (IBW)"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextLayoutHint">
+
+                <EditText
+                    android:id="@+id/editText_current_user_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Current Weight"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/buttonSubmitWeight"
+                style="@style/button_Style_cal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Submit"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

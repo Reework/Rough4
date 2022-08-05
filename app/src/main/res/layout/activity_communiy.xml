@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_color"
+    android:orientation="vertical"
+    tools:context=".reework.activity.community.CommuniyActivity">
+
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeContainer1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_alignParentTop="true"
+                    android:stackFromBottom="true"
+                    android:layout_above="@+id/ll_chaat"
+
+                    android:transcriptMode="alwaysScroll" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_chaat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/ll_tem_chat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="end"
+                        android:layout_below="@+id/recyclerView_chat"
+                        android:layout_marginLeft="@dimen/size40"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:visibility="gone"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/bg_msg_from_community"
+                        android:paddingLeft="10dp">
+                        <TextView
+                            android:id="@+id/txt_tem_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_gravity="end"
+                            android:gravity="end"
+                            android:textColor="@color/white"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_tem_msg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_small"
+                            android:textColor="@color/white"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+
+                            android:paddingBottom="5dp"
+                            />
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:id="@+id/view_chat"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+
+                        android:layout_above="@+id/llMsgCompose"
+                        android:background="@color/gray" />
+
+
+                    <LinearLayout
+                        android:id="@+id/llMsgCompose"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/line_color"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <EditText
+                            android:id="@+id/inputMsg"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/size4"
+
+                            android:layout_weight="2.5"
+                            android:background="@color/line_color"
+                            android:hint="Type your message"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp"
+                            android:textColor="@color/text_msg_input" />
+
+
+                        <ImageView
+                            android:id="@+id/btnSend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="33dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_weight=".5"
+                            android:background="@color/line_color"
+                            android:src="@drawable/ic_send"
+
+                            android:text="Send" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

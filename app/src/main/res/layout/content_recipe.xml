@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_recipe"
+    android:orientation="vertical"
+
+    tools:showIn="@layout/activity_food_recipe">
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_recipe_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:background="@color/gray_recipe"-->
+
+        <!--                android:layout_marginTop="30dp"-->
+
+        <!--                >-->
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+
+
+            >
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="fitXY"
+
+
+                android:src="@drawable/dish" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txt_recname"
+                    style="@style/TextStyle.CoolveticaRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="@dimen/size5"
+                    android:layout_marginEnd="10dp"
+                    android:letterSpacing="0.1"
+                    android:padding="@dimen/size2"
+                    android:text="Hello Again!"
+                    android:textColor="@color/white_recipe"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txt_recinfo"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="@dimen/size2"
+                    android:text="Hello Aga"
+                    android:textColor="@color/white_recipe"
+                    android:textSize="16dp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--            </LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/layout_nut"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="40dp"-->
+            <!--                android:background="@drawable/round_recipe_button"-->
+            <!--                android:layout_marginLeft="0dp"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:orientation="horizontal">-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_nut"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="0dp">
+
+                <Button
+                    android:id="@+id/txt_nut"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:background="@color/green_recipe"
+                    android:text="Nutrition"
+                    android:textAllCaps="false"
+
+
+                    android:textColor="@color/white_recipe"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <!--            </LinearLayout>-->
+
+
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/layout_ing"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="40dp"-->
+            <!--                android:background="@drawable/round_recipe_button_white"-->
+            <!--                android:layout_marginRight="10dp"-->
+
+            <!--                android:orientation="horizontal">-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_ing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+
+                android:layout_weight="1"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="0dp">
+
+                <Button
+                    android:id="@+id/txt_ing"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:background="@color/white_recipe"
+                    android:text="Ingredients"
+                    android:textAllCaps="false"
+
+
+                    android:textColor="@color/black_recipe"
+                    android:textStyle="bold" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!--            </LinearLayout>-->
+
+
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/layout_rec"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="40dp"-->
+            <!--                android:background="@drawable/round_recipe_button_white"-->
+            <!--                android:orientation="horizontal">-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_rec"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="0dp">
+
+                <Button
+                    android:id="@+id/txt_rec"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:background="@color/white_recipe"
+                    android:gravity="center"
+                    android:text="Recipe"
+                    android:textAllCaps="false"
+
+                    android:textColor="@color/black_recipe"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <!--            </LinearLayout>-->
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_nutrition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="@dimen/size15"
+                android:gravity="start"
+                android:letterSpacing="0.1"
+                android:padding="@dimen/size2"
+                android:text="Nutrition per 100 gram"
+                android:textColor="@color/black_recipe"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/white_recipe"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        app:cardBackgroundColor="@color/white_recipe"
+                        app:cardCornerRadius="5dp"
+
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1.3"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/eggbig" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.7"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:letterSpacing="0.1"
+
+                                    android:text="Protein"
+                                    android:textColor="@color/black_recipe"
+                                    android:textSize="16dp"
+
+                                    android:visibility="visible" />
+
+
+                                <TextView
+                                    android:id="@+id/txt_protein"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:letterSpacing="0.1"
+
+                                    android:text="6.00"
+                                    android:textColor="@color/black_recipe"
+                                    android:textSize="16dp"
+
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white_recipe"
+
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        app:cardBackgroundColor="@color/white_recipe"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white_recipe"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1.3"
+                                android:background="@color/white_recipe"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/eggbig" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.7"
+                                android:background="@color/white_recipe"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:letterSpacing="0.1"
+
+                                    android:text="Fibre"
+                                    android:textColor="@color/black_recipe"
+                                    android:textSize="16dp"
+
+                                    android:visibility="visible" />
+
+
+                                <TextView
+                                    android:id="@+id/txt_fiber"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:letterSpacing="0.1"
+
+                                    android:text="6.00"
+                                    android:textColor="@color/black_recipe"
+                                    android:textSize="16dp"
+
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/white_recipe"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        app:cardBackgroundColor="@color/white_recipe"
+                        app:cardCornerRadius="5dp"
+
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white_recipe"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1.3"
+                                android:background="@color/white_recipe"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/eggbig" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.7"
+                                android:background="@color/white_recipe"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:letterSpacing="0.1"
+
+                                    android:text="Fat"
+                                    android:textColor="@color/black_recipe"
+                                    android:textSize="16dp"
+
+                                    android:visibility="visible" />
+
+
+                                <TextView
+                                    android:id="@+id/txt_fat"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:letterSpacing="0.1"
+
+                                    android:text="6.00"
+                                    android:textColor="@color/black_recipe"
+                                    android:textSize="16dp"
+
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white_recipe"
+
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        app:cardBackgroundColor="@color/white_recipe"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white_recipe"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1.3"
+                                android:background="@color/white_recipe"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/eggbig" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.7"
+                                android:background="@color/white_recipe"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:letterSpacing="0.1"
+
+                                    android:text="Carbs"
+                                    android:textColor="@color/black_recipe"
+                                    android:textSize="16dp"
+
+                                    android:visibility="visible" />
+
+
+                                <TextView
+                                    android:id="@+id/txt_carbs"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:letterSpacing="0.1"
+
+                                    android:text="6.00"
+                                    android:textColor="@color/black_recipe"
+                                    android:textSize="16dp"
+
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/white_recipe"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white_recipe"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        app:cardBackgroundColor="@color/white_recipe"
+                        app:cardCornerRadius="5dp"
+
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/white_recipe"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="30dp"
+                                android:layout_weight="1"
+                                android:background="@color/white_recipe"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:letterSpacing="0.1"
+                                    android:padding="@dimen/size2"
+                                    android:text="Serving"
+                                    android:textColor="@color/black_recipe"
+                                    android:textSize="16dp"
+
+                                    android:visibility="visible" />
+
+
+                                <TextView
+                                    android:id="@+id/txt_serving"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:letterSpacing="0.1"
+                                    android:padding="@dimen/size2"
+                                    android:text="6.00"
+                                    android:textColor="@color/black_recipe"
+                                    android:textSize="16dp"
+
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="30dp"
+                                android:layout_weight="1"
+                                android:background="@color/white_recipe"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:letterSpacing="0.1"
+                                    android:padding="@dimen/size2"
+                                    android:text="Calories"
+                                    android:textColor="@color/black_recipe"
+                                    android:textSize="16dp"
+
+                                    android:visibility="visible" />
+
+
+                                <TextView
+                                    android:id="@+id/txt_calories"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:letterSpacing="0.1"
+                                    android:padding="@dimen/size2"
+                                    android:text="6.00"
+                                    android:textColor="@color/black_recipe"
+                                    android:textSize="16dp"
+
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_ingredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+
+            android:visibility="gone">
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="@dimen/size15"
+                android:gravity="start"
+                android:letterSpacing="0.1"
+                android:padding="@dimen/size2"
+                android:text="Things you need"
+                android:textColor="@color/black_recipe"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+
+
+                        >
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvIngridents"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="10dp"
+                            android:divider="@color/colorGreyLight_BgListView"
+                            android:dividerHeight="5dp"
+                            android:nestedScrollingEnabled="false"
+                            android:overScrollMode="never"
+                            android:scrollbars="none" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_recipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+
+            android:visibility="gone">
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="@dimen/size15"
+                android:gravity="start"
+                android:letterSpacing="0.1"
+                android:padding="@dimen/size2"
+                android:text="How to make"
+                android:textColor="@color/black_recipe"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/gray_recipe"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        app:cardBackgroundColor="@color/white_recipe"
+                        app:cardCornerRadius="5dp"
+
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="0dp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvRecipe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:divider="@color/colorGreyLight_BgListView"
+                            android:dividerHeight="5dp"
+                            android:nestedScrollingEnabled="false"
+                            android:overScrollMode="never"
+                            android:scrollbars="none"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/etDesc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:gravity="top|left"
+                            android:scrollbars="vertical"
+                            android:scrollHorizontally="false" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+             android:id="@+id/ll_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+
+                style="@style/TextStyle.CoolveticaRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#F4F4F4"
+                android:gravity="center"
+                android:letterSpacing="0.1"
+                android:text="Recipe Video"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_tiny" />
+
+
+        </LinearLayout>
+
+
+
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_margin="@dimen/_15sdp"
+        app:autoPlay="false"
+        app:showFullScreenButton="false" />
+
+
+</LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+    </LinearLayout>

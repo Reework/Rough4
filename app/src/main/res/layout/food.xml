@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="@dimen/_5sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Meal Name: Bourbon biscuit"
+
+            android:id="@+id/txt_meal_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2sdp"
+            android:padding="@dimen/_5sdp"
+            android:background="@color/colorPrimaryDark"
+
+            android:textColor="@color/white"
+            style="@style/TextStyle.CoolveticaRegular"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Meal Type :Before Breakfast"
+                    android:id="@+id/txt_meal_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="@dimen/_2sdp"
+
+                    style="@style/TextStyle.CoolveticaRegular"
+
+                    android:padding="@dimen/_3sdp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="end"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="@dimen/size10"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_add_to_daily_dairy"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginEnd="10dp"
+                        android:visibility="visible"
+
+
+
+                        android:src="@drawable/ic_done_black_24dp"
+                        android:layout_marginRight="10dp"
+
+                        android:layout_toStartOf="@id/imgMedicineDelete"
+                        android:padding="4dp"/>
+                    <ImageView
+                        android:id="@+id/img_edit_food_plan"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginEnd="10dp"
+                        android:visibility="visible"
+                        android:src="@drawable/ic_edit"
+                        android:layout_marginRight="10dp"
+
+                        android:layout_toStartOf="@id/imgMedicineDelete"
+                        android:padding="4dp"/>
+
+                    <ImageView
+                        android:id="@+id/delete_food_plan"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:visibility="visible"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_alignParentEnd="true"
+                        android:padding="4dp"
+                        android:src="@drawable/ic_cancel" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/deleted_food_plan"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/close"
+                    android:padding="@dimen/size3"
+                    android:visibility="gone"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+android:layout_marginBottom="@dimen/_5sdp"
+
+
+                    android:layout_height="wrap_content"/>
+
+
+                <ImageView
+                    android:id="@+id/img_edit_food_planss"
+                    android:src="@drawable/ic_edit"
+                    android:padding="@dimen/size3"
+                    android:visibility="gone"
+                    android:layout_marginEnd="@dimen/_5sdp"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Meal Time: 1:30PM"
+                    android:id="@+id/txt_meal_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/_2sdp"
+
+
+                    android:padding="@dimen/_3sdp"/>
+                <TextView
+                    android:id="@+id/txt_viedddw_recipe"
+                    android:layout_width="wrap_content"
+                    android:text="  View Recipe  "
+                    android:padding="@dimen/size5"
+                    android:textColor="@color/white"
+                    android:layout_margin="@dimen/size5"
+                    android:visibility="gone"
+                    style="@style/button_squarebtn"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="UOM : Glass"
+                    android:layout_weight="1"
+                    android:id="@+id/txt_uom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/_2sdp"
+
+                    android:padding="@dimen/_3sdp"/>
+
+                <TextView
+                    android:text="Quantity: 5.1"
+                    android:layout_weight="1"
+                    android:id="@+id/txt_quantity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/_2sdp"
+
+                    android:padding="@dimen/_3sdp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Calories: 308.55"
+                    android:layout_weight="1"
+                    android:id="@+id/txt_calories"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/_2sdp"
+
+                    android:padding="@dimen/_3sdp"/>
+
+                <TextView
+                    android:text="Proteain: 257.66"
+                    android:layout_weight="1"
+                    android:id="@+id/txt_protein"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/_2sdp"
+
+                    android:padding="@dimen/_3sdp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Fat: 155.55"
+                    android:layout_weight="1"
+                    android:id="@+id/txt_fat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/_2sdp"
+
+                    android:padding="@dimen/_3sdp"/>
+
+                <TextView
+                    android:text="Card: 206.26"
+                    android:layout_weight="1"
+                    android:id="@+id/txt_carb"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/_2sdp"
+
+                    android:padding="@dimen/_3sdp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Fibre: 259.06"
+                    android:layout_weight="1"
+                    android:id="@+id/txt_fibre"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/_2sdp"
+
+                    android:padding="@dimen/_3sdp"/>
+
+                <TextView
+                    android:text="Remark: Test 2"
+                    android:layout_weight="1"
+                    android:id="@+id/txt_remark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/_2sdp"
+
+                    android:padding="@dimen/_3sdp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size5"
+                android:layout_marginEnd="@dimen/size5"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/txt_view_recipe"
+                    android:layout_width="0dp"
+                    android:text="  View Recipe  "
+                    style="@style/button_Style_cal"
+                    android:gravity="center"
+
+
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="@dimen/_2sdp"
+
+                    android:padding="@dimen/_3sdp"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/_2sdp"
+
+                    android:padding="@dimen/_3sdp"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:visibility="invisible"
+                android:background="@color/dark_grey_blue"
+                android:layout_height="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

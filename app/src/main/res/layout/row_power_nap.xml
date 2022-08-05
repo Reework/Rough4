@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/size10"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/size5"
+    android:layout_marginLeft="@dimen/size10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size10"
+
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Start Time"
+            android:id="@+id/txt_entry_date"
+            android:visibility="gone"
+            android:layout_gravity="start"
+            android:layout_marginLeft="@dimen/size10"
+            android:textColor="@android:color/black"
+            android:layout_weight="0.8"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Start Time"
+            android:id="@+id/txt_date"
+            android:textSize="@dimen/size15"
+
+            android:layout_gravity="start"
+            android:textColor="#231F20"
+            android:layout_weight="1.1"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="fsddfd"
+
+                android:layout_gravity="center"
+                android:paddingLeft="15dp"
+                android:textSize="@dimen/size15"
+                android:textColor="#231F20"
+                android:gravity="start"
+                android:id="@+id/txt_sleep_time" />
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/bg_green_button"
+                android:layout_margin="@dimen/size3"
+                android:id="@+id/lay_edit"
+
+                android:layout_height="23dp">
+
+                <TextView
+                    android:id="@+id/img_edit_sleep_power"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:textColor="#FFFFFF"
+                    android:padding="3dp"
+
+                    style="@style/TextStyle.mulishsemibold"
+                    android:text="Edit"
+                    android:gravity="center"
+                    android:textSize="12dp"
+
+                    android:layout_height="wrap_content"
+
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:background="@drawable/bg_pink_button"
+                android:layout_margin="@dimen/size3"
+                android:id="@+id/lay_current"
+
+                android:layout_height="23dp">
+
+                <TextView
+                    android:id="@+id/img_delete_sleep_power"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:textColor="#FFFFFF"
+                    android:padding="3dp"
+
+                    style="@style/TextStyle.mulishsemibold"
+                    android:text="Delete"
+                    android:gravity="center"
+                    android:textSize="12dp"
+
+                    android:layout_height="wrap_content"
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="@dimen/_20sdp"
+    android:layout_marginEnd="@dimen/_20sdp"
+    android:background="#F5F6F8">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mulishsemibold"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Quick access :"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="@dimen/_50sdp">
+        <LinearLayout
+            android:id="@+id/cvHealth"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+           android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginRight="16dp"
+android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_msg_white"
+            android:layout_height="@dimen/_45sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:src="@drawable/ic_home_health_monitoring"
+                android:layout_height="@dimen/_20sdp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="REEmonitor"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:fontFamily="@font/mulishsemibold"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/cvReport"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="8dp"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_msg_white"
+            android:layout_height="@dimen/_45sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:src="@drawable/icon_blood_report"
+                android:layout_height="@dimen/_20sdp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="REEplan"
+                android:textStyle="bold"
+
+
+                android:textColor="@color/black"
+                android:fontFamily="@font/mulishsemibold"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/cvReevaluate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+android:layout_marginRight="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="10dp"
+
+            android:orientation="horizontal"
+android:gravity="center"
+            android:background="@drawable/bg_msg_white"
+            android:layout_height="@dimen/_45sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:src="@drawable/ic_home_reevaluate"
+                android:layout_height="@dimen/_20sdp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="REEvaluate"
+                android:textStyle="bold"
+
+                android:textColor="@color/black"
+                android:fontFamily="@font/mulishsemibold"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/cvReeplan"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:layout_marginRight="8dp"
+
+            android:orientation="horizontal"
+            android:background="@drawable/bg_msg_white"
+            android:layout_height="@dimen/_45sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:src="@drawable/icon_blood_report"
+                android:layout_height="@dimen/_20sdp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="REEscore"
+                android:textStyle="bold"
+
+                android:textColor="@color/black"
+                android:fontFamily="@font/mulishsemibold"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

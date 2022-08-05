@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-6dp"
+        android:layout_marginBottom="60dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_indicator_color"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPremiumWhite"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingStart="0dp"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:src="@drawable/back_arrow" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgLeft"
+                    android:layout_marginLeft="10dp"
+                    android:text="Food"
+                    android:textColor="@color/colorPremiumBlack"
+                    android:textSize="@dimen/text_x_xlarge" />
+
+                <RelativeLayout
+                    android:id="@+id/counterValuePanel"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivBell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/ic_notification" />
+
+                    <TextView
+                        android:id="@+id/count"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignTop="@+id/ivBell"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="-12dp"
+                        android:layout_marginTop="-5dp"
+                        android:layout_toRightOf="@+id/ivBell"
+                        android:background="@drawable/rounded_textview"
+                        android:gravity="center"
+                        android:textColor="@color/colorPremiumBlack"
+                        android:textSize="@dimen/text_tiny" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabBackground="@color/colorTransparent"
+            app:tabIndicator="@drawable/tab_indicator"
+            app:tabIndicatorColor="@color/colorPremiumWhite"
+            app:tabIndicatorFullWidth="false">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItemFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:icon="@drawable/foodnew" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItemWater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/waternew" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItemSleep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/sleepnew" />
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItemActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/activitynew" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItemMind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/moodnew" />
+
+
+
+            <!--            <com.google.android.material.tabs.TabItem-->
+            <!--                android:id="@+id/tabItemweight"-->
+            <!--                -->
+            <!--                android:layout_width="@dimen/_4sdp"-->
+            <!--                android:layout_height="@dimen/_4sdp"-->
+            <!--                android:icon="@drawable/scale" />-->
+
+
+            <!--  <android.support.design.widget.TabItem
+                  android:id="@+id/tabItemActivity"
+                  android:visibility="gone"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:icon="@drawable/ic_tab_activity" />-->
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

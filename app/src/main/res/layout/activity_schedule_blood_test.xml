@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+    tools:context=".reework.activity.BloodTestModule.activity.ScheduleBloodTestActivity">
+
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/custom_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Date"
+                style="@style/TextStyle.CoolveticaRegular"
+                android:letterSpacing="0.1"
+                android:textColor="@color/colorPremiumBlack"
+         />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#F4F4F4"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/text_SBT_Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/size4"
+                    android:textColor="@color/colorPremiumBlack" />
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/calendars"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:layout_height="@dimen/_30sdp"/>
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Time"
+                style="@style/TextStyle.CoolveticaRegular"
+                android:letterSpacing="0.1"
+                android:textColor="@color/colorPremiumBlack"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#F4F4F4"
+                android:layout_height="match_parent">
+              <TextView
+                  android:id="@+id/text_SBT_Time"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="@dimen/_4sdp"
+                  android:layout_centerVertical="true"
+                  />
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/clocknew"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:layout_height="@dimen/_30sdp"/>
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextStyle.CoolveticaRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Select Address"
+            android:textColor="@color/colorPremiumBlack" />
+
+        <RadioGroup
+            android:id="@+id/RadioGroupSelectAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonRegisteredAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Registered Address" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNewAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Address" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/edtTextBloodTest_NewAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="5dp"
+
+            android:layout_marginTop="@dimen/size4"
+            android:gravity="start"
+
+            android:padding="@dimen/_4sdp"
+
+            android:background="#F4F4F4"
+            android:hint="Enter new address"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:maxLines="5" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/ll_pin"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/TextStyle.CoolveticaRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Enter Pincode"
+                android:textColor="@color/colorPremiumBlack" />
+
+            <EditText
+                android:id="@+id/edt_pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="5dp"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/size4"
+                android:gravity="start"
+                android:maxLength="6"
+                android:padding="@dimen/_10sdp"
+                android:background="#F4F4F4"
+
+
+
+                android:inputType="number"
+                android:lines="1"
+                android:maxLines="5" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <Button
+            android:id="@+id/buttonSubmit_ScheduleTest"
+            style="@style/button_Style_cal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Schedule"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/buttonCancel_ScheduleTest"
+            style="@style/button_Style_cal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Cancel"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

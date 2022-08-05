@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+
+    <item android:drawable="@drawable/ic_glass_frame_000" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_005" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_006" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_007" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_008" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_009" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_010" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_011" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_012" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_013" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_014" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_015" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_016" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_017" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_018" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_019" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_020" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_021" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_022" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_023" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_024" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_025" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_026" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_027" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_028" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_029" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_030" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_031" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_032" android:duration="50" />
+    <item android:drawable="@drawable/ic_glass_frame_033" android:duration="50" />
+</animation-list>

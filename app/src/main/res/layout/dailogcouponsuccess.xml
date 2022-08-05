@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_close"
+        android:padding="@dimen/size5"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+
+        android:src="@drawable/ic_popup_cancel"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@+id/img_close"
+        android:textColor="@android:color/black"
+        android:text="Add Sleep Time"
+        style="@style/TextStyle.CoolveticaRegular"
+        android:padding="@dimen/_5sdp"
+        android:textSize="@dimen/text_normal"
+        android:gravity="center"
+        >
+
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/img_close"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:id="@+id/rd_group_sleep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RadioButton
+                    android:id="@+id/rd_btn_dreamless_sleep"
+
+                    android:layout_width="wrap_content"
+                    android:text="Deep sleep"
+
+                    android:checked="true"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/rd_btn_dreamwith_sleep"
+
+                    android:text="Disturbed sleep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size8"
+                android:layout_weight="1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_entry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/size5">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:padding="@dimen/size5"
+                            android:text="Entry Date "
+                            android:textColor="@color/black"
+                            android:textStyle="bold">
+
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/txt_sleep_entry_date"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="@dimen/size5" />
+                            <TextView
+                                android:id="@+id/txt_repeat_slewwep_data"
+                                android:layout_width="wrap_content"
+                                android:background="@drawable/bg_button_blue"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+
+                                android:text="       Repeat        "
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:padding="@dimen/size8" />
+                        </LinearLayout>
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="@dimen/size3"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_height="1dp"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size5"
+                android:layout_weight="1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/size5">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/size5"
+                            android:textColor="@color/black"
+                            android:text="Start Time "
+                            android:textStyle="bold">
+
+
+                        </TextView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/txt_sleep_date_from"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="@dimen/size5" />
+                            <TextView
+                                android:id="@+id/txt_repeat_sleep_data"
+                                android:layout_width="wrap_content"
+                                android:background="@drawable/bg_button_blue"
+                                android:layout_height="wrap_content"
+
+                                android:text="  Repeat "
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:padding="@dimen/size8" />
+                        </LinearLayout>
+
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/size3"
+                            android:background="@color/colorPrimaryDark"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/size5"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="End Time   "
+                            android:padding="@dimen/size5"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:gravity="start"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/txt_sleep_date_to"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/size5"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorPrimaryDark"/>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/size5"
+                        android:layout_marginTop="@dimen/size5"
+                        android:background="@color/white"
+                        android:text="How many times did you get-up during sleep?"
+                        android:textColor="@color/black"
+                        android:textStyle="bold">
+
+
+                    </TextView>
+                    <EditText
+                        android:id="@+id/edt_sleep_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:text="0"
+                        android:background="@color/white"
+                        android:padding="@dimen/size5"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimaryDark"/>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit_sleep_hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/button_Style_cal"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/size20"
+            android:layout_alignParentBottom="true"
+            android:text="Submit "
+
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

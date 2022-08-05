@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll_mediceine"
+        android:fadeScrollbars="false"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPremiumWhite"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/labelMedicineTitle"
+                    style="@style/TextStyle.CoolveticaRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Ingradient"
+                    android:textColor="@color/colorPremiumBlack"
+                    android:textSize="@dimen/text_normal" />
+
+                <ImageView
+                    android:id="@+id/close_rdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_popup_cancel" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="4dp"
+
+                android:text="Ingradient"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/edt_edit_ingrad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+
+
+
+                android:enabled="false"
+
+                android:inputType="numberDecimal"
+                android:maxLength="20" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="4dp"
+
+                android:text="Unit"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/edt_ingrad_unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:enabled="false"
+
+
+
+                android:inputType="numberDecimal"
+                android:maxLength="20" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="4dp"
+
+                android:text="Quantity"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/edt_ingrad_qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+
+
+
+
+                android:inputType="numberDecimal"
+                android:maxLength="20" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="4dp"
+
+                android:text="Remark"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/edt_ingrad_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+
+
+
+                />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btn_delete_ingrad"
+
+                    android:layout_alignParentRight="true"
+                    android:background="@color/dark_red"
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/size2"
+                    android:layout_marginLeft="@dimen/size2"
+                    android:layout_marginRight="@dimen/size2"
+                    android:layout_marginTop="@dimen/size10"
+                    android:layout_above="@+id/dummyview"
+                    android:layout_marginBottom="@dimen/size10"
+
+
+                    android:text="Delete"
+                    />
+                <Button
+                    android:id="@+id/btn_update_ingrad"
+
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/size2"
+                    android:textColor="@color/white"
+                    android:background="@color/colorGreen3"
+                    android:layout_marginLeft="@dimen/size12"
+                    android:layout_marginRight="@dimen/size2"
+                    android:layout_marginTop="@dimen/size10"
+                    android:layout_above="@+id/dummyview"
+                    android:layout_marginBottom="@dimen/size10"
+
+
+                    android:text="Update"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

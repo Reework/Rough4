@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/two_sided_corner"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgLogoLogin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:layout_marginRight="60dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wellcomeimage" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgLogoLogin"
+            android:gravity="center"
+            style="@style/TextStyle.mulishmedium"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:padding="@dimen/_25sdp"
+            android:textSize="@dimen/_15sdp"
+            android:text="Health"/>
+
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_top"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:layout_above="@+id/ll_bottom">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_23sdp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mulishmedium"
+            android:textStyle="bold"
+            android:text="Welcome to"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_23sdp"
+            android:gravity="center"
+            android:textColor="#00DDB0"
+            android:fontFamily="@font/mulishbold"
+            android:textStyle="bold"
+            style="@style/TextStyle.mulishsemibold"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Reework"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_small"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:textColor="@color/black"
+            android:alpha="0.6"
+            style="@style/TextStyle.mulishregular"
+
+            android:text="Health and Wellness App"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_login"
+            android:textSize="@dimen/text_small"
+            style="@style/button_Style_newdesign"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:visibility="visible"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+
+
+            android:layout_alignParentBottom="true"
+
+            android:text="Login"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btn_register"
+            android:textSize="@dimen/text_small"
+            style="@style/button_Style_green"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:visibility="visible"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+
+
+            android:layout_alignParentBottom="true"
+
+            android:text="Signup"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

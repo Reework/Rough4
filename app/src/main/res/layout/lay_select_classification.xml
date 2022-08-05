@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/ffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextStyle.CoolveticaRegular"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/squarebtn"
+        android:padding="@dimen/size10"
+        android:text="Select Classification"/>
+
+    <ListView
+        android:id="@+id/lst_classificationlist"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ffff"
+        android:layout_above="@+id/btn_classifcation"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_classifcation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:background="@drawable/squarebtn"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

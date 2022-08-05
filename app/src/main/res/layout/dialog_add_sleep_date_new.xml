@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/size10"
+    android:background="@color/white">
+
+
+
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:id="@+id/img_close"
+        android:padding="@dimen/size2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+
+        android:src="@drawable/close"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/txt_dialog_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:text="Set  Date"
+
+        android:textStyle="bold"
+        android:gravity="center">
+
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size10"
+        android:layout_below="@+id/img_close"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size8"
+                android:layout_weight="1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/size5">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/size5"
+                            android:text="Start Date"
+                            android:textStyle="bold">
+
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/txt_sleep_date_from_dialog"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/size5"></TextView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_grey_20"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/size5"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="End Date"
+                            android:padding="@dimen/size5"
+                            android:textStyle="bold"
+                            android:gravity="start"
+                            >
+
+
+
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/txt_sleep_date_to_dialog"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/size5"
+                            ></TextView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_grey_20"/>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit_sleep_hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/button_Style_cal"
+            android:layout_marginTop="@dimen/size20"
+            android:layout_alignParentBottom="true"
+            android:text="Submit "
+
+            />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

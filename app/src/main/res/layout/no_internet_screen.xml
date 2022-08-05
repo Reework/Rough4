@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_noInternet"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relLay_MyReminder_AddClock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView_ScheduleReminder_AddClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tvNwError"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_my_reminders" />
+
+        <TextView
+            android:id="@+id/tvNwError"
+            style="@style/TextStyle.CoolveticaRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="Network Error"
+            android:textColor="@color/colorPremiumBlack"
+            android:textSize="@dimen/text_large"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/labelScheduleReminder"
+            android:layout_below="@+id/tvNwError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="@string/internet_connection_unavailable"
+            android:textColor="@color/colorPremiumBlack"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refresh"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginTop="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/labelScheduleReminder"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

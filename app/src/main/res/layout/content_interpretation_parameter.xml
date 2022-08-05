@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:background="#F3F6F8"
+
+    >
+<!--    <ScrollView-->
+<!--                    android:scrollbars="vertical"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="15dp"
+
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="#00D5BC"
+            android:padding="@dimen/_8sdp">
+
+
+            <TextView
+
+                android:id="@+id/txt_viewsteps1234"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="10dp"
+                android:gravity="start"
+                android:visibility="visible"
+                android:autoSizeMaxTextSize="20dp"
+                android:layout_below="@+id/txt_rescore_name"
+
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="BCA Parameters"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                />
+
+            <ImageView
+                android:id="@+id/img_plus"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/white_plus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <ImageView
+                android:id="@+id/img_minus"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/white_miuns"
+                android:layout_width="30dp"
+                android:visibility="gone"
+                android:layout_height="30dp"/>
+
+
+        </RelativeLayout>
+
+
+
+<!--            <ScrollView-->
+<!--                android:scrollbars="vertical"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/layout_bca"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="80dp"
+            android:layout_height="wrap_content"
+android:visibility="gone"
+
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="#FFFFFF"
+           >
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyler_bca_param"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:scrollbars="none"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+        </RelativeLayout>
+<!--            </ScrollView>-->
+
+
+
+</LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:layout_marginBottom="80dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="#00D5BC"
+                android:padding="@dimen/_8sdp">
+
+
+                <TextView
+
+                    android:id="@+id/txt_viewsteps1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="start"
+                    android:visibility="visible"
+                    android:autoSizeMaxTextSize="20dp"
+                    android:layout_below="@+id/txt_rescore_name"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Patho Parameters"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_plus1"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/white_plus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+                <ImageView
+                    android:id="@+id/img_minus1"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/white_miuns"
+                    android:layout_width="30dp"
+                    android:visibility="gone"
+                    android:layout_height="30dp"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layout_patho"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+android:layout_marginBottom="0dp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="#FFFFFF"
+                android:visibility="gone">
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyler_patho_param"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fadeScrollbars="true"
+                    android:scrollbars="none"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+
+            android:orientation="vertical">
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+<!--    </ScrollView>-->
+
+    <Button
+        android:id="@+id/buttonSubmit_MyProfiless"
+        style="@style/button_Style_cal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Home"
+
+        android:textStyle="bold"
+android:layout_alignParentBottom="true"
+
+        android:visibility="visible" />
+
+</RelativeLayout>

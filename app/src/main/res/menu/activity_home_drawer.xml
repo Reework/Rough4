@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_my_reecoach"
+            android:title="Profile" />
+
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="Daily Diary" />
+        <item
+            android:id="@+id/nav_my_analysis"
+            android:icon="@drawable/ic_menu_my_analysis"
+            android:title="My Analysis"
+            />
+        <item
+            android:id="@+id/nav_my_plans"
+            android:icon="@drawable/ic_menu_my_plans"
+            android:title="My Diet Plan"/>
+        <item
+            android:id="@+id/nav_my_cheat_plans"
+            android:icon="@drawable/cheat"
+            android:title="REEplace Items"/>
+        <item
+            android:id="@+id/nav_food"
+            android:icon="@drawable/ic_master_food_hover"
+            android:title="Recipe Library"/>
+
+
+        <item
+            android:id="@+id/nav_spiritual"
+            android:icon="@drawable/ic_master_food_hover"
+            android:title="Wellness Library"/>
+        <item
+            android:id="@+id/nav_subscription"
+            android:icon="@drawable/ic_subscription"
+            android:title="Membership Plan"/>
+
+
+
+
+        <item
+            android:id="@+id/nav_services"
+            android:icon="@drawable/ic_subscription"
+            android:title="Services"/>
+        <item
+            android:id="@+id/nav_my_reecoach"
+            android:icon="@drawable/ic_menu_my_reecoach"
+
+
+            android:title="Reecoach" />
+        <item
+            android:id="@+id/nav_my_appointment"
+            android:icon="@drawable/ic_menu_my_appointment"
+            android:title="Appointments"/>
+
+        <item
+            android:id="@+id/nav_my_reminders"
+            android:icon="@drawable/ic_menu_my_reminders"
+            android:title="Reminders" />
+        <item
+            android:id="@+id/nav_my_report"
+            android:icon="@drawable/ic_home_reeport"
+            android:title="Reports" />
+        <item
+            android:id="@+id/nav_medication"
+            android:icon="@drawable/ic_menu_medication"
+            android:title="Medicines" />
+        <item
+            android:id="@+id/nav_my_life"
+            android:icon="@drawable/fitness"
+            android:title="My LifeStyle Plan" />
+
+        <item
+            android:id="@+id/nav_you_before_after"
+            android:icon="@drawable/ic_menu_you_before_after"
+            android:title="Me - Before &amp; After"/>
+
+
+        <item
+            android:id="@+id/nav_external_devices"
+            android:icon="@drawable/ic_menu_you_before_after"
+            android:title="External devices"/>
+
+
+
+
+        <item
+            android:id="@+id/nav_faq"
+            android:icon="@drawable/ic_menu_you_before_after"
+            android:title="FAQ"/>
+
+        <item
+            android:id="@+id/nav_weight"
+            android:icon="@drawable/ic_menu_weight"
+            android:visible="true"
+            android:title="Weight" />
+        <item
+            android:id="@+id/nav_my_health"
+            android:icon="@drawable/ic_menu_my_health"
+            android:title="My Health" />
+
+
+
+
+
+        <item
+            android:id="@+id/nav_my_groups"
+            android:icon="@drawable/ic_menu_my_groups"
+            android:title="My Groups"
+            android:visible="false" />
+
+
+
+
+
+
+        <item
+            android:id="@+id/nav_upgrade"
+            android:icon="@drawable/ic_menu_upgrade"
+            android:visible="false"
+            android:title="Upgrade"/>
+        <item
+            android:id="@+id/nav_schedule_blood_test"
+            android:icon="@drawable/ic_menu_my_appointment"
+            android:visible="false"
+            android:title="Schedule Pathology Test" />
+        <item
+            android:id="@+id/nav_blood_report"
+            android:icon="@drawable/ic_menu_my_plans"
+            android:visible="false"
+            android:title="My Blood Reports" />
+        <item
+            android:id="@+id/nav_unfreeze"
+            android:icon="@drawable/ic_menu_unfreeze"
+            android:title="Unfreeze"
+
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_chat_with_reecoach"
+            android:icon="@drawable/ic_menu_chat_reecoach"
+            android:title="Chat with Reecoach"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_chat_with_community"
+            android:icon="@drawable/ic_menu_chat_community"
+            android:title="Chat with Community"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_logout"
+            android:title="Logout" />
+    </group>
+
+</menu>

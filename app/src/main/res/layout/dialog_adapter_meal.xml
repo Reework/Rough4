@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/spinner_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:fontFamily="@font/mulishbold"
+        android:layout_marginStart="@dimen/size10"
+        android:gravity="start"
+        android:layout_toLeftOf="@+id/imgadd"
+        android:textColor="@color/colorPremiumBlack"
+        android:textSize="@dimen/text_small"
+        android:text="hhh"/>
+
+    <ImageView
+        android:id="@+id/imgadd"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_add_meal"/>
+
+
+
+</RelativeLayout>
+    <!--
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/spinner_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="center"
+        android:textColor="@color/colorPremiumBlack"
+        android:textSize="@dimen/text_small"/>-->

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical"
+    android:padding="@dimen/size5"
+    android:background="@drawable/bg_light_box_border">
+    <TextView
+        android:id="@+id/textmealtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size2"
+
+        android:layout_marginTop="@dimen/size5"
+        android:layout_marginRight="@dimen/size2"
+
+        android:text="12:30 PM"
+        android:visibility="gone"
+        android:layout_gravity="end"
+        android:textStyle="bold"
+        android:textColor="@color/colorPremiumBlack"
+        android:textSize="12sp"
+        android:drawablePadding="@dimen/size10"
+
+
+        app:layout_constraintBottom_toBottomOf="@id/imgAllMeal_item_image"
+        app:layout_constraintLeft_toRightOf="@id/imgAllMeal_item_image"
+        app:layout_constraintStart_toEndOf="@+id/imgAllMeal_item_image"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/size2"
+        android:weightSum="3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:layout_weight="1.3">
+            <ImageView
+                android:id="@+id/imgAllMeal_item_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size5"
+                android:src="@drawable/ic_home_food" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="left|center"
+            android:layout_weight="0.9">
+
+            <TextView android:id="@+id/textAllMealRowName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:text="Oats Idli"
+                android:textColor="@color/colorPremiumBlack"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/textmealtimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="12:30 PM"
+                android:visibility="gone"
+                android:textColor="@color/colorPremiumBlack"
+                android:textSize="12sp"
+                android:drawablePadding="@dimen/size10"
+
+                android:drawableEnd="@drawable/ic_appointment_time"
+
+                app:layout_constraintBottom_toBottomOf="@id/imgAllMeal_item_image"
+                app:layout_constraintLeft_toRightOf="@id/imgAllMeal_item_image"
+                app:layout_constraintStart_toEndOf="@+id/imgAllMeal_item_image"
+                android:drawableRight="@drawable/ic_appointment_time" />
+
+            <TextView
+                android:id="@+id/textAllMealCalories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size2"
+
+                android:text="1800 calories "
+                android:padding="@dimen/size2"
+                android:drawablePadding="@dimen/size2"
+                android:textColor="@color/colorPremiumBlack"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@id/imgAllMeal_item_image"
+                app:layout_constraintLeft_toRightOf="@id/imgAllMeal_item_image"
+                app:layout_constraintStart_toEndOf="@+id/imgAllMeal_item_image" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.9"
+            android:gravity="left|center"
+            >
+
+            <ImageView
+                android:id="@+id/ivRemove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/colorPremiumBlack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="@id/textAllMealQty"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/ic_remove_circle" />
+            <TextView
+                android:id="@+id/txtQty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qty "
+                android:visibility="gone"
+                android:textColor="@color/colorPremiumBlack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/textAllMealQty"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textAllMealQty"
+                style="@style/TextStyle.CoolveticaRegular"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:background="@drawable/bg_light_box_border"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorPremiumBlack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/ivAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPremiumBlack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/textAllMealQty"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/ic_add_circle" />
+            <TextView
+                android:id="@+id/cancle"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cancel"
+                android:layout_marginLeft="14dp"
+                android:textColor="@color/colorPremiumBlack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/textAllMealQty"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

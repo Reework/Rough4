@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F3F6F8"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F3F6F8"
+        android:layout_above="@+id/but_add_activity"
+        android:layout_alignParentTop="true"
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:padding="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/labelMedicineTitle"
+                style="@style/TextStyle.CoolveticaRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Add Activity"
+                android:layout_toRightOf="@+id/imageView_AddMedicine_CloseDialog"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/size15"
+                android:textColor="@color/colorPremiumBlack"
+                android:textSize="@dimen/text_normal" />
+
+            <ImageView
+                android:id="@+id/imageView_AddMedicine_CloseDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/size10"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/back_arrow" />
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_white"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        android:layout_marginLeft="4dp"
+
+                        android:text="@string/medicine_name"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/edtText_NameMedicine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/medicine_name"
+                        android:layout_marginLeft="4dp"
+                        android:visibility="gone"
+
+                        android:inputType="textPersonName"
+                        android:maxLength="20" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="4dp"
+                        android:visibility="gone"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Days"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <com.shamrock.reework.util.MultiSelectionSpinner
+                            android:id="@+id/spinnerAddMedicine_Days"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/custom_spinner_bg_calender" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/bkgr_view_line_light" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size15"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/size15"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Date"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <TextView
+                            android:id="@+id/txt_add_activity_date"
+                            android:layout_marginTop="@dimen/size4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bkgr_view_line_light" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text=" Activity Details"
+                        android:layout_marginStart="@dimen/size15"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/mulishbold"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size15"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Activity  Time"
+                            android:layout_marginTop="@dimen/size10"
+                            android:layout_marginLeft="@dimen/size2"
+                            android:visibility="gone"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <TextView
+                            android:id="@+id/text_time_clock_activity"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+
+
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/bg_border_grey"
+
+                            android:drawableRight="@drawable/arrow_down_grey"
+                            android:padding="@dimen/size10"
+                            android:layout_marginEnd="@dimen/_10sdp"
+
+
+                            android:text="select activity time"
+                            android:textColor="@color/colorPremiumBlack" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/size15"
+                        android:layout_marginRight="@dimen/size15"
+
+                        android:layout_marginTop="@dimen/size15"
+                        android:background="@drawable/bg_border_grey"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Activity Type"
+                            android:visibility="gone"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+                        <Spinner
+                            android:id="@+id/spinner_activity_type"
+                            style="@style/MySpinner"
+
+
+
+                            android:spinnerMode="dialog"
+
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/size15"
+                        android:layout_marginRight="@dimen/size15"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/size15"
+                        android:background="@drawable/bg_border_grey"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sub Activity Type"
+                            android:visibility="gone"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <Spinner
+                            android:id="@+id/spinner_sub_Activity"
+                            style="@style/MySpinner"
+
+
+
+                            android:spinnerMode="dialog"
+
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size10"
+                        android:padding="@dimen/size4"
+                        android:layout_marginTop="@dimen/size15"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Total  Time Spend"
+                            android:layout_marginLeft="@dimen/size2"
+                            android:visibility="gone"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+
+
+
+
+
+
+                        <TextView
+                            android:id="@+id/text_time_acrtivty"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:drawableRight="@drawable/arrow_down_grey"
+
+                            android:padding="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+
+                            android:background="@drawable/bg_border_grey"
+
+                            android:text="Total Time Spend"
+                            android:textColor="@color/colorPremiumBlack" />
+
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text=" Repeat Activity"
+                    android:layout_marginStart="@dimen/size15"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/mulishbold"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recylr_repeat_activity_list"
+                    android:layout_width="match_parent"
+                    android:background="#F3F6F8"
+                    android:layout_margin="@dimen/size10"
+                    android:nestedScrollingEnabled="false"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/but_add_activity"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size2"
+        android:layout_alignParentBottom="true"
+        style="@style/button_Style_newdesign"
+
+
+        android:text="Add Activities"
+        />
+
+
+</RelativeLayout>

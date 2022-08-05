@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />
+
+    <include layout="@layout/content_before_after" />
+
+    <Button
+        android:id="@+id/btn_upload"
+        style="@style/button_Style_cal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:text="Upload Photo"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,1395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F3F6F8"
+    tools:context=".reework.fragment.MasterWaterFragment">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F3F6F8"
+
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Water"
+            android:layout_gravity="center"
+            android:padding="@dimen/size8"
+            android:textSize="@dimen/text_size_20"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:visibility="gone"
+
+
+
+            android:textColor="@color/white"/>
+        <RadioGroup
+            android:id="@+id/radioGroup_water"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/size8"
+            android:layout_marginBottom="@dimen/size8"
+            android:padding="@dimen/size3"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/rd_button_water_daily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:checked="true"
+                android:textColor="@color/black"
+                android:background="@drawable/custom_white_radio_new1"
+                android:button="@null"
+                android:text="Daily entry" />
+
+            <RadioButton
+                android:id="@+id/rd_button_water_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/custom_white_radio_new1"
+                android:button="@null"
+                android:text="History" />
+
+            <RadioButton
+                android:id="@+id/rd_button_water_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/custom_white_radio_new1"
+                android:button="@null"
+                android:text="Healthy-Tips" />
+
+
+
+            <RadioButton
+                android:id="@+id/rd_button_water_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/custom_white_radio_new1"
+                android:button="@null"
+                android:text="Video" />
+
+
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+
+    <ViewFlipper
+        android:id="@+id/vp_main_water"
+        android:layout_width="match_parent"
+        android:background="#F3F6F8"
+        android:layout_marginBottom="70dp"
+        android:layout_below="@+id/l1"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:background="@color/colorTransparent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorTransparent"
+                android:visibility="visible"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorTransparent"
+                        android:orientation="vertical"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:visibility="visible"
+                            android:padding="5dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/txt_status"
+                                style="@style/TextStyle.CoolveticaRegular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Today's status"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:visibility="visible"
+                                android:textColor="@color/colorPremiumBlack"
+                                android:textSize="16dp" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_add_water1"
+                                android:layout_width="wrap_content"
+
+
+                                android:layout_alignParentEnd="true"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/txt_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:drawablePadding="@dimen/text_view_line_spacing_4dp"
+                                    android:padding="@dimen/text_view_line_spacing_4dp"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginRight="15dp"
+                                    android:text="Add meal"
+                                    android:textColor="#92989B"/>
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+
+                        <TextView
+                            android:id="@+id/tvTodaysGoal1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size5"
+                            android:layout_marginRight="@dimen/size5"
+                            android:padding="@dimen/size5"
+                            android:visibility="gone"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/colorPremiumBlack" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            app:cardElevation="5dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:id="@+id/img_total_cal"
+                                    android:orientation="vertical"
+
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_height="@dimen/_50sdp">
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        >
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="1,900 kcal"
+                                            android:padding="@dimen/_5sdp"
+                                            android:layout_marginTop="@dimen/_10sdp"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/colorPremiumBlack"
+                                            android:textSize="@dimen/text_size_12" />
+
+
+                                        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                                            android:layout_width="match_parent"
+                                            android:id="@+id/progress_daily_consumed"
+                                            android:layout_height="70dp"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_margin="@dimen/_5sdp"
+                                            android:layout_centerInParent="true"
+                                            android:background="@drawable/bkgr_white_circle"
+                                            app:cpb_background_progressbar_color="#F3F6F8"
+                                            app:cpb_background_progressbar_width="5dp"
+                                            app:cpb_progressbar_color="#58C960"
+                                            app:cpb_progressbar_width="3dp" />
+
+                                        <ImageView
+                                            style="@style/TextStyle.CoolveticaRegular"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_width="@dimen/_15sdp"
+                                            android:layout_height="@dimen/_15sdp"
+                                            android:gravity="bottom"
+                                            android:layout_centerInParent="true"
+                                            android:src="@drawable/waterglass"
+                                            android:text="0"
+                                            android:textColor="@color/colorPremiumBlack"
+                                            android:textSize="@dimen/text_small" />
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_toRightOf="@+id/img_total_cal"
+                                    android:layout_centerVertical="true"
+                                    android:orientation="vertical"
+
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:id="@+id/tvTodaysGoal"
+                                        android:layout_width="wrap_content"
+                                        android:fontFamily="@font/mulishregular"
+                                        android:text="Today’s goal is 10 glass of water"
+                                        android:textSize="13dp"
+                                        android:textColor="#99231F20"
+                                        android:layout_height="wrap_content"/>
+
+                                    <TextView
+                                        android:id="@+id/txt_take_glass"
+                                        android:layout_width="wrap_content"
+                                        android:text="1 Glass"
+                                        android:textColor="#231F20"
+                                        android:textStyle="bold"
+
+                                        android:textSize="16dp"
+                                        android:fontFamily="@font/mulishbold"
+                                        android:layout_height="wrap_content"/>
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/ll_add_water"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginEnd="@dimen/_10sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:src="@drawable/ic_add_food"
+                                    android:layout_centerVertical="true"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/colorPremiumBlack" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <RelativeLayout
+                            android:id="@+id/rel_weekly_water"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="match_parent"
+                            android:nestedScrollingEnabled="false"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_height="52dp"
+                            android:background="@drawable/bg_black_button"
+                            >
+                            <TextView
+                                android:id="@+id/buttonwater_ViewMore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:gravity="start|center"
+
+
+                                android:layout_marginLeft="24dp"
+                                android:textSize="@dimen/text_small"
+
+
+
+
+                                android:text="Weekly Analysis" />
+
+                            <ImageView
+                                android:id="@+id/imgprocess_water"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_plus"
+                                android:layout_marginEnd="@dimen/_20sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"/>
+                        </RelativeLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-5dp"
+                            android:background="@color/colorTransparent"
+                            android:orientation="horizontal">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvGlassess"
+                                android:background="@color/white"
+                                android:visibility="gone"
+
+                                android:layout_width="match_parent"
+                                android:layout_marginStart="@dimen/_15sdp"
+                                android:layout_marginEnd="@dimen/_15sdp"
+
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:divider="@null" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_weekly_water"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="0dp"
+                        android:layout_marginTop="-5dp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:visibility="gone"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:background="@color/white"
+                                android:visibility="visible"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1.6"
+                                    android:layout_height="wrap_content"
+                                    android:text="Date"
+
+                                    android:fontFamily="@font/mulishbold"
+                                    android:gravity="start"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/text_tiny"
+                                    android:textColor="@color/black"
+                                    />
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1.5"
+                                    android:layout_height="wrap_content"
+                                    android:text="Goal"
+                                    android:fontFamily="@font/mulishbold"
+                                    android:paddingRight="20dp"
+
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/text_tiny"
+                                    android:textColor="@color/black"
+                                    />
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1.6"
+                                    android:layout_height="wrap_content"
+                                    android:text="Consumed"
+                                    android:fontFamily="@font/mulishbold"
+
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/text_tiny"
+                                    android:textColor="@color/black"
+                                    />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:background="@color/line_color"/>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recycleView_Water"
+                                android:layout_width="match_parent"
+                                android:visibility="visible"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:background="@drawable/sleep_drawable">
+
+                        <LinearLayout
+                            android:id="@+id/linLay_All_Meal_Week_Analysis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size10"
+                            android:layout_marginTop="@dimen/appbar_padding_top"
+                            android:layout_marginRight="@dimen/size10"
+                            android:background="@drawable/bkgr_button_white_radius"
+                            android:orientation="vertical"
+                            android:padding="@dimen/appbar_padding_top"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/TextStyle.CoolveticaRegular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Weekly Analysis"
+                                android:textColor="@color/colorPremiumBlack" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerView_All_Meal_Weekly"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/buttonAllMeal_ViewMore"
+                            style="@style/button_Style_round"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/linLay_All_Meal_Week_Analysis"
+
+                            android:layout_centerHorizontal="true"
+                            android:text="View last 7 days" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/_10sdp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorTransparent"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/black"
+                                style="@style/TextStyle.CoolveticaRegular"
+                                android:text="Water Unit :">
+
+                            </TextView>
+                            <Spinner
+                                android:id="@+id/spinner_add_uom_water"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/size10"
+                                android:paddingRight="@dimen/spinner_padding_right"
+                                style="@style/MySpinner"
+
+                                android:prompt="@string/select_monthss"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Actual Water Intake :"
+                                android:textColor="@android:color/black"
+                                style="@style/TextStyle.CoolveticaRegular"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/size8"
+                                android:layout_weight="1">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+
+
+
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+
+
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+
+
+
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <EditText
+                                    android:id="@+id/edt_add_actual_water"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="4dp"
+
+                                    android:layout_toLeftOf="@+id/img_plus_water"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginTop="@dimen/size5"
+
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="20" />
+
+                                <ImageView
+                                    android:id="@+id/img_plus_water"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:visibility="gone"
+                                    android:textColor="@android:color/black"
+
+                                    android:background="@drawable/ic_add_water"
+                                    android:layout_marginRight="@dimen/size10"
+                                    android:layout_toLeftOf="@+id/img_minus_water"
+
+                                    />
+                                <ImageView
+                                    android:id="@+id/img_minus_water"
+                                    android:layout_width="40dp"
+                                    android:visibility="gone"
+                                    android:layout_height="40dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="35dp"
+                                    android:background="@drawable/ic_indeterminate_check_box_black_24dp"
+
+                                    android:layout_alignParentRight="true" />
+
+
+                            </RelativeLayout>
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <Button
+                            android:id="@+id/btn_add_water"
+
+                            android:layout_alignParentRight="true"
+                            style="@style/button_Style_cal"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/size2"
+                            android:layout_marginLeft="@dimen/size2"
+                            android:layout_marginRight="@dimen/size2"
+                            android:layout_marginTop="@dimen/size10"
+                            android:layout_above="@+id/dummyview"
+                            android:layout_marginBottom="@dimen/size10"
+
+
+                            android:text="Proceed"
+                            />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:background="@color/colorTransparent"
+
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/size10"
+                    android:background="@color/transparent1">
+
+
+
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/img_close"
+                        android:padding="@dimen/size2"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:visibility="gone"
+
+                        android:src="@drawable/close"
+                        android:layout_alignParentEnd="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@android:color/black"
+                        android:text="Sleep Hours"
+                        android:visibility="gone"
+                        android:textStyle="bold"
+                        android:gravity="center">
+
+                    </TextView>
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/img_close"
+                        android:orientation="vertical"
+                        android:background="#F3F6F8"
+
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/ll_choosedate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_below="@+id/img_close"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_marginBottom="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/text_small"
+                                    android:layout_alignParentStart="true"
+
+                                    android:layout_marginLeft="@dimen/size10"
+                                    android:fontFamily="@font/mulishbold"
+                                    android:textStyle="bold"
+                                    android:text="Water History"
+                                    />
+                                <TextView
+                                    android:id="@+id/historydatte"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/mulishregular"
+                                    android:textColor="#92989B"
+                                    android:textSize="14dp"
+                                    android:layout_marginEnd="@dimen/_10sdp"
+                                    android:layout_alignParentEnd="true"
+
+                                    android:layout_marginLeft="@dimen/size30"
+
+                                    android:text="water history"
+                                    />
+                            </RelativeLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="#F3F6F8"
+
+                                android:orientation="vertical">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_gravity="center_horizontal"
+                                    android:padding="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/size5"
+                                    android:layout_marginBottom="@dimen/size8"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bg_white"
+
+                                    android:orientation="vertical">
+
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:orientation="horizontal"
+                                        android:padding="@dimen/_10sdp"
+                                        android:background="@drawable/bg_edit_text_box_border"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/txt_water_date_from"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/size10"
+                                            android:textColor="#99231F20"
+                                            android:textStyle="bold"
+                                            android:text="From Date"/>
+                                        <ImageView
+                                            android:layout_width="@dimen/_17sdp"
+                                            android:layout_height="@dimen/_17sdp"
+                                            android:layout_gravity="end"
+                                            android:layout_alignParentEnd="true"
+                                            android:gravity="end"
+
+
+                                            android:src="@drawable/grey_date"/>
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:orientation="horizontal"
+                                        android:padding="@dimen/_10sdp"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:background="@drawable/bg_edit_text_box_border"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/txt_water_date_to"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/size10"
+                                            android:textStyle="bold"
+                                            android:textColor="#99231F20"
+                                            android:text="To Date"/>
+                                        <ImageView
+                                            android:layout_width="@dimen/_17sdp"
+                                            android:layout_height="@dimen/_17sdp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginLeft="@dimen/size15"
+                                            android:src="@drawable/red_date"/>
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:visibility="gone"
+                                        android:layout_marginTop="@dimen/size8"
+                                        android:layout_weight="1">
+
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:layout_gravity="center"
+                                            android:orientation="horizontal">
+
+
+
+
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:padding="@dimen/size5"
+                                                android:orientation="horizontal">
+                                                <ImageView
+                                                    android:layout_width="@dimen/_17sdp"
+                                                    android:layout_height="@dimen/_17sdp"
+                                                    android:src="@drawable/grey_date"/>
+
+
+
+
+                                                <TextView
+                                                    android:id="@+id/txt_waterff_date_from"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:textStyle="bold"
+                                                    android:textColor="@color/black"
+                                                    android:padding="@dimen/size5"
+                                                    />
+
+
+
+
+
+
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                >
+
+
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:orientation="vertical">
+
+
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:padding="@dimen/size5"
+                                                        android:orientation="horizontal">
+
+
+                                                        <ImageView
+                                                            android:layout_width="@dimen/_17sdp"
+                                                            android:layout_height="@dimen/_17sdp"
+                                                            android:src="@drawable/red_date"/>
+                                                        <TextView
+                                                            android:id="@+id/txt_cwater_date_to"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:textColor="@color/black"
+                                                            android:textStyle="bold"
+                                                            android:padding="@dimen/size5"
+                                                            />
+
+
+
+
+
+
+                                                    </LinearLayout>
+
+
+
+                                                </LinearLayout>
+                                            </LinearLayout>
+
+
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+                                    <TextView
+                                        android:id="@+id/btn_show_water_history"
+                                        android:padding="@dimen/size6"
+                                        android:visibility="gone"
+                                        android:background="@color/line_color"
+
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"
+                                        android:elevation="@dimen/_3sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="@dimen/size2"
+                                        android:layout_marginRight="@dimen/size2"
+                                        android:layout_marginTop="@dimen/size10"
+                                        android:layout_above="@+id/dummyview"
+                                        android:layout_marginBottom="@dimen/size10"
+
+
+                                        android:text="   View history  "
+                                        />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/ll_avg_water"
+                                        android:visibility="gone"
+                                        android:background="@color/line_color"
+                                        android:layout_height="wrap_content"
+                                        android:padding="@dimen/size5"
+                                        android:layout_marginTop="@dimen/size5"
+                                        android:layout_marginBottom="@dimen/size5"
+                                        android:layout_marginLeft="@dimen/size8"
+                                        android:layout_marginRight="@dimen/size8"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:textColor="@color/black"
+                                            android:textStyle="bold"
+                                            android:textSize="@dimen/text_tiny"
+
+                                            android:text="Average Water Intake "
+
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:id="@+id/txt_avg_waters"
+                                            android:layout_width="wrap_content"
+                                            android:textStyle="bold"
+                                            android:textColor="@color/colorPrimaryDark"
+
+                                            android:textSize="@dimen/text_small"
+
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/text_tiny"
+                                            android:text=" Litres"
+                                            android:textStyle="bold"
+
+                                            android:layout_height="wrap_content"/>
+
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:visibility="gone"
+                                android:layout_marginTop="@dimen/size5"
+                                android:background="@color/line_grey_20"/>
+
+                            <TextView
+                                android:id="@+id/txt_no_water_history"
+                                android:layout_width="match_parent"
+                                android:text="No data available"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:visibility="gone"
+                                android:textColor="@color/black"
+                                android:layout_height="@dimen/_300sdp"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:id="@+id/ll_avg_food"
+                                android:visibility="visible"
+                                android:layout_marginTop="@dimen/_20sdp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/border_new_bottom_yellow_round"
+                                android:layout_height="50dp"
+                                android:padding="@dimen/size5"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:id="@+id/img_fire"
+                                    android:layout_width="@dimen/_25sdp"
+                                    android:layout_height="@dimen/_25sdp"
+                                    android:src="@drawable/ic_fire"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentStart="true"
+                                    />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_toRightOf="@+id/img_fire"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold"
+                                        android:textSize="@dimen/text_tiny"
+
+                                        android:text="Average Water Intake"
+
+                                        android:layout_height="wrap_content"/>
+                                    <TextView
+                                        android:id="@+id/txt_avg_water"
+                                        android:layout_width="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"
+                                        android:text="-"
+
+                                        android:textSize="14dp"
+
+                                        android:layout_height="wrap_content"/>
+
+                                </LinearLayout>
+
+
+                            </RelativeLayout>
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/list_water_history"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:visibility="visible"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                android:layout_marginBottom="@dimen/size50"
+                                android:nestedScrollingEnabled="false"
+                                android:divider="@color/white"
+                                />
+                        </LinearLayout>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:padding="@dimen/size5"
+                android:textStyle="bold"
+                android:fontFamily="@font/mulishbold"
+                android:textColor="@color/black"
+                android:text="   Tips Water "
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_water_tips"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/size5"
+                android:padding="@dimen/size5"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recylcer_spiritual_list"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txt_no_data_spiritual"
+                android:layout_width="match_parent"
+                android:text="No videos available"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorTransparent">
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:orientation="vertical">-->
+
+                <!--                    <LinearLayout-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:background="@color/colorGreyLight_Transparent"-->
+                <!--                        android:orientation="vertical"-->
+                <!--                        >-->
+
+                <!--                        <TextView-->
+                <!--                            style="@style/TextStyle.CoolveticaRegular"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:layout_marginTop="@dimen/size5"-->
+                <!--                            android:layout_gravity="center_horizontal"-->
+                <!--                            android:text="Today's Goal"-->
+                <!--                            android:padding="@dimen/size5"-->
+                <!--                            android:layout_marginBottom="@dimen/size5"-->
+                <!--                            android:textColor="@color/colorPremiumBlack" />-->
+
+                <!--                        <TextView-->
+                <!--                            android:id="@+id/tvTodaysGoal"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:layout_marginLeft="@dimen/size5"-->
+                <!--                            android:layout_marginRight="@dimen/size5"-->
+                <!--                            android:padding="@dimen/size5"-->
+                <!--                            android:layout_gravity="center_horizontal"-->
+                <!--                            android:textColor="@color/colorPremiumBlack" />-->
+
+                <!--                        <LinearLayout-->
+                <!--                            android:layout_width="match_parent"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:background="@color/white"-->
+                <!--                            android:padding="@dimen/size10"-->
+                <!--                            android:orientation="horizontal">-->
+
+                <!--                            <androidx.recyclerview.widget.RecyclerView-->
+                <!--                                android:id="@+id/rvGlassess"-->
+                <!--                                android:layout_width="match_parent"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                android:orientation="horizontal"-->
+                <!--                                android:divider="@null" />-->
+
+                <!--                        </LinearLayout>-->
+
+
+                <!--                    </LinearLayout>-->
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_margin="10dp"-->
+                <!--                        android:text="Weekly Analysis"-->
+                <!--                        android:textColor="@color/colorPremiumBlack"-->
+                <!--                        android:textStyle="bold" />-->
+
+                <!--                    <LinearLayout-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:orientation="horizontal"-->
+                <!--                        android:paddingLeft="10dp"-->
+                <!--                        android:paddingRight="10dp"-->
+                <!--                        android:paddingTop="10dp"-->
+                <!--                        android:paddingBottom="10dp">-->
+
+                <!--                        <TextView-->
+                <!--                            android:layout_width="0dp"-->
+                <!--                            android:layout_weight="2"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:text="Date"-->
+                <!--                            android:textSize="@dimen/text_small"-->
+                <!--                            android:gravity="start"-->
+                <!--                            android:textColor="@color/colorPremiumBlack" />-->
+                <!--                        <TextView-->
+                <!--                            android:layout_width="0dp"-->
+                <!--                            android:layout_weight="1.6"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:text="Goal(Litres)"-->
+
+                <!--                            android:gravity="start"-->
+                <!--                            android:textSize="@dimen/text_small"-->
+                <!--                            android:textColor="@color/colorPremiumBlack" />-->
+                <!--                        <TextView-->
+                <!--                            android:layout_width="0dp"-->
+                <!--                            android:layout_weight="1.6"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:text="Consumed(Litres)"-->
+                <!--                            android:gravity="start"-->
+                <!--                            android:singleLine="true"-->
+                <!--                            android:textSize="@dimen/text_small"-->
+                <!--                            android:textColor="@color/colorPremiumBlack" />-->
+                <!--                    </LinearLayout>-->
+
+
+                <!--                    <androidx.recyclerview.widget.RecyclerView-->
+                <!--                        android:id="@+id/recycleView_Water"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"/>-->
+
+                <!--                </LinearLayout>-->
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </ViewFlipper>
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_home"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/_50sdp">
+
+
+        <LinearLayout
+            android:id="@+id/layout_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:src="@drawable/ic_profile"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_20sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textSize="@dimen/text_tiny"
+                android:fontFamily="@font/mulishsemibold"
+                android:layout_gravity="center_horizontal"
+                android:text="Profile"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:src="@drawable/ic_home_gray"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_20sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textSize="@dimen/text_tiny"
+                android:textStyle="bold"
+                android:fontFamily="@font/mulishsemibold"
+                android:layout_gravity="center_horizontal"
+                android:text="Home"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:src="@drawable/ic_settings"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_20sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textSize="@dimen/text_tiny"
+                android:textStyle="bold"
+                android:fontFamily="@font/mulishsemibold"
+                android:layout_gravity="center_horizontal"
+                android:text="Settings"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

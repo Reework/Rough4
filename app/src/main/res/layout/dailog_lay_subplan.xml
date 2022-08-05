@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_plan_names"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginRight="@dimen/size10"
+            android:drawableEnd="@drawable/ic_edit"
+            android:gravity="center"
+            android:padding="@dimen/size5"
+            android:text="dffff"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/TextStyle.CoolveticaRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:letterSpacing="0.1"
+            android:padding="@dimen/size5"
+            android:text="Select SubPlan"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_large"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginStart="@dimen/size96"
+            android:layout_marginEnd="@dimen/size96"
+            android:background="@color/colorGreen3" />
+
+        <ListView
+            android:id="@+id/lst_sub_plan_list"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/size10"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

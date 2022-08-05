@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_300sdp"
+               android:background="@drawable/sqaure_s"
+               >
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_alignParentTop="true"
+                   android:text="Reework"
+                   android:textSize="@dimen/text_large"
+                   android:gravity="center_horizontal"
+                   android:padding="@dimen/_10sdp"
+                   android:textColor="@color/white"
+                   style="@style/TextStyle.CoolveticaRegular"
+                   android:layout_height="wrap_content"/>
+
+               <ImageView
+                   android:id="@+id/img_user"
+                   android:layout_width="@dimen/_89sdp"
+                   android:layout_height="@dimen/_89sdp"
+                   android:layout_centerHorizontal="true"
+                   android:layout_marginTop="@dimen/_50sdp"
+                   android:src="@drawable/activitynew"/>
+
+               <TextView
+                   android:id="@+id/txt_test"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   style="@style/TextStyle.CoolveticaRegular"
+                   android:textSize="@dimen/text_normal"
+                   android:gravity="center_horizontal"
+                   android:layout_below="@+id/img_user"
+                   android:textColor="@color/white"
+                   android:text="Good Morning ,Abhay Sir "/>
+
+               <HorizontalScrollView
+                   android:layout_width="match_parent"
+                   android:layout_below="@+id/txt_test"
+                   android:layout_marginTop="@dimen/_20sdp"
+                   android:layout_height="wrap_content">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+                       <LinearLayout
+                           android:layout_width="@dimen/_120sdp"
+                           android:layout_height="wrap_content"
+                           android:layout_margin="@dimen/_5sdp"
+                           android:background="@drawable/sqaure_s"
+                           android:orientation="vertical">
+                           <TextView
+                               android:layout_width="@dimen/_120sdp"
+                               android:text="BCA  Parameter"
+                               android:gravity="center"
+                               android:textColor="@color/black"
+                               android:textSize="@dimen/_10sdp"
+                               android:letterSpacing="0.1"
+                               android:padding="@dimen/_3sdp"
+                               style="@style/TextStyle.CoolveticaRegular"
+                               android:layout_height="wrap_content"/>
+                           <TextView
+                               android:layout_width="@dimen/_120sdp"
+                               android:text="12.4 "
+                               android:gravity="center"
+                               android:padding="@dimen/_5sdp"
+                               android:textColor="@color/gray"
+                               android:layout_height="wrap_content"/>
+
+                       </LinearLayout>
+                       <LinearLayout
+                           android:layout_width="@dimen/_120sdp"
+                           android:layout_height="wrap_content"
+                           android:layout_margin="@dimen/_5sdp"
+                           android:background="@drawable/sqaure_s"
+                           android:orientation="vertical">
+                           <TextView
+                               android:layout_width="@dimen/_120sdp"
+                               android:text="BCA  Parameter"
+                               android:gravity="center"
+                               android:textColor="@color/black"
+                               android:textSize="@dimen/_10sdp"
+                               android:letterSpacing="0.1"
+                               android:padding="@dimen/_3sdp"
+                               style="@style/TextStyle.CoolveticaRegular"
+                               android:layout_height="wrap_content"/>
+                           <TextView
+                               android:layout_width="@dimen/_120sdp"
+                               android:text="12.4 "
+                               android:gravity="center"
+                               android:padding="@dimen/_5sdp"
+                               android:textColor="@color/gray"
+                               android:layout_height="wrap_content"/>
+
+                       </LinearLayout>
+                       <LinearLayout
+                           android:layout_width="@dimen/_120sdp"
+                           android:layout_height="wrap_content"
+                           android:layout_margin="@dimen/_5sdp"
+                           android:background="@drawable/sqaure_s"
+                           android:orientation="vertical">
+                           <TextView
+                               android:layout_width="@dimen/_120sdp"
+                               android:text="BCA  Parameter"
+                               android:gravity="center"
+                               android:textColor="@color/black"
+                               android:textSize="@dimen/_10sdp"
+                               android:letterSpacing="0.1"
+                               android:padding="@dimen/_3sdp"
+                               style="@style/TextStyle.CoolveticaRegular"
+                               android:layout_height="wrap_content"/>
+                           <TextView
+                               android:layout_width="@dimen/_120sdp"
+                               android:text="12.4 "
+                               android:gravity="center"
+                               android:padding="@dimen/_5sdp"
+                               android:textColor="@color/gray"
+                               android:layout_height="wrap_content"/>
+
+                       </LinearLayout>
+                       <LinearLayout
+                           android:layout_width="@dimen/_120sdp"
+                           android:layout_height="wrap_content"
+                           android:layout_margin="@dimen/_5sdp"
+                           android:background="@drawable/squarebtn"
+                           android:orientation="vertical">
+                           <TextView
+                               android:layout_width="@dimen/_120sdp"
+                               android:text="BCA  Parameter"
+                               android:gravity="center"
+                               android:textColor="@color/black"
+                               android:textSize="@dimen/_10sdp"
+                               android:letterSpacing="0.1"
+                               android:padding="@dimen/_3sdp"
+                               style="@style/TextStyle.CoolveticaRegular"
+                               android:layout_height="wrap_content"/>
+                           <TextView
+                               android:layout_width="@dimen/_120sdp"
+                               android:text="12.4 "
+                               android:gravity="center"
+                               android:padding="@dimen/_5sdp"
+                               android:textColor="@color/gray"
+                               android:layout_height="wrap_content"/>
+
+                       </LinearLayout>
+                       <LinearLayout
+                           android:layout_width="@dimen/_120sdp"
+                           android:layout_height="wrap_content"
+                           android:layout_margin="@dimen/_5sdp"
+                           android:background="@drawable/squarebtn"
+                           android:orientation="vertical">
+                           <TextView
+                               android:layout_width="@dimen/_120sdp"
+                               android:text="BCA  Parameter"
+                               android:gravity="center"
+                               android:textColor="@color/black"
+                               android:textSize="@dimen/_10sdp"
+                               android:letterSpacing="0.1"
+                               android:padding="@dimen/_3sdp"
+                               style="@style/TextStyle.CoolveticaRegular"
+                               android:layout_height="wrap_content"/>
+                           <TextView
+                               android:layout_width="@dimen/_120sdp"
+                               android:text="12.4 "
+                               android:gravity="center"
+                               android:padding="@dimen/_5sdp"
+                               android:textColor="@color/gray"
+                               android:layout_height="wrap_content"/>
+
+                       </LinearLayout>
+
+
+                   </LinearLayout>
+               </HorizontalScrollView>
+           </RelativeLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:background="@drawable/sqaure_s"
+               >
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="November 2021"
+                   android:gravity="center"
+                   android:textSize="@dimen/_8sdp"
+                   style="@style/TextStyle.CoolveticaRegular"
+                   android:textColor="@color/white"
+                   />
+               <HorizontalScrollView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:orientation="vertical"
+                           android:padding="@dimen/_3sdp"
+                           android:background="@drawable/squarebtn"
+                           android:layout_margin="@dimen/_3sdp"
+                           android:layout_height="wrap_content">
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:text="   Nov   "
+                               android:textColor="@color/black"
+                               android:layout_height="wrap_content"/>
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:text="21"
+                               android:gravity="center"
+                               style="@style/TextStyle.CoolveticaRegular"
+                               android:layout_height="wrap_content"/>
+
+                       </LinearLayout>
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:orientation="vertical"
+                           android:padding="@dimen/_3sdp"
+                           android:background="@drawable/sqare"
+                           android:layout_margin="@dimen/_3sdp"
+                           android:layout_height="wrap_content">
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:text="   Nov   "
+                               android:textColor="@color/black"
+                               android:layout_height="wrap_content"/>
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:text="22"
+                               android:gravity="center"
+                               style="@style/TextStyle.CoolveticaRegular"
+                               android:layout_height="wrap_content"/>
+
+                       </LinearLayout>
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:orientation="vertical"
+                           android:padding="@dimen/_3sdp"
+                           android:background="@drawable/sqare"
+                           android:layout_margin="@dimen/_3sdp"
+                           android:layout_height="wrap_content">
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:text="   Nov   "
+                               android:textColor="@color/black"
+                               android:layout_height="wrap_content"/>
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:text="22"
+                               android:gravity="center"
+                               style="@style/TextStyle.CoolveticaRegular"
+                               android:layout_height="wrap_content"/>
+
+                       </LinearLayout>
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:orientation="vertical"
+                           android:padding="@dimen/_3sdp"
+                           android:background="@drawable/sqare"
+                           android:layout_margin="@dimen/_3sdp"
+                           android:layout_height="wrap_content">
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:text="   Nov   "
+                               android:textColor="@color/black"
+                               android:layout_height="wrap_content"/>
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:text="22"
+                               android:gravity="center"
+                               style="@style/TextStyle.CoolveticaRegular"
+                               android:layout_height="wrap_content"/>
+
+                       </LinearLayout>
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:orientation="vertical"
+                           android:padding="@dimen/_3sdp"
+                           android:background="@drawable/sqare"
+                           android:layout_margin="@dimen/_3sdp"
+                           android:layout_height="wrap_content">
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:text="   Nov   "
+                               android:textColor="@color/black"
+                               android:layout_height="wrap_content"/>
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:text="22"
+                               android:gravity="center"
+                               style="@style/TextStyle.CoolveticaRegular"
+                               android:layout_height="wrap_content"/>
+
+                       </LinearLayout>
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:orientation="vertical"
+                           android:padding="@dimen/_3sdp"
+                           android:background="@drawable/sqare"
+                           android:layout_margin="@dimen/_3sdp"
+                           android:layout_height="wrap_content">
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:text="   Nov   "
+                               android:textColor="@color/black"
+                               android:layout_height="wrap_content"/>
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:text="22"
+                               android:gravity="center"
+                               style="@style/TextStyle.CoolveticaRegular"
+                               android:layout_height="wrap_content"/>
+
+                       </LinearLayout>
+
+
+
+                   </LinearLayout>
+
+               </HorizontalScrollView>
+           </LinearLayout>
+
+
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:padding="@dimen/_20sdp"
+               android:visibility="gone"
+               android:layout_margin="@dimen/_15sdp"
+               app:cardBackgroundColor="@color/haldi"
+
+               android:layout_height="wrap_content">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@color/haldi"
+                   >
+                   <ImageView
+                       android:id="@+id/ffff"
+                       android:layout_width="@dimen/_60sdp"
+                       android:layout_centerHorizontal="true"
+                       android:layout_margin="@dimen/_10sdp"
+                       android:src="@drawable/foodnew"
+                       android:layout_height="@dimen/_60sdp"/>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/black"
+                       android:letterSpacing="0.1"
+                       android:textSize="@dimen/text_tiny"
+                       android:gravity="center_horizontal"
+                       style="@style/TextStyle.CoolveticaRegular"
+                       android:padding="@dimen/_5sdp"
+                       android:text="3334 of 3344 kcal consumed"
+                       android:layout_below="@+id/ffff">
+
+                   </TextView>
+               </RelativeLayout>
+
+           </androidx.cardview.widget.CardView>
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               app:cardElevation="@dimen/_5sdp"
+               android:layout_margin="@dimen/_5sdp"
+               android:layout_height="wrap_content">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@color/haldi"
+                  >
+                   <ImageView
+                       android:layout_width="@dimen/_30sdp"
+                       android:layout_centerHorizontal="true"
+                       android:src="@drawable/foodnew"
+                       android:layout_margin="@dimen/_5sdp"
+                       android:layout_alignParentStart="true"
+                       android:layout_height="@dimen/_30sdp"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/black"
+                       android:letterSpacing="0.1"
+                       android:layout_margin="@dimen/_5sdp"
+                       android:gravity="center_horizontal"
+                       style="@style/TextStyle.CoolveticaRegular"
+                       android:padding="@dimen/_5sdp"
+                       android:text="                 300 kcal conusmed"
+                       android:textSize="@dimen/text_tiny"
+
+                      >
+
+                   </TextView>
+                   <ImageView
+                       android:layout_width="@dimen/_20sdp"
+                       android:src="@drawable/ic_add_black"
+                       android:layout_gravity="end"
+                       android:scaleType="fitXY"
+                       android:layout_centerVertical="true"
+                       android:layout_alignParentEnd="true"
+                       android:layout_height="match_parent"/>
+               </RelativeLayout>
+
+           </androidx.cardview.widget.CardView>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <androidx.cardview.widget.CardView
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   app:cardElevation="@dimen/_5sdp"
+                   android:layout_margin="@dimen/_5sdp"
+                   android:layout_height="wrap_content">
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/sqaure_blue">
+                       <ImageView
+                           android:id="@+id/fffff"
+                           android:layout_width="@dimen/_60sdp"
+                           android:layout_centerHorizontal="true"
+                           android:src="@drawable/activitynew"
+                           android:layout_height="@dimen/_40sdp"/>
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/black"
+                           android:letterSpacing="0.1"
+                           android:gravity="center_horizontal"
+                           style="@style/TextStyle.CoolveticaRegular"
+                           android:padding="@dimen/_5sdp"
+                           android:text="300 kcal burn"
+                           android:textSize="@dimen/text_tiny"
+
+                           android:layout_below="@+id/fffff">
+
+                       </TextView>
+                   </RelativeLayout>
+
+               </androidx.cardview.widget.CardView>
+               <androidx.cardview.widget.CardView
+                   android:layout_width="0dp"
+                   android:padding="@dimen/_20sdp"
+                   android:layout_weight="1"
+                   app:cardElevation="@dimen/_5sdp"
+                   android:layout_margin="@dimen/_5sdp"
+                   android:layout_height="wrap_content">
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/sqaure_blue">
+                       <ImageView
+                           android:id="@+id/ffffff"
+                           android:layout_width="@dimen/_60sdp"
+                           android:layout_centerHorizontal="true"
+                           android:src="@drawable/sleepnew"
+                           android:layout_height="@dimen/_40sdp"/>
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/black"
+                           android:letterSpacing="0.1"
+                           android:gravity="center_horizontal"
+                           style="@style/TextStyle.CoolveticaRegular"
+                           android:padding="@dimen/_5sdp"
+                           android:text="3 hours sleep "
+                           android:singleLine="true"
+                           android:textSize="@dimen/text_tiny"
+
+                           android:layout_below="@+id/ffffff">
+
+                       </TextView>
+                   </RelativeLayout>
+
+               </androidx.cardview.widget.CardView>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <androidx.cardview.widget.CardView
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   app:cardElevation="@dimen/_5sdp"
+                   android:layout_margin="@dimen/_5sdp"
+                   android:layout_height="wrap_content">
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/sqaure_blue">
+                       <ImageView
+                           android:id="@+id/fffff"
+                           android:layout_width="@dimen/_60sdp"
+                           android:layout_centerHorizontal="true"
+                           android:src="@drawable/activitynew"
+                           android:layout_height="@dimen/_40sdp"/>
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/black"
+                           android:letterSpacing="0.1"
+                           android:gravity="center_horizontal"
+                           style="@style/TextStyle.CoolveticaRegular"
+                           android:padding="@dimen/_5sdp"
+                           android:text="300 kcal burn"
+                           android:textSize="@dimen/text_tiny"
+
+                           android:layout_below="@+id/fffff">
+
+                       </TextView>
+                   </RelativeLayout>
+
+               </androidx.cardview.widget.CardView>
+               <androidx.cardview.widget.CardView
+                   android:layout_width="0dp"
+                   android:padding="@dimen/_20sdp"
+                   android:layout_weight="1"
+                   app:cardElevation="@dimen/_5sdp"
+                   android:layout_margin="@dimen/_5sdp"
+                   android:layout_height="wrap_content">
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/sqaure_blue">
+                       <ImageView
+                           android:id="@+id/ffffff"
+                           android:layout_width="@dimen/_60sdp"
+                           android:layout_centerHorizontal="true"
+                           android:src="@drawable/sleepnew"
+                           android:layout_height="@dimen/_40sdp"/>
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/black"
+                           android:letterSpacing="0.1"
+                           android:gravity="center_horizontal"
+                           style="@style/TextStyle.CoolveticaRegular"
+                           android:padding="@dimen/_5sdp"
+                           android:text="3 hours sleep "
+                           android:singleLine="true"
+                           android:textSize="@dimen/text_tiny"
+
+                           android:layout_below="@+id/ffffff">
+
+                       </TextView>
+                   </RelativeLayout>
+
+               </androidx.cardview.widget.CardView>
+
+           </LinearLayout>
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               app:cardElevation="@dimen/_5sdp"
+               android:visibility="gone"
+               android:layout_margin="@dimen/_5sdp"
+               android:layout_height="wrap_content">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@color/dark_red"
+                   >
+                   <ImageView
+                       android:layout_width="@dimen/_30sdp"
+                       android:layout_centerHorizontal="true"
+                       android:src="@drawable/reescorenew"
+                       android:layout_margin="@dimen/_5sdp"
+                       android:layout_alignParentStart="true"
+                       android:layout_height="@dimen/_30sdp"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/black"
+                       android:letterSpacing="0.1"
+                       android:layout_margin="@dimen/_5sdp"
+                       android:gravity="center_horizontal"
+                       style="@style/TextStyle.CoolveticaRegular"
+                       android:padding="@dimen/_5sdp"
+                       android:text="                 Reeevaluate"
+                       android:textSize="@dimen/text_tiny"
+
+                       >
+
+                   </TextView>
+                   <ImageView
+                       android:layout_width="@dimen/_20sdp"
+                       android:src="@drawable/ic_add_black"
+                       android:layout_gravity="end"
+                       android:scaleType="fitXY"
+                       android:layout_centerVertical="true"
+                       android:layout_alignParentEnd="true"
+                       android:layout_height="match_parent"/>
+               </RelativeLayout>
+
+           </androidx.cardview.widget.CardView>
+           <TableLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="10dp"
+               android:background="@color/colorGreyWhite"
+               android:padding="10dp">
+
+               <TableRow
+                   android:paddingBottom="10dp">
+
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/cvHealth"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       app:cardBackgroundColor="@color/colorPremiumWhite"
+                       app:cardCornerRadius="5dp"
+                       app:cardElevation="0dp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:background="@drawable/sqaure_s"
+                           android:orientation="horizontal">
+
+                           <ImageView
+                               android:layout_width="@dimen/_30sdp"
+                               android:layout_height="@dimen/_30sdp"
+                               android:layout_margin="10dp"
+                               android:src="@drawable/ic_home_health_monitoring" />
+
+                           <TextView
+                               style="@style/TextStyle.CalibriLight"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center_vertical"
+                               android:text="REEmonitor"
+                               android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                               android:textColor="@color/colorPremiumBlack"
+                               android:textStyle="bold" />
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/cvReport"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginLeft="10dp"
+                       android:layout_weight="1"
+                       app:cardBackgroundColor="@color/colorPremiumWhite"
+                       app:cardCornerRadius="5dp"
+                       app:cardElevation="0dp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:background="@drawable/sqaure_s"
+
+                           android:orientation="horizontal">
+
+                           <ImageView
+                               android:layout_width="@dimen/_30sdp"
+                               android:layout_height="@dimen/_30sdp"
+                               android:layout_margin="10dp"
+                               android:src="@drawable/ic_home_reeport" />
+
+                           <TextView
+                               style="@style/TextStyle.CalibriLight"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center_vertical"
+                               android:text="REEports"
+                               android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                               android:textColor="@color/colorPremiumBlack"
+                               android:textStyle="bold" />
+                       </LinearLayout>
+
+                   </androidx.cardview.widget.CardView>
+
+               </TableRow>
+
+               <TableRow>
+
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/cvReevaluate"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       app:cardBackgroundColor="@color/colorPremiumWhite"
+                       app:cardCornerRadius="5dp"
+                       app:cardElevation="0dp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:background="@drawable/sqaure_s"
+
+                           android:orientation="horizontal">
+
+                           <ImageView
+                               android:layout_width="@dimen/_30sdp"
+                               android:layout_height="@dimen/_30sdp"
+                               android:layout_margin="10dp"
+                               android:src="@drawable/ic_home_reevaluate" />
+
+                           <TextView
+                               style="@style/TextStyle.CalibriLight"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center_vertical"
+                               android:text="REEvaluate"
+                               android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                               android:textColor="@color/colorPremiumBlack"
+                               android:textStyle="bold" />
+                       </LinearLayout>
+
+                   </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/cvReeplan"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginLeft="10dp"
+                       android:layout_weight="1"
+                       app:cardBackgroundColor="@color/colorPremiumWhite"
+                       app:cardCornerRadius="5dp"
+                       app:cardElevation="0dp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:background="@drawable/sqaure_s"
+
+                           android:orientation="horizontal">
+
+                           <ImageView
+                               android:layout_width="@dimen/_30sdp"
+                               android:layout_height="@dimen/_30sdp"
+                               android:layout_margin="10dp"
+                               android:src="@drawable/ic_analysis_my_reescore" />
+
+                           <TextView
+                               style="@style/TextStyle.CalibriLight"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center_vertical"
+                               android:text="REEplan"
+                               android:visibility="gone"
+                               android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                               android:textColor="@color/colorPremiumBlack"
+                               android:textStyle="bold" />
+                           <TextView
+                               style="@style/TextStyle.CalibriLight"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center_vertical"
+                               android:text="REEscore"
+                               android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                               android:textColor="@color/colorPremiumBlack"
+                               android:textStyle="bold" />
+                       </LinearLayout>
+
+                   </androidx.cardview.widget.CardView>
+
+
+               </TableRow>
+
+           </TableLayout>
+
+       </LinearLayout>
+   </ScrollView>
+
+
+</LinearLayout>

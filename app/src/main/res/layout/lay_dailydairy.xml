@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txt_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/mulishsemibold"
+        android:layout_marginStart="@dimen/_10sdp"
+
+        android:text="Today's plan :"/>
+
+    <LinearLayout
+        android:id="@+id/constrainFood_Master"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_msg_white"
+        android:orientation="horizontal"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="@dimen/_50sdp">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/bg_msg_white"
+
+            >
+
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:layout_width="match_parent"
+                android:id="@+id/circular_dailydairy_cal_consumed"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/bkgr_white_circle"
+                app:cpb_background_progressbar_color="#F3F6F8"
+                app:cpb_background_progressbar_width="5dp"
+                app:cpb_progress="10"
+                android:layout_centerHorizontal="true"
+                app:cpb_progressbar_color="#00D5BC"
+                app:cpb_progressbar_width="3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/TextStyle.CoolveticaRegular"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:gravity="bottom"
+                    android:src="@drawable/foodnew"
+                    android:text="0"
+                    android:textColor="@color/colorPremiumBlack"
+                    android:textSize="@dimen/text_small" />
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_msg_white"
+
+            android:layout_marginStart="@dimen/_15sdp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mulishsemibold"
+                    android:textSize="13dp"
+                    android:text="Food"/>
+                <TextView
+                    android:id="@+id/txtfoodcalconsumed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:text="Eat upto 1,900 Cal"/>
+
+
+
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/img_addFood"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:src="@drawable/ic_add_food"
+
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/constrainWater_Master"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_msg_white"
+        android:orientation="horizontal"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_height="@dimen/_50sdp">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/bg_msg_white"
+
+            >
+
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/progress_water"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/bkgr_white_circle"
+                app:cpb_background_progressbar_color="#F3F6F8"
+                app:cpb_background_progressbar_width="5dp"
+                app:cpb_progress="10"
+                android:layout_centerHorizontal="true"
+                app:cpb_progressbar_color="#417CFF"
+                app:cpb_progressbar_width="3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/TextStyle.CoolveticaRegular"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:gravity="bottom"
+                    android:src="@drawable/waternew"
+                    android:text="0"
+                    android:textColor="@color/colorPremiumBlack"
+                    android:textSize="@dimen/text_small" />
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_msg_white"
+
+            android:layout_marginStart="@dimen/_15sdp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mulishsemibold"
+                    android:textSize="13dp"
+                    android:text="Water"/>
+                <TextView
+                    android:id="@+id/txtwaterttotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:text="1 of 4 Glasses"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgHome_AddWater"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:src="@drawable/ic_add_waters"
+
+                android:layout_height="wrap_content"/>
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/constrainSleep_Master"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_msg_white"
+        android:orientation="horizontal"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_height="@dimen/_50sdp">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/bg_msg_white"
+
+            >
+
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:layout_width="match_parent"
+                android:id="@+id/progress_sleep"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/bkgr_white_circle"
+                app:cpb_background_progressbar_color="#F3F6F8"
+                app:cpb_background_progressbar_width="5dp"
+                android:layout_centerHorizontal="true"
+                app:cpb_progressbar_color="@color/colorPrimaryDark"
+                app:cpb_progressbar_width="3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/TextStyle.CoolveticaRegular"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:gravity="bottom"
+                    android:src="@drawable/sleepnew"
+                    android:text="0"
+                    android:textColor="@color/colorPremiumBlack"
+                    android:textSize="@dimen/text_small" />
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_msg_white"
+
+            android:layout_marginStart="@dimen/_15sdp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mulishsemibold"
+                    android:textSize="13dp"
+                    android:text="Sleep"/>
+                <TextView
+                    android:id="@+id/textHome_Sleep_Total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:text="1:00 Hr"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgHome_AddSleep"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:src="@drawable/ic_add_sleep"
+
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/constrainActivity_Master"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_msg_white"
+        android:orientation="horizontal"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_height="@dimen/_50sdp">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/bg_msg_white"
+
+            >
+
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:layout_width="match_parent"
+                android:id="@+id/progrees_activity"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/bkgr_white_circle"
+                app:cpb_background_progressbar_color="#F3F6F8"
+                app:cpb_background_progressbar_width="5dp"
+                android:layout_centerHorizontal="true"
+                app:cpb_progressbar_color="@color/colorPrimaryDark"
+                app:cpb_progressbar_width="3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/TextStyle.CoolveticaRegular"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:gravity="bottom"
+                    android:src="@drawable/activitynew"
+                    android:text="0"
+                    android:textColor="@color/colorPremiumBlack"
+                    android:textSize="@dimen/text_small" />
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_msg_white"
+
+            android:layout_marginStart="@dimen/_15sdp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mulishsemibold"
+                    android:textSize="13dp"
+                    android:text="Activity"/>
+                <TextView
+                    android:id="@+id/textHome_Activity_Total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:text="1:00 Hr"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_activity"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:src="@drawable/ic_add_activity"
+
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/constrainMind_Master"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_msg_white"
+        android:orientation="horizontal"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_height="@dimen/_50sdp">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/bg_msg_white"
+
+            >
+
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/progress_mind"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/bkgr_white_circle"
+                app:cpb_background_progressbar_color="#F3F6F8"
+                app:cpb_background_progressbar_width="5dp"
+                android:layout_centerHorizontal="true"
+                app:cpb_progressbar_color="@color/colorPrimaryDark"
+                app:cpb_progressbar_width="3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/TextStyle.CoolveticaRegular"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:gravity="bottom"
+                    android:src="@drawable/moodnew"
+                    android:text="0"
+                    android:textColor="@color/colorPremiumBlack"
+                    android:textSize="@dimen/text_small" />
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_msg_white"
+
+            android:layout_marginStart="@dimen/_15sdp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mulishsemibold"
+                    android:textSize="13dp"
+                    android:text="Feelings"/>
+                <TextView
+                    android:id="@+id/textHome_Mind_Total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:text="1:00 Hr"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgHome_AddMind"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:src="@drawable/ic_add_mind"
+
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

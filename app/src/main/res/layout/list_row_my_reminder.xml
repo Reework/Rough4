@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+  >
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+
+        app:cardCornerRadius="@dimen/size3"
+        android:layout_margin="@dimen/size8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size4"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/imageView_MyReminder_icon"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_my_reminders_activity"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true">
+                <ImageView
+                    android:id="@+id/ivEdit1"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_marginLeft="4dp"
+                    android:visibility="gone"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/ic_edit" />
+
+                <ImageView
+                    android:id="@+id/ivClose1"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/ic_cancel" />
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvActivity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/size10"
+                android:padding="@dimen/size5"
+                android:text="Activity"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPremiumBlack"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/size3"
+            android:paddingBottom="4dp"
+            android:paddingTop="6dp"
+            android:gravity="end">
+            <TextView
+                android:id="@+id/tvFrequency"
+                style="@style/TextStyle.CoolveticaRegular"
+                android:layout_width="0dp"
+                android:layout_weight=".6"
+                android:layout_height="wrap_content"
+
+                android:includeFontPadding="false"
+                android:textColor="@color/colorRobinEggBlue"
+                android:textSize="@dimen/text_tiny"/>
+
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:drawableLeft="@drawable/ic_appointment_time"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:text="00:00am"
+
+                android:textColor="@color/colorPremiumBlack"
+                android:textSize="@dimen/text_tiny" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linLay_MyReminder_DetailView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/bkgr_view_line_light" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp">
+
+                <!-- <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentEnd="true"
+                     android:layout_alignParentRight="true"
+                     android:layout_centerVertical="true"
+                     android:src="@drawable/ic_my_plan_active" />-->
+
+                <EditText
+                    android:id="@+id/etEditActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Activity"
+                    android:textColor="@color/colorPremiumBlack"
+                    android:textSize="@dimen/text_small"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvEditime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_appointment_time"
+                    android:drawablePadding="4dp"
+                    android:text="00:00am"
+                    android:textColor="@color/colorPremiumBlack"
+                    android:textSize="@dimen/text_small" />
+
+                <Spinner
+                    android:id="@+id/editSpinner"
+                    style="@style/MySpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:entries="@array/reminder_frequency"
+                    android:paddingRight="@dimen/text_normal" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnEditSave"
+                style="@style/button_Style_cal"
+                android:layout_width="@dimen/height_grid_layout_item"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/size5"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/ivEdit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="EDIT"
+                android:gravity="center"
+                android:textSize="@dimen/text_tiny"
+                android:layout_margin="@dimen/_3sdp"
+                android:background="@drawable/squarebtn_new"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:id="@+id/ivClose"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="DELETE"
+                android:gravity="center"
+                android:textSize="@dimen/text_tiny"
+                android:layout_margin="@dimen/_3sdp"
+                android:background="@drawable/squarebtn_new_delete"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

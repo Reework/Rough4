@@ -1,0 +1,359 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <!--<style Name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"></style>-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPremiumWhite</item>
+        <item name="colorPrimaryDark">@color/colorBlue5</item>
+        <item name="colorAccent">@color/colorBlueGreen3</item>
+
+        <!-- target android sdk versions < 26 and > 14 if theme other than AppCompat -->
+        <item name="fontFamily">@font/calibri_light</item>
+
+        <item name="colorControlNormal">@color/colorGreyLight</item>
+        <item name="colorControlActivated">@color/colorBlue5</item>
+        <item name="colorControlHighlight">@color/colorBlue5</item>
+
+        <!--<item Name="android:textColorPrimary">@color/colorBlue1</item>-->
+        <!--<item Name="android:textColorSecondary">@color/colorAccent</item>-->
+        <!--<item Name="android:textColorTertiary">@color/egg_54</item>-->
+        <!--<item Name="android:textColorLink">@color/winterBlue</item>-->
+        <!--<item Name="android:textColorHint">@color/colorPrimaryDark</item>-->
+        <!--<item Name="android:textColorPrimaryInverse">@color/onyx</item>-->
+        <!--<item Name="android:textColorSecondaryInverse">@color/onyx_54</item>-->
+        <!--<item Name="android:textColorTertiaryInverse">@color/onyx_38</item>-->
+        <!--<item Name="android:textColorLinkInverse">@color/lakeBlue</item>-->
+        <!--<item Name="android:textColorHintInverse">@color/onyx_38</item>-->
+
+        <item name="android:textViewStyle">@style/TextStyle.CalibriLight</item>
+
+
+
+
+
+
+
+    </style>
+    <style name="DialogTheme1" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="DialogAnimation1">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+    <style name="CustomDialogframgent" parent="android:Theme.Holo.Dialog" >
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="CustomDialogfragmgent" parent="@android:style/Theme.Holo.Light" >
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize10Percent" parent="">
+        <item name="cornerSize">8%</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize10PercentRound" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="TextStyle.CalibriLight" parent="android:Widget.TextView">
+        <item name="fontFamily">@font/calibri_light</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="TextStyle.CoolveticaRegular" parent="android:Widget.TextView">
+
+        <item name="fontFamily">@font/coolvetica_regular</item>
+
+    </style>
+
+    <style name="TextStyle.mulishsemibold" parent="android:Widget.TextView">
+
+        <item name="fontFamily">@font/mulishsemibold</item>
+
+    </style>
+
+    <style name="TextStyle.mulishbold" parent="android:Widget.TextView">
+
+        <item name="fontFamily">@font/mulishbold</item>
+
+    </style>
+
+    <style name="TextStyle.mulishmedium" parent="android:Widget.TextView">
+
+        <item name="fontFamily">@font/mulishmedium</item>
+
+    </style>
+
+    <style name="TextStyle.mulishregular" parent="android:Widget.TextView">
+
+        <item name="fontFamily">@font/mulishregular</item>
+
+    </style>
+
+    <style name="AppSearchView" parent="Widget.AppCompat.SearchView" >
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+
+
+    <style name="button_Style_cal">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:textColor">@color/colorPremiumWhite</item>
+        <item name="android:background">@drawable/bkgr_button_green</item>
+        <item name="fontFamily">@font/calibri_light</item>
+    </style>
+
+
+    <style name="button_Style_newdesign">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:textColor">@color/colorPremiumWhite</item>
+        <item name="android:background">@drawable/bg_newdesign_btn</item>
+        <item name="fontFamily">@font/mulishbold</item>
+    </style>
+
+    <style name="button_Style_black">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:textColor">@color/colorPremiumWhite</item>
+        <item name="android:background">@drawable/bg_newdesign_btn_black</item>
+        <item name="fontFamily">@font/mulishbold</item>
+    </style>
+
+
+
+    <style name="button_Style_new">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:textColor">@color/colorPremiumWhite</item>
+        <item name="android:background">@drawable/bkgr_button_green</item>
+        <item name="fontFamily">@font/calibri_light</item>
+    </style>
+
+
+
+    <style name="button_Style_green">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:textColor">@color/colorPremiumWhite</item>
+        <item name="android:background">@drawable/border_button</item>
+        <item name="fontFamily">@font/calibri_light</item>
+    </style>
+
+
+    <style name="button_Style_red">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:textColor">@color/colorPremiumWhite</item>
+        <item name="android:background">@drawable/bg_button_red</item>
+        <item name="fontFamily">@font/calibri_light</item>
+    </style>
+
+    <style name="button_squarebtn">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:textColor">@color/colorPremiumWhite</item>
+        <item name="android:background">@drawable/squarebtn</item>
+        <item name="fontFamily">@font/calibri_light</item>
+    </style>
+
+    <style name="button_Style_reg">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:textColor">@color/colorPremiumWhite</item>
+        <item name="android:background">@drawable/bkgr_button_green</item>
+        <item name="fontFamily">@font/coolvetica_regular</item>
+    </style>
+
+    <style name="button_Style_cal_bordered">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorPremiumWhite</item>
+        <item name="android:background">@drawable/bkgr_button_green_bordered</item>
+        <item name="fontFamily">@font/calibri_light</item>
+    </style>
+
+    <style name="button_Style_cal_Selector">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorPremiumWhite</item>
+        <item name="android:background">@drawable/bkgr_button_green_selector</item>
+        <item name="fontFamily">@font/calibri_light</item>
+    </style>
+
+    <style name="button_Style_round" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:textColor">@color/colorPremiumBlack</item>
+        <item name="android:background">@drawable/bkgr_button_grey_round</item>
+        <item name="fontFamily">@font/calibri_light</item>
+    </style>
+
+    <style name="MyRadioButtonStyle" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/custom_btn_radio</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="textSignup">
+        <item name="android:background">@drawable/bg_bottom_border</item>
+        <item name="android:textColor">@color/colorGreen5</item>
+        <item name="fontFamily">@font/coolvetica_regular</item>
+    </style>
+
+    <style name="customSeekBar" parent="Widget.AppCompat.SeekBar.Discrete">
+        <item name="android:thumb">@drawable/ic_health_progress_done</item>
+        <!--<item Name="android:progressTint">@color/colorPremiumWhite</item>-->
+        <!--<item Name="android:progressBackgroundTint">@color/colorPremiumWhite</item>-->
+    </style>
+
+    <style name="tallerBarStyle" parent="@android:style/Widget.SeekBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:minHeight">8dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <style name="MySpinner" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/custom_spinner_bg</item>
+    </style>
+    <style name="MySpinneraa" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/custom_food_spinner</item>
+    </style>
+
+    <style name="MySpinnerNew" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/custom_spinner_bg</item>
+        <item name="android:textColor">@color/lightblack</item>
+        <item name="fontFamily">@font/mulishbold</item>
+    </style>
+
+    <style name="MySpinnerNew1" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/custom_spinner_bg</item>
+        <item name="android:textColor">@color/lightblack</item>
+
+    </style>
+
+    <style name="MySpinnerWeight" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/custom_spinner_bg_weight</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+    <style name="MySpinnerfood" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/custom_food_spinner</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="MySpinnerCalender" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/custom_spinner_bg_calender</item>
+    </style>
+
+    <!--below for TextInputLayout Hint size-->
+    <style name="TextLayoutHint" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+
+    <style name="TextLayoutHintnew" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/text_tiny</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="fontFamily">@font/coolvetica_regular</item>
+
+    </style>
+    <style name="CustomDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="colorControlNormal">@color/colorGreyLight</item>
+        <item name="colorControlActivated">@color/colorBlue5</item>
+        <item name="colorControlHighlight">@color/colorBlue5</item>
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+
+    <style name="PauseDialogAnimation">textSignup
+        <item name="android:windowEnterAnimation">@anim/v_fragment_enter</item>
+        <item name="android:windowExitAnimation">@anim/v_fragment_exit</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="NavigationDrawerItemStyle">
+        <item name="android:textSize">@dimen/text_normal</item>
+    </style>
+
+
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="sleep_progressbar" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+    </style>
+
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="CustomDialogs" parent="android:Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+
+
+    <style name="HintTextStyle" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="DialogAnimation">test</style>
+
+
+    <!--<style Name="EditTextStyle" parent="@android:style/Widget.Holo.EditText">-->
+    <!--<item Name="colorControlNormal">@color/colorGreyLight</item>-->
+    <!--<item Name="colorControlActivated">@color/colorBlue5</item>-->
+    <!--</style>-->
+    <!--<style Name="CustomTitle" parent="TextAppearance.AppCompat.Title">-->
+    <!--<item Name="android:textAllCaps">true</item>-->
+    <!--<item Name="fontFamily">serif</item>-->
+    <!--</style>-->
+    <!--<style Name="SecondaryText" parent="TextAppearance.AppCompat.Title">-->
+    <!--<item Name="android:textAllCaps">true</item>-->
+    <!--<item Name="fontFamily">serif</item>-->
+    <!--</style>-->
+
+</resources>

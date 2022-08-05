@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="reminder_icons">
+        <item>@drawable/ic_my_reminders_activity</item>
+        <item>@drawable/ic_my_reminders_water</item>
+        <item>@drawable/ic_my_reminders_sedentary</item>
+        <item>@drawable/ic_my_reminders_sleep</item>
+        <item>@drawable/ic_my_reminders_wake_up</item>
+        <item>@drawable/ic_my_reminders_medicine</item>
+        <item>@drawable/ic_my_reminders_calm_down</item>
+        <item>@drawable/ic_my_reminders_food</item>
+        <item>@drawable/ic_my_reminders_supplement</item>
+    </array>
+    <array name="reminder_text">
+     <item>"Activity"</item>
+     <item>"Water"</item>
+     <item>"Sedentary"</item>
+     <item>"Sleep"</item>
+     <item>"Wake Up"</item>
+     <item>"Medicine"</item>
+     <item>"Calm Down"</item>
+     <item>"Food"</item>
+     <item>"Supplement"</item>
+    </array>
+    <array name="array_dot_active">
+        <item>@color/colorGreen3</item>
+        <item>@color/colorGreen3</item>
+        <item>@color/colorGreen3</item>
+        <item>@color/colorGreen3</item>
+    </array>
+    <array name="array_dot_inactive">
+        <item>@color/gray</item>
+        <item>@color/gray</item>
+        <item>@color/gray</item>
+        <item>@color/gray</item>
+    </array>
+    <string-array name="gfit_heartpoints" >
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+        <item>65</item>
+
+    </string-array>
+</resources>

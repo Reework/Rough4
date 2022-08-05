@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/_10sdp">
+
+
+
+
+        <TextView
+            android:id="@+id/labelMedicineTitle"
+            style="@style/TextStyle.CoolveticaRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Repeat Meal "
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textColor="@color/colorPremiumBlack"
+            android:textSize="@dimen/text_normal" />
+        <TextView
+            android:id="@+id/tvMealType_repeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size15"
+            android:visibility="gone"
+            android:layout_below="@+id/labelMedicineTitle"
+            android:padding="@dimen/size15"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginRight="@dimen/size10"
+            android:background="@color/line_color"
+
+
+            android:drawableEnd="@drawable/arrow_down_grey"
+
+
+            android:text="Select Meal Type"
+            android:drawableRight="@drawable/ic_appointment_time" />
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/tvMealType_repeat"
+            android:padding="@dimen/_10sdp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_food"
+                android:layout_width="@dimen/_40sdp"
+                android:src="@drawable/food_default"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/_40sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@+id/img_food"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/repeatname"
+                    android:layout_width="match_parent"
+                    android:text="Poha"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/repeatcal"
+                    android:layout_width="match_parent"
+                    android:text="10.22 kcal"
+                    android:textSize="@dimen/_12sdp"
+
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/repeattype"
+                    android:layout_width="match_parent"
+                    android:text="Lunch"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tvMealTime_repeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size10"
+            android:padding="@dimen/size15"
+            android:layout_below="@+id/rel"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginRight="@dimen/size10"
+            android:background="@drawable/bg_border_grey"
+            android:drawableEnd="@drawable/arrow_down_grey"
+
+
+            android:text="Select Meal Time"
+            android:drawableRight="@drawable/ic_appointment_time" />
+
+
+
+        <ImageView
+            android:id="@+id/close_update_qn_repeat"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/ic_popup_cancel" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtquntity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantity :"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/mulishbold"
+        android:visibility="visible"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edt_repeat_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="quantity"
+            android:layout_toLeftOf="@+id/img_plus_water"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/size5"
+            android:padding="@dimen/_12sdp"
+            android:background="@drawable/bg_border_grey"
+
+            android:inputType="numberDecimal"
+            android:maxLength="20" />
+
+        <ImageView
+            android:id="@+id/img_plus_water"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:textColor="@android:color/black"
+
+            android:background="@drawable/ic_add_water"
+            android:layout_marginRight="@dimen/size10"
+            android:layout_toLeftOf="@+id/img_minus_water"
+
+            />
+        <ImageView
+            android:id="@+id/img_minus_water"
+            android:layout_width="40dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/black"
+            android:textSize="35dp"
+            android:background="@drawable/ic_indeterminate_check_box_black_24dp"
+
+            android:layout_alignParentRight="true" />
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edt_repeat_quakntity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/bg_edit_text_box_border"/>
+
+    <Button
+        android:id="@+id/btn_update_repeat_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textSize="@dimen/_12sdp"
+        style="@style/button_Style_newdesign"
+
+        android:text="Update"
+        />
+
+
+</LinearLayout>

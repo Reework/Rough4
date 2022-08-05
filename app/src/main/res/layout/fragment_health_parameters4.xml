@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        style="@style/TextStyle.CoolveticaRegular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Do You Have Any Medical Conditions ?"
+        android:textColor="@color/colorPremiumBlack" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Do You have Any Medical Conditions ?"
+            style="@style/TextStyle.CoolveticaRegular"
+            android:textColor="@color/colorPremiumBlack"
+
+            android:padding="@dimen/size5"
+
+            />
+
+
+
+
+
+
+        <ListView
+            android:id="@+id/lst_health_condition"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/size10"
+            android:layout_height="wrap_content"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/bkgr_view_line" />
+
+    </LinearLayout>
+</RelativeLayout>

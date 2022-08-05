@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size4"
+        android:background="@drawable/green"
+        >
+        <TextView
+            android:id="@+id/txt_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size8"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:textSize="@dimen/text_small"
+
+            android:background="@drawable/green"
+            android:text="Select Parameter"/>
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="wrap_content"
+            android:src="@drawable/close"
+            android:layout_margin="@dimen/size8"
+            android:layout_alignParentEnd="true"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+
+
+    <EditText
+        android:id="@+id/edt_search_parameter"
+        android:background="@drawable/bkgr_button_grey_round_bordered_rect"
+        android:layout_width="match_parent"
+        android:hint="Search here"
+
+        android:layout_margin="@dimen/size8"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lst_parameter"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:textColor="@color/black"
+
+        android:padding="@dimen/size8"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</LinearLayout>

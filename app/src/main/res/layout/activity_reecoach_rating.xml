@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".reework.activity.reecoach.ReecoachRatingActivity">
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />
+    <View
+        android:layout_width="match_parent"
+        android:background="#F4F4F4"
+        android:layout_height="@dimen/_7sdp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/img_close_rate"
+            android:scaleType="fitXY"
+            android:padding="@dimen/size5"
+            android:visibility="gone"
+            android:background="@color/line_color"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/close"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/size10"
+            android:layout_above="@+id/btn_post_rate"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#F4F4F4"
+
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextStyle.CoolveticaRegular"
+                    android:padding="@dimen/size10"
+
+                    android:textSize="@dimen/text_small"
+                    android:gravity="center"
+
+                    android:textColor="@android:color/black"
+                    android:layout_margin="@dimen/size10"
+                    android:text="Average Rating of Reecoach"
+                    >
+
+                </TextView>
+                <RatingBar
+                    android:id="@+id/rating_reecoach"
+                    android:layout_width="wrap_content"
+                    android:padding="@dimen/size2"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:saveEnabled="false"
+                    android:focusable="false"
+
+                    android:scaleX=".7"
+                    android:scaleY=".7"
+                    android:layout_marginLeft="@dimen/size10"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="#F4F4F4"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_height="@dimen/_7sdp"/>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_q1"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/_10sdp"
+
+                        android:visibility="gone"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/q1"
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/size5"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:background="#F4F4F4"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/size10"
+                            android:text="This is test Questions ?"
+                            android:layout_height="wrap_content"/>
+
+                        <RatingBar
+                            android:id="@+id/edt_ans_1"
+                            android:layout_width="wrap_content"
+                            android:padding="@dimen/size2"
+                            android:scaleX=".7"
+                            android:layout_gravity="center"
+                            android:scaleY=".7"
+                            android:layout_marginLeft="@dimen/size10"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="#F4F4F4"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="@dimen/_3sdp"/>
+                    <LinearLayout
+                        android:id="@+id/ll_q2"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/q2"
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/size5"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="@dimen/size15"
+                            android:gravity="center"
+                            android:background="#F4F4F4"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/size10"
+                            android:text="This is test Questions ?"
+                            android:layout_height="wrap_content"/>
+
+                        <RatingBar
+                            android:id="@+id/edt_ans_2"
+                            android:layout_width="wrap_content"
+                            android:padding="@dimen/size2"
+                            android:scaleX=".7"
+                            android:layout_gravity="center"
+                            android:scaleY=".7"
+                            android:layout_marginLeft="@dimen/size10"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="#F4F4F4"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="@dimen/_3sdp"/>
+                    <LinearLayout
+                        android:id="@+id/ll_q3"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:visibility="gone"
+
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/q3"
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/size5"
+                            android:gravity="center"
+
+                            android:layout_marginTop="@dimen/size15"
+                            android:textColor="@color/black"
+                            android:background="#F4F4F4"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/size10"                            android:text="This is test Questions ?"
+                            android:layout_height="wrap_content"/>
+
+                        <RatingBar
+                            android:id="@+id/edt_ans_3"
+                            android:layout_width="wrap_content"
+                            android:padding="@dimen/size2"
+                            style="?android:attr/ratingBarStyle"
+                            android:scaleX=".7"
+                            android:scaleY=".7"
+                            android:layout_gravity="center"
+
+                            android:layout_marginLeft="@dimen/size10"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="#F4F4F4"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="@dimen/_3sdp"/>
+                    <LinearLayout
+                        android:id="@+id/ll_q4"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:visibility="gone"
+
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/q4"
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/size5"
+                            android:layout_marginTop="@dimen/size15"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+
+                            android:background="#F4F4F4"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/size10"                            android:text="This is test Questions ?"
+                            android:layout_height="wrap_content"/>
+
+                        <RatingBar
+                            android:id="@+id/edt_ans_4"
+                            android:layout_width="wrap_content"
+                            android:padding="@dimen/size2"
+                            android:scaleX=".7"
+                            android:scaleY=".7"
+                            android:layout_gravity="center"
+
+                            android:layout_marginLeft="@dimen/size10"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="#F4F4F4"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="@dimen/_3sdp"/>
+                    <LinearLayout
+                        android:id="@+id/ll_q5"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:visibility="gone"
+
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/q5"
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/size5"
+                            android:layout_marginTop="@dimen/size15"
+                            android:textColor="@color/black"
+                            android:background="#F4F4F4"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/size10"                            android:text="This is test Questions ?"
+                            android:layout_height="wrap_content"/>
+
+                        <RatingBar
+                            android:id="@+id/edt_ans_5"
+                            android:layout_width="wrap_content"
+                            android:padding="@dimen/size2"
+                            android:scaleX=".7"
+                            android:layout_gravity="center"
+
+                            android:scaleY=".7"
+                            android:layout_marginLeft="@dimen/size10"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/btn_post_rate"
+            android:layout_margin="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/squarebtn"
+            android:textColor="@color/white"
+            style="@style/TextStyle.CoolveticaRegular"
+            android:letterSpacing="0.1"
+            android:gravity="center"
+
+
+            android:layout_alignParentBottom="true"
+            android:text="Save Rating"
+
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

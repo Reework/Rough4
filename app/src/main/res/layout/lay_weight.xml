@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_1"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_back"
+        android:layout_above="@+id/ll_bt"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/squarebtn_select"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_15sdp"
+
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:orientation="horizontal"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@color/white"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@color/haldi"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@color/white"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@color/white"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@color/white"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@color/white"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@color/white"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@color/white"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@color/white"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@color/white"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@color/white"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@color/white"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@color/white"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@color/white"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@color/white"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@color/white"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@color/white"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@color/white"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@color/white"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@color/white"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:background="@color/white"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:padding="@dimen/size5"
+                android:textSize="@dimen/text_small"
+                android:fontFamily="@font/pfhandbookpro_bold"
+                android:textStyle="bold"
+                android:text="Question 2/21"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size10"
+                android:textSize="@dimen/text_large"
+                style="@style/TextStyle.CoolveticaRegular"
+                android:letterSpacing="0.1"
+                android:layout_margin="@dimen/size10"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="3. Enter Weight ? "
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="@dimen/size10"
+            android:visibility="visible"
+            android:textColor="@color/black"
+            style="@style/TextStyle.CalibriLight"
+            android:padding="@dimen/size10"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_small"
+            android:text="Select Option to enter Weight "/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_btn_kg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size5"
+                android:text="KG"
+                android:gravity="center"
+                android:textColor="@color/white"
+
+                android:background="@drawable/squarebtn_select"
+                android:layout_margin="@dimen/_3sdp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/txt_btn_pound"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size5"
+                android:text="POUND"
+                android:gravity="center"
+                android:textColor="@color/white"
+
+                android:elevation="2dp"
+                android:background="@drawable/squarebtn_unselect"
+                android:layout_margin="@dimen/_3sdp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/size50"
+            android:minWidth="200dp"
+
+            android:hint="Enter Weight"
+            android:inputType="numberDecimal"
+            android:maxLength="6"
+            android:background="@drawable/green_bor"
+
+            android:textColor="@color/black"
+            android:padding="@dimen/size10"
+            android:gravity="center"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

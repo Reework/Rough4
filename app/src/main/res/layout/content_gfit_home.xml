@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    tools:showIn="@layout/activity_g_fit"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:gravity="end"
+        android:id="@+id/linear_logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="@dimen/size5"
+            android:layout_below="@+id/layout_goals"
+            style="@style/TextStyle.CoolveticaRegular"
+            android:letterSpacing="0.1"
+            android:textColor="@android:color/white"
+            android:background="@drawable/squarebtn_news"
+            android:layout_marginEnd="@dimen/size20"
+            android:text="Logout"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_below="@+id/linear_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.hookedonplay.decoviewlib.DecoView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+
+            android:id="@+id/dynamicArcView"/>
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/txt_viewsteps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="10dp"
+
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="Your daily goals"
+            android:textColor="@color/colorBlue"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/txt_dgoale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/r1"
+
+        android:layout_marginTop="10dp"
+        android:text="Your daily goals"
+        android:textColor="@color/color_20"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        />
+
+    <LinearLayout
+        android:weightSum="2"
+        android:id="@+id/layout_daliygoals"
+        android:layout_below="@+id/txt_dgoale"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_below="@+id/dynamicArcView"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardMaxElevation="0dp"
+                >
+
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="vertical"
+                    android:id="@+id/l1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/lable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginStart="0dp"
+                        android:gravity="center"
+
+                        android:layout_marginTop="10dp"
+                        android:text="Your daily goals"
+                        android:textColor="@color/color_20"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        />
+                    <TextView
+                        android:id="@+id/txt_dailysteps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginStart="0dp"
+                        android:gravity="center"
+                        android:layout_marginTop="0dp"
+                        android:text="5000"
+                        android:textColor="@color/color_20"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Achieved"
+                        android:textStyle="bold"
+                        android:gravity="center"
+
+                        android:textColor="@color/colorBlue"
+                        android:textSize="14sp"
+                        />
+                    <TextView
+                        android:id="@+id/counter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="0"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="18sp"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_steps"
+            android:layout_weight="1"
+
+            android:layout_below="@+id/dynamicArcView"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardMaxElevation="0dp"
+
+
+                >
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginStart="0dp"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Steps"
+                        android:textColor="@color/color_20"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/txt_steps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="0"
+                        android:gravity="center"
+
+                        android:textColor="@color/colorBlue"
+                        android:textSize="18sp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text=" Today"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_energy"
+        android:layout_below="@+id/layout_daliygoals"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="0dp"
+
+
+            >
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:gravity="center|start"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="10dp"
+
+                    android:layout_marginTop="10dp"
+                    android:text="Energy expended"
+                    android:textColor="@color/color_20"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/txt_energy"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:text="0 cal   "
+                    android:textColor="@color/colorBlue"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:text=" Today"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_"
+        android:layout_below="@+id/layout_energy"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="0dp"
+
+
+            >
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:gravity="center|start"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="10dp"
+
+                    android:layout_marginTop="5dp"
+                    android:text="Last 7 Day's"
+                    android:textColor="@color/color_20"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    />
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:gravity="center|start"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center|start"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_7days"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:text="0"
+                            android:textColor="@color/colorBlue"
+                            android:textSize="18sp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:text="Steps"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:textColor="@color/colorBlue"
+                            android:textSize="14sp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center|start"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_7cal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:text="0"
+                            android:textColor="@color/colorBlue"
+                            android:textSize="18sp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="0dp"
+                            android:text="Energy expended"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:textColor="@color/colorBlue"
+                            android:textSize="14sp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

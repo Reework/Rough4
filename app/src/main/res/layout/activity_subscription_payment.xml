@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPremiumWhite"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />
+
+    <include
+        android:id="@+id/no_internet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/no_internet_screen"
+        android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonProceedToPay"
+                style="@style/button_Style_cal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Proceed To Pay"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/buttonProceedToPay"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bkgr_button_green_no_radius"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/colorPremiumWhite"
+                            android:textSize="@dimen/text_xlarge"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/TextStyle.CalibriLight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Amount to be paid"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorPremiumWhite" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvPlan"
+                        android:layout_marginTop="14dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_spinner_bg"
+                        android:padding="8dp"
+                        android:text="Select your plan"
+                        android:gravity="center"
+                        android:textColor="@color/colorPremiumBlack" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Subscription Type"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/strategy_bz_maharaj"
+                            android:padding="8dp"
+                            android:text="Yearly"
+                            android:textColor="@color/colorPremiumBlack"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bkgr_view_line" />
+
+                        <EditText
+                            android:id="@+id/edtText_Address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/colorPremiumWhite"
+                            android:hint="Address"
+                            android:padding="9dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bkgr_view_line" />
+
+                        <!--<Spinner
+                            android:id="@+id/spinnerCountry"
+                            style="@style/MySpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:prompt="@string/select_country" />-->
+                        <TextView
+                            android:id="@+id/tvCountry"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/custom_spinner_bg"
+                            android:padding="8dp"
+                            android:text="Select country"
+                            android:textColor="@color/colorPremiumBlack" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bkgr_view_line" />
+
+                        <TextView
+                            android:id="@+id/tvState"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/custom_spinner_bg"
+                            android:padding="8dp"
+                            android:text="Select state"
+                            android:textColor="@color/colorPremiumBlack" />
+
+                        <!--<Spinner
+                            android:id="@+id/spinnerState"
+                            style="@style/MySpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:prompt="@string/select_state" />-->
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bkgr_view_line" />
+
+                        <TextView
+                            android:id="@+id/tvCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/custom_spinner_bg"
+                            android:padding="8dp"
+                            android:text="Select city"
+                            android:textColor="@color/colorPremiumBlack" />
+
+                        <!--<Spinner
+                            android:id="@+id/spinnerCity"
+                            style="@style/MySpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:prompt="@string/select_country"
+                            android:visibility="gone"/>-->
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bkgr_view_line" />
+
+                        <TextView
+                            android:id="@+id/tvLanguage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/custom_spinner_bg"
+                            android:padding="8dp"
+                            android:text="Select language"
+                            android:textColor="@color/colorPremiumBlack" />
+
+                        <!--<Spinner
+                            android:id="@+id/spinnerLanguage"
+                            style="@style/MySpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:prompt="@string/select_language" />-->
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/bkgr_view_line" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </ScrollView>
+        </RelativeLayout>
+
+</LinearLayout>

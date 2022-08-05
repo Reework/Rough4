@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+
+
+    >
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_marginBottom="@dimen/size10"
+
+        android:layout_marginLeft="@dimen/size10">
+
+        <RelativeLayout
+            android:id="@+id/txt_header"
+            android:background="@color/white"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size10"
+                android:layout_alignParentTop="true"
+                android:id="@+id/labelMyProgress"
+                style="@style/TextStyle.CoolveticaRegular"
+                android:background="@drawable/round_rect_green"
+                android:text=" Export "
+                android:padding="@dimen/size4"
+
+                android:textColor="@color/black_overlay"
+                />
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/green_date"
+                android:id="@+id/img_add_sleep_date"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_15sdp"
+
+                android:layout_gravity="end"
+                />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_sleep_date"
+            android:background="@color/white"
+
+            android:layout_marginTop="@dimen/size5"
+            android:layout_below="@+id/txt_header">
+
+            <ImageView
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:src="@drawable/grey_date"/>
+
+            <TextView
+                android:id="@+id/txt_show_sleep_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size10"
+                android:text=""/>
+
+            <ImageView
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_marginLeft="@dimen/size15"
+                android:src="@drawable/red_date"/>
+
+            <TextView
+                android:id="@+id/txt_show_sleep_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size10"
+                android:text=""/>
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size5"
+        android:visibility="gone"
+        android:background="@drawable/list_divider_line_grey_20_full_width"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/labelMyProgress1"
+            style="@style/TextStyle.CoolveticaRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Export "
+            android:padding="@dimen/size4"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/size5"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size5"
+            android:layout_marginBottom="@dimen/size5"
+
+            android:background="@drawable/round_rect_green"
+
+            android:textColor="@color/black_overlay" />
+
+        <Spinner
+            android:id="@+id/spinner_Weight_Months"
+            style="@style/MySpinnerWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size5"
+
+            android:paddingRight="@dimen/spinner_padding_right"
+            android:prompt="@string/select_month"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="Time(hh.mm)"
+        android:padding="@dimen/size5"
+/>
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_270sdp"
+        android:visibility="visible"
+        android:layout_margin="@dimen/size5"
+        android:background="@android:color/black"
+        android:id="@+id/linegraph"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size5"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginTop="@dimen/size20"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/beforebreakfast" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Before Breakfast"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="@dimen/size5"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/size3"
+
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/breakfast" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Breakfast"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="@dimen/size5"
+
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/size3"
+
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/lunch" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lunch"
+                        android:layout_marginLeft="@dimen/size5"
+
+                        android:textSize="10sp"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/size3"
+
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/evening" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Evening Snacks"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="@dimen/size5"
+
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size3"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/size3"
+
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/dinner" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dinner"
+                        android:layout_marginLeft="@dimen/size5"
+
+                        android:textSize="10sp"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/size3"
+
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/dessert" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dessert"
+                        android:layout_marginLeft="@dimen/size5"
+
+                        android:textSize="10sp"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/size3"
+                    android:visibility="invisible"
+
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/protine_circle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Proteins"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="@dimen/size5"
+
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="invisible"
+                    android:layout_marginTop="@dimen/size3"
+
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/protine_circle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Proteins"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="@dimen/size5"
+
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6F8"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar_white" />
+    <LinearLayout
+        android:id="@+id/llAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:padding="@dimen/_12sdp"
+        android:orientation="vertical"
+        android:layout_below="@+id/custom_toolbar"
+        tools:layout_editor_absoluteX="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMealTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp"
+                android:background="@drawable/bg_border_grey"
+
+                android:drawableEnd="@drawable/arrow_down_grey"
+
+
+                android:text="Select Meal Time"
+                android:drawableRight="@drawable/ic_appointment_time" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size10"
+
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvMealTypeName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp"
+                        android:drawableEnd="@drawable/arrow_down_grey"
+                        android:background="@drawable/bg_border_grey"
+
+                        android:text="Select Meal Type" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:visibility="gone"
+                        android:background="@drawable/bkgr_view_line_light" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Repeat meal "
+                    android:id="@+id/txt_repeat_mealddd"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/colorGreen3"
+                    android:layout_gravity="center_vertical"
+                    android:textStyle="italic"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size10"
+            android:visibility="gone"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/spinner_UOM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/profile_btn_bg"
+                android:padding="@dimen/_7sdp"
+                android:drawableEnd="@drawable/arrow_down_grey"
+
+
+                android:text="Select Measurement" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@drawable/bkgr_view_line_light" />
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/button_Style_cal_Selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/txt_repat"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="end"
+            android:padding="6dp"
+            android:visibility="gone"
+            android:text="Repeat Yesterday's Meal"
+            android:textColor="@color/colorPremiumWhite" />
+
+
+        <LinearLayout
+            android:id="@+id/linAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.8"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvMeals"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_7sdp"
+                        android:visibility="gone"
+                        android:background="@drawable/bg_border_grey"
+
+                        android:drawableEnd="@drawable/arrow_down_grey"
+
+                        android:text="Select Meal" />
+
+
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/searchCountry_meal"
+                        app:queryHint="Search here"
+                        app:iconifiedByDefault="false"
+
+                        android:background="@drawable/bg_border_grey"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Repeat meal "
+                        android:id="@+id/txt_repeat_meal"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/colorGreen3"
+                        android:layout_gravity="center_vertical"
+                        style="@style/TextStyle.CoolveticaRegular"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:id="@+id/ivRemove"
+                        android:layout_width="0dp"
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:src="@drawable/ic_remove_circle" />
+
+                    <EditText
+                        android:id="@+id/tvQty"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:gravity="center"
+
+
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:padding="@dimen/_7sdp"
+                        android:background="@drawable/bg_light_box_border"
+                        android:textColor="@color/colorPremiumBlack"
+                        android:textSize="@dimen/text_normal" />
+
+                    <ImageView
+                        android:id="@+id/ivAdd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="24dp"
+                        android:visibility="gone"
+                        android:layout_weight=".3"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_add_circle" />
+
+                    <TextView
+                        android:id="@+id/tvAdd"
+                        style="@style/button_Style_cal_Selector"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:padding="@dimen/_7sdp"
+                        android:text="Add"
+                        android:textColor="@color/colorPremiumWhite" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:background="@drawable/bkgr_view_line_light" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llAdd"
+        android:orientation="vertical"
+        android:layout_above="@+id/btnSave"
+        >
+        <RelativeLayout
+            android:id="@+id/rel_parent"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_viewaddedmeal"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/mulishbold"
+                android:textColor="@color/white"
+                android:visibility="visible"
+                android:textSize="@dimen/_12sdp"
+
+                android:background="@drawable/bg_green_button_new"
+                android:textStyle="bold"
+                android:padding="@dimen/_5sdp"
+                android:text="Show Added Meal"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txt_showaddedrepeat"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/mulishbold"
+                android:textColor="@color/white"
+                android:visibility="visible"
+                android:textSize="@dimen/_12sdp"
+
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_green_button_new"
+                android:textStyle="bold"
+                android:padding="@dimen/_5sdp"
+                android:text="Show Repeat Meal"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintTop_toBottomOf="@+id/llAdd"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="@dimen/size10"/>
+
+
+        <TextView
+            android:id="@+id/txt_viewRepeatmeal"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/mulishbold"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Show Repeat Meal"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:id="@+id/rel_repeatmeal"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_repeat_meal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:nestedScrollingEnabled="false"
+                android:layout_above="@+id/btnSave_repeat"
+                android:layout_alignParentTop="true"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/btnSave_repeat"
+                style="@style/button_Style_newdesign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:text="Save Repeat Meal"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/txt_searcheal"
+            android:layout_width="wrap_content"
+            android:text="Search Results"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/size10"
+
+            android:layout_marginStart="@dimen/size10"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_meal"
+            android:layout_width="match_parent"
+            android:nestedScrollingEnabled="false"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10"
+            android:scrollbars="vertical" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/btnSave"
+        style="@style/button_Style_newdesign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="@dimen/size10"
+        android:layout_marginEnd="@dimen/size10"
+        android:text="Save"
+        android:textSize="@dimen/_12sdp"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</RelativeLayout>

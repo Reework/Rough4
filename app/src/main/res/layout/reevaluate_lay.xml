@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageView_ReecoachProfile_Photo_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+
+                <ImageView
+                    android:id="@+id/img_reecoach_photo"
+                    android:layout_width="@dimen/height_grid_layout_item"
+                    android:layout_height="@dimen/height_grid_layout_item"
+                    android:src="@drawable/reevaluate"
+                    android:layout_marginTop="@dimen/size50"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/reecoach_name_dailog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sunit Thakur"
+                    android:gravity="center"
+                    android:letterSpacing="0.1"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/size15"
+                    android:textColor="@android:color/black"
+                    style="@style/TextStyle.CoolveticaRegular"
+                    android:layout_below="@+id/img_reecoach_photo"
+                    android:textSize="@dimen/text_x_x_xlarge"/>
+
+                <TextView
+                    android:id="@+id/txt_i_am"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="I am Your Reecoach"
+                    android:visibility="gone"
+                    android:gravity="center"
+
+
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/size8"
+                    android:layout_below="@+id/reecoach_name_dailog"
+                    android:textSize="@dimen/text_large"/>
+
+                <View
+                    android:layout_width="@dimen/size40"
+                    android:layout_marginTop="@dimen/size20"
+                    android:layout_height="3dp"
+                    android:visibility="gone"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_centerHorizontal="true"
+
+                    android:layout_below="@+id/txt_i_am"/>
+
+                <TextView
+                    android:id="@+id/txt_below_i_will_be"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size50"
+                    android:layout_marginLeft="@dimen/size30"
+                    android:layout_marginRight="@dimen/size30"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_large"
+                    android:text="It is important for your assigned Reecoach  to understand and evaluate your current health profile"
+
+                    android:layout_below="@+id/txt_i_am"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size15"
+                    android:layout_marginLeft="@dimen/size30"
+                    android:layout_marginRight="@dimen/size30"
+                    android:textStyle="bold"
+
+                    android:textColor="@android:color/black"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_large"
+                    android:id="@+id/txt_text2"
+
+                    android:text="So click on Reevaluate button to provide your health details "
+                    android:layout_below="@+id/txt_below_i_will_be"/>
+
+                <View
+                    android:layout_width="@dimen/size40"
+                    android:layout_marginTop="@dimen/size20"
+                    android:layout_height="3dp"
+
+
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_centerHorizontal="true"
+
+                    android:layout_below="@+id/txt_text2"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/size20"
+
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        style="@style/button_Style_green"
+                        android:id="@+id/btn_reevaluate_later"
+                        android:padding="@dimen/size10"
+                        android:text="Later"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+
+
+                        android:layout_marginRight="@dimen/size10"
+                        android:layout_marginBottom="@dimen/size20"
+                        android:layout_marginLeft="@dimen/size10"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        style="@style/button_Style_cal"
+                        android:id="@+id/btn_reevaluate"
+                        android:padding="@dimen/size10"
+                        android:text="REEvaluate"
+                        android:textStyle="bold"
+                        android:layout_marginRight="@dimen/size10"
+                        android:layout_marginBottom="@dimen/size20"
+                        android:layout_marginLeft="@dimen/size10"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

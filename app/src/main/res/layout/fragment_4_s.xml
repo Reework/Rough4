@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+
+    tools:context=".reework.activity.reeworkerhealth.app.Fragment4">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/btn_go_to_basic"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:id="@+id/customOptionLL"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btn_go_to_basic"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/size8"
+        android:text="Go to Basic Profile"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        style="@style/button_Style_cal"/>
+
+</RelativeLayout>

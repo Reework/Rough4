@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    tools:showIn="@layout/activity_gfit_home"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/layout_goals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity goals"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textStyle="bold"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/line_color"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_rounded_input_field" />
+
+                <TextView
+                    android:id="@+id/text_dummy_hint_username1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="16dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="Target Steps"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/very_dark_grey"
+                    android:background="@android:color/white"
+                    android:visibility="visible"/>
+
+                <EditText
+                    android:id="@+id/etd_steps"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:hint="Enter Steps"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_height="@dimen/_30sdp"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_rounded_input_field" />
+
+                <TextView
+                    android:id="@+id/text_dummy_hint_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="16dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="Calories"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/very_dark_grey"
+                    android:background="@android:color/white"
+                    android:visibility="visible"/>
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:gravity="start"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/gfit_heartpoints"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_height="@dimen/_30sdp"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="@dimen/size40"
+        android:layout_below="@+id/layout_goals"
+        android:gravity="center"
+        style="@style/TextStyle.CoolveticaRegular"
+        android:letterSpacing="0.1"
+        android:textColor="@android:color/white"
+        android:background="@drawable/squarebtn_news"
+        android:textSize="20dp"
+
+        android:layout_marginStart="@dimen/size20"
+        android:layout_marginEnd="@dimen/size20"
+
+        android:text="Next"/>
+
+
+
+
+
+
+</RelativeLayout>

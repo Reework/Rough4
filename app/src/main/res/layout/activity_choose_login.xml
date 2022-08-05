@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_400sdp"
+        android:background="@drawable/bg_circle_login"
+        >
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imgLogoLogin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/logo" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            style="@style/TextStyle.CalibriLight"
+            android:textSize="@dimen/text_x_xlarge"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="Welcome to"
+            android:padding="@dimen/size5"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            style="@style/TextStyle.CoolveticaRegular"
+            android:textSize="@dimen/_30sdp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="Reework"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            style="@style/TextStyle.CalibriLight"
+            android:textSize="@dimen/text_large"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="Health and Wellness App"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/size12"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/ll_verification_code"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="60dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/size8"
+                    android:background="@color/colorPrimaryDark"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btn_login_reework"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size30"
+            android:gravity="center"
+            style="@style/TextStyle.CoolveticaRegular"
+            android:letterSpacing="0.1"
+            android:textColor="@android:color/white"
+            android:background="@drawable/squarebtn_news"
+            android:textSize="@dimen/text_normal"
+
+            android:layout_marginStart="@dimen/size20"
+            android:layout_marginEnd="@dimen/size20"
+            android:padding="@dimen/size8"
+            android:text="Reeworker"/>
+        <Button
+            android:id="@+id/btn_login_reecoach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextStyle.CoolveticaRegular"
+            android:letterSpacing="0.1"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:background="@drawable/squarebtn_news"
+            android:textSize="@dimen/text_normal"
+
+            android:layout_marginTop="@dimen/size30"
+            android:gravity="center"
+
+            android:layout_marginStart="@dimen/size20"
+            android:layout_marginEnd="@dimen/size20"
+            android:padding="@dimen/size8"
+            android:text="Reecoach"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

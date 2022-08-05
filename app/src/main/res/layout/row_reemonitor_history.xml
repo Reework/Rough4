@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/size8"
+    app:cardUseCompatPadding="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="match_parent"
+            android:padding="@dimen/size3"
+            android:layout_marginLeft="@dimen/size8"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@+id/txt_edit_reemonitor"
+            android:marqueeRepeatLimit="marquee_forever"            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/txt_edit_reemonitor"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_edit"
+            android:layout_margin="@dimen/size3"
+            android:visibility="visible"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+<!--        <TextView-->
+<!--            android:id="@+id/txt_testname"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:padding="@dimen/size3"-->
+
+<!--            android:layout_marginLeft="@dimen/size8"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            style="@style/TextStyle.CoolveticaRegular"-->
+
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txt_testvalue"
+        android:layout_width="match_parent"
+        android:padding="@dimen/size3"
+
+        android:textColor="@android:color/black"
+android:textStyle="bold"
+        android:layout_marginLeft="@dimen/size8"
+
+        android:layout_toLeftOf="@+id/txt_delete_reemonitor"
+
+        android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/txt_delete_reemonitor"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_delete_black_24dp"
+            android:layout_margin="@dimen/size3"
+            android:visibility="visible"
+            android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+<!--    <TextView-->
+<!--        android:id="@+id/txt_remark"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:padding="@dimen/size5"-->
+<!--        android:layout_marginTop="@dimen/size8"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        android:textStyle="bold"-->
+
+<!--        android:layout_marginLeft="@dimen/size8"-->
+
+<!--        android:layout_height="wrap_content"/>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/size3"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_edit_reemonitor12"
+                android:layout_width="wrap_content"
+                android:text="   Edit   "
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_toLeftOf="@+id/txt_delete_reemonitor12"
+                android:layout_margin="@dimen/size3"
+                android:background="@color/colorPrimaryDark"
+                android:padding="@dimen/size8"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txt_delete_reemonitor12"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="  Delete  "
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/size3"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/size3"
+                android:background="@color/dark_red"
+                android:padding="@dimen/size8"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

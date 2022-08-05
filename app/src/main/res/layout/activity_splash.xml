@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6F8"
+    android:id="@+id/rel"
+
+    tools:context=".reework.SplashActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:visibility="gone"
+        android:adjustViewBounds="true"
+        android:paddingTop="25dp"
+        android:src="@drawable/logo" />
+
+    <RelativeLayout
+        android:id="@+id/linBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:background="#F3F6F8"
+
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+
+
+        >
+
+        <ImageView
+            android:visibility="gone"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ready_to_start"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_80sdp"
+            />
+
+        <ImageView
+            android:id="@+id/img_cycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/splash"
+            android:scaleType="fitXY"
+            android:background="#F3F6F8"
+
+            />
+
+        <TextView
+            android:id="@+id/ttt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_alignParentBottom="true"
+            android:text="@string/splash_message"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPremiumWhite"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

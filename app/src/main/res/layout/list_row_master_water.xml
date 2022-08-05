@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/_3sdp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="@dimen/_5sdp"
+
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+
+
+
+    <TextView
+        android:id="@+id/text_master_water_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.6"
+        android:fontFamily="@font/mulishsemibold"
+        android:textStyle="bold"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:alpha="0.6"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:gravity="start"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/text_master_water_ideal"
+        android:fontFamily="@font/mulishsemibold"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:paddingRight="15dp"
+        android:alpha="0.6"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/text_master_water_your"
+        android:fontFamily="@font/mulishsemibold"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:textColor="#417CFF"
+        android:text="sffdd"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.6"
+        android:gravity="center"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:background="@color/line_color"/>
+
+</LinearLayout>

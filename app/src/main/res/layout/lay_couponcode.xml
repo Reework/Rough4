@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/line_grey_20"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Coupon code"
+                android:background="@drawable/squarebtn"
+                android:padding="@dimen/_8sdp"
+
+                style="@style/TextStyle.CoolveticaRegular"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/img_closecoupon"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/close"/>
+        </RelativeLayout>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:padding="@dimen/_8sdp"
+            android:hint="Enter Coupon code"
+            android:id="@+id/edt_couponcode"
+            android:layout_marginBottom="@dimen/_20sdp"
+
+            android:layout_margin="@dimen/_12sdp"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:id="@+id/btn_submitcouponcode"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@drawable/squarebtn_myreeworker"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColor="@color/white"
+            android:text="Apply Coupon code"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_skip"
+            android:layout_width="match_parent"
+            android:background="@drawable/squarebtn_unselect"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:text="Skip"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

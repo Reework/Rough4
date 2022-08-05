@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPremiumWhite"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/custom_toolbar"
+        android:visibility="invisible"
+        layout="@layout/custom_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView_Unfreeze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_unfreeze" />
+
+        <TextView
+            android:id="@+id/textUnfreeze_Title"
+            style="@style/TextStyle.CoolveticaRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView_Unfreeze"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPremiumBlack"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textUnfreeze_YourAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textUnfreeze_Title"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="Your Reework account has\n been freezed!!!"
+            android:textAlignment="center"
+            android:textColor="@color/colorPremiumBlack"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/textUnfreeze_ClickHere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textUnfreeze_YourAccount"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:lineSpacingExtra="5dp"
+            android:text="Please contact Administrator for the same or click here to send the request"
+            android:textAlignment="center"
+            android:textColor="@color/colorPremiumBlack"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="45dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/textUnfreeze_ClickHere"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorGreen4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="4dp"
+            android:id="@+id/txtnailno"
+            android:text="admin@reeworker.com\n1800 1800 1234"
+            android:textAlignment="center"
+            android:textColor="@color/colorPremiumBlack"
+            android:textSize="@dimen/text_small" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".reework.activity.healthmonitoring.NewHealthMonitoringActivity">
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />
+    <include
+
+        layout="@layout/content_reemonitor" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:text="Submit"
+        android:textStyle="bold"
+        style="@style/button_Style_cal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/white"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"/>
+
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/line_background"-->
+
+<!--        android:orientation="vertical">-->
+
+<!--        <HorizontalScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:background="@drawable/bkgr_button_green_no_radius"-->
+
+<!--            android:layout_height="wrap_content">-->
+<!--            <RadioGroup-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:layout_margin="@dimen/size8"-->
+<!--                android:padding="@dimen/size3"-->
+<!--                android:orientation="horizontal"-->
+<!--                >-->
+
+<!--                <RadioButton-->
+<!--                    android:id="@+id/rd_btn_weight"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginEnd="@dimen/_5sdp"-->
+<!--                    android:layout_marginRight="@dimen/_5sdp"-->
+<!--                    android:background="@drawable/custom_btn_radio_bg_food"-->
+<!--                    android:button="@null"-->
+<!--                    android:text="   Weight   " />-->
+
+<!--                <RadioButton-->
+<!--                    android:id="@+id/rd_btn_reemonitor"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginEnd="@dimen/_5sdp"-->
+<!--                    android:layout_marginRight="@dimen/_5sdp"-->
+<!--                    android:checked="true"-->
+<!--                    android:visibility="gone"-->
+
+<!--                    android:background="@drawable/custom_btn_radio_bg_food"-->
+<!--                    android:button="@null"-->
+<!--                    android:text="Reemonitor" />-->
+
+
+
+
+
+<!--            </RadioGroup>-->
+
+<!--        </HorizontalScrollView>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <HorizontalScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:background="@color/dark_grey_blue"-->
+<!--        >-->
+<!--        <RadioGroup-->
+<!--            android:id="@+id/radioGroup_sl"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+
+<!--            android:gravity="center_horizontal"-->
+<!--            android:layout_marginTop="@dimen/size8"-->
+<!--            android:layout_marginBottom="@dimen/size8"-->
+<!--            android:padding="@dimen/size3"-->
+<!--            android:layout_marginEnd="@dimen/size5"-->
+<!--            android:layout_marginStart="@dimen/size12"-->
+<!--            android:orientation="horizontal"-->
+<!--            >-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/rd_button_cureent"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:gravity="center"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:layout_marginRight="15dp"-->
+<!--                android:background="@drawable/sqare"-->
+<!--                android:button="@null"-->
+<!--                android:checked="true"-->
+<!--                android:text="Current" />-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/rd_button_history"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="5dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:background="@drawable/sqare"-->
+<!--                android:button="@null"-->
+<!--                android:text="History" />-->
+
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/rd_button_compare"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="15dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:layout_marginRight="15dp"-->
+<!--                android:background="@drawable/sqare"-->
+<!--                android:button="@null"-->
+<!--                android:text="Comparison" />-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/rd_button_graph"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="15dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:layout_marginRight="15dp"-->
+<!--                android:background="@drawable/sqare"-->
+<!--                android:button="@null"-->
+<!--                android:text="Graph " />-->
+
+
+
+
+
+<!--        </RadioGroup>-->
+
+<!--    </HorizontalScrollView>-->
+<!--    <ViewFlipper-->
+<!--        android:id="@+id/vp_reemonitor"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_marginBottom="@dimen/size12"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_above="@+id/btn_submit"-->
+<!--                android:background="@color/white"-->
+
+<!--                android:orientation="vertical"-->
+
+<!--                android:layout_height="match_parent">-->
+
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Measure Date :"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@android:color/black"-->
+<!--                    android:layout_marginTop="@dimen/size20"-->
+
+
+<!--                    android:layout_marginStart="@dimen/size20"-->
+<!--                    android:layout_marginEnd="@dimen/size20"-->
+<!--                    android:layout_marginRight="@dimen/size20"-->
+<!--                    />-->
+
+
+
+<!--                <TextView-->
+
+<!--                    android:id="@+id/txt_select_paramters_date"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="@dimen/size10"-->
+<!--                    android:text="12-5-2020"-->
+<!--                    android:layout_marginTop="@dimen/size10"-->
+<!--                    android:drawableEnd="@drawable/calender"-->
+<!--                    android:textColor="@android:color/black"-->
+
+
+<!--                    android:layout_marginStart="@dimen/size20"-->
+<!--                    android:layout_marginEnd="@dimen/size20"-->
+<!--                    android:layout_marginRight="@dimen/size20"-->
+<!--                    android:background="@drawable/bg_blue_border"/>-->
+
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Measure Date :"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:textColor="@android:color/black"-->
+<!--                    android:layout_marginTop="@dimen/size20"-->
+
+
+<!--                    android:layout_marginStart="@dimen/size20"-->
+<!--                    android:layout_marginEnd="@dimen/size20"-->
+<!--                    android:layout_marginRight="@dimen/size20"-->
+<!--                    />-->
+
+
+
+<!--                <TextView-->
+
+<!--                    android:id="@+id/txt_select_paramters_time"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="@dimen/size10"-->
+<!--                    android:text="Select Time"-->
+<!--                    android:layout_marginTop="@dimen/size10"-->
+<!--                    android:drawableEnd="@drawable/clocknew"-->
+<!--                    android:textColor="@android:color/black"-->
+
+
+<!--                    android:layout_marginStart="@dimen/size20"-->
+<!--                    android:layout_marginEnd="@dimen/size20"-->
+<!--                    android:layout_marginRight="@dimen/size20"-->
+<!--                    android:background="@drawable/bg_blue_border"/>-->
+
+
+<!--                <TextView-->
+
+<!--                    android:id="@+id/txt_select_paramters"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="@dimen/size10"-->
+<!--                    android:text="Select Parameter"-->
+<!--                    android:drawableEnd="@drawable/arrow_down_grey"-->
+<!--                    android:layout_marginTop="@dimen/size20"-->
+<!--                    android:textColor="@android:color/white"-->
+<!--                    android:inputType="number"-->
+
+<!--                    android:layout_marginStart="@dimen/size20"-->
+<!--                    android:layout_marginEnd="@dimen/size20"-->
+<!--                    android:layout_marginRight="@dimen/size20"-->
+<!--                    android:background="@drawable/bg_button_blue"/>-->
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="@dimen/size10"-->
+<!--                    android:text="Measurement : "-->
+<!--                    android:letterSpacing="0.1"-->
+<!--                    android:visibility="gone"-->
+
+<!--                    style="@style/TextStyle.CoolveticaRegular"-->
+<!--                    android:textColor="@android:color/black"-->
+<!--                    android:layout_marginTop="@dimen/size15"-->
+<!--                    android:inputType="number"-->
+<!--                    android:layout_marginStart="@dimen/size20"-->
+<!--                    android:layout_marginEnd="@dimen/size20"-->
+<!--                    android:layout_marginRight="@dimen/size20"-->
+<!--                    />-->
+
+
+<!--                <TextView-->
+
+<!--                    android:id="@+id/txt_select_measurement"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="@dimen/size10"-->
+<!--                    android:text="Select Measurement"-->
+<!--                    android:drawableEnd="@drawable/arrow_down_grey"-->
+<!--                    android:textColor="@android:color/black"-->
+<!--                    android:layout_marginTop="@dimen/size10"-->
+<!--                    android:inputType="number"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:layout_marginStart="@dimen/size20"-->
+<!--                    android:layout_marginEnd="@dimen/size20"-->
+<!--                    android:layout_marginRight="@dimen/size20"-->
+<!--                    android:background="@drawable/bg_otp"/>-->
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="@dimen/size10"-->
+<!--                    android:text="Range : "-->
+<!--                    android:visibility="gone"-->
+<!--                    android:letterSpacing="0.1"-->
+<!--                    style="@style/TextStyle.CoolveticaRegular"-->
+<!--                    android:textColor="@android:color/black"-->
+<!--                    android:layout_marginTop="@dimen/size15"-->
+<!--                    android:inputType="number"-->
+<!--                    android:layout_marginStart="@dimen/size20"-->
+<!--                    android:layout_marginEnd="@dimen/size20"-->
+<!--                    android:layout_marginRight="@dimen/size20"-->
+<!--                    />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_select_range"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="@dimen/size10"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:layout_marginTop="@dimen/size30"-->
+<!--                    android:textColor="@android:color/black"-->
+<!--                    android:inputType="number"-->
+<!--                    android:layout_marginStart="@dimen/size20"-->
+<!--                    android:layout_marginEnd="@dimen/size20"-->
+<!--                    android:layout_marginRight="@dimen/size20"-->
+<!--                    android:background="@drawable/bg_otp"/>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:id="@+id/ll_range"-->
+<!--                    android:visibility="visible"-->
+<!--                    android:layout_marginTop="@dimen/size20"-->
+<!--                    android:layout_height="wrap_content">-->
+<!--                    <EditText-->
+
+<!--                        android:id="@+id/txt_lab_test_value"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:padding="@dimen/size10"-->
+<!--                        android:hint="Enter test value"-->
+<!--                        android:layout_weight="1.3"-->
+<!--                        android:maxLength="5"-->
+<!--                        android:textColor="@android:color/black"-->
+<!--                        android:layout_marginTop="@dimen/size10"-->
+<!--                        android:inputType="numberDecimal"-->
+<!--                        android:layout_marginStart="@dimen/size20"-->
+<!--                        android:layout_marginEnd="@dimen/size20"-->
+<!--                        android:layout_marginRight="@dimen/size20"-->
+<!--                        android:background="@drawable/bg_blue_border"/>-->
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/txt_select_unit"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:padding="@dimen/size10"-->
+<!--                        android:ellipsize="marquee"-->
+<!--                        android:marqueeRepeatLimit="marquee_forever"-->
+<!--                        android:singleLine="true"-->
+<!--                        android:text="Select Unit"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textColor="@android:color/white"-->
+<!--                        android:layout_marginTop="@dimen/size10"-->
+<!--                        android:inputType="number"-->
+<!--                        android:layout_marginStart="@dimen/size20"-->
+<!--                        android:layout_marginEnd="@dimen/size20"-->
+<!--                        android:layout_marginRight="@dimen/size20"-->
+<!--                        android:background="@drawable/bg_button_blue"-->
+<!--                        />-->
+
+<!--                </LinearLayout>-->
+
+
+
+<!--                <EditText-->
+
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:maxLines="3"-->
+<!--                    android:minLines="3"-->
+<!--                    android:id="@+id/edt_remark"-->
+<!--                    android:padding="@dimen/size8"-->
+<!--                    android:gravity="start"-->
+<!--                    android:nextFocusForward="@id/btn_submit"-->
+
+<!--                    android:textColor="@android:color/black"-->
+<!--                    android:layout_marginTop="@dimen/size20"-->
+<!--                    android:hint=" Enter remark here"-->
+<!--                    android:layout_marginStart="@dimen/size20"-->
+<!--                    android:layout_marginEnd="@dimen/size20"-->
+<!--                    android:layout_marginRight="@dimen/size20"-->
+<!--                    android:background="@drawable/bg_blue_border"/>-->
+
+
+
+<!--            </LinearLayout>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btn_submit"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:text="Submit"-->
+<!--                android:textStyle="bold"-->
+<!--                style="@style/button_Style_cal"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:layout_margin="@dimen/size8"-->
+<!--                android:layout_marginBottom="@dimen/size12"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--        </RelativeLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/ll_choosedate"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="@dimen/_5sdp"-->
+<!--                android:layout_below="@+id/img_close"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+
+
+<!--                    style="@style/TextStyle.CoolveticaRegular"-->
+<!--                    android:layout_marginLeft="@dimen/_5sdp"-->
+<!--                    android:text="Weight History"/>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/ll_sleep_date"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_marginLeft="@dimen/_5sdp"-->
+<!--                    android:layout_marginTop="@dimen/size10"-->
+<!--                    android:layout_below="@+id/txt_header">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/_17sdp"-->
+<!--                        android:layout_height="@dimen/_17sdp"-->
+<!--                        android:src="@drawable/grey_date"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/txt_show_sleep_from"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="@dimen/size10"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:text="01-05-020"/>-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/_17sdp"-->
+<!--                        android:layout_height="@dimen/_17sdp"-->
+<!--                        android:layout_marginLeft="@dimen/size15"-->
+<!--                        android:src="@drawable/red_date"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/txt_show_sleep_to"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:layout_marginLeft="@dimen/size10"-->
+<!--                        android:text="01-05-020"/>-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:visibility="gone"-->
+
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentTop="true"-->
+<!--                    android:orientation="vertical">-->
+
+
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/size8"-->
+<!--                        >-->
+
+
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="vertical">-->
+
+
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:padding="@dimen/size5"-->
+<!--                                android:orientation="horizontal">-->
+
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="0dp"-->
+<!--                                    android:layout_height="match_parent"-->
+<!--                                    android:layout_weight="0.5"-->
+<!--                                    android:text="From Date :"-->
+<!--                                    android:textColor="@android:color/black"-->
+<!--                                    android:padding="@dimen/size5"-->
+<!--                                    android:textStyle="bold"-->
+<!--                                    >-->
+
+
+
+
+<!--                                </TextView>-->
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/txt_weight_date_from"-->
+<!--                                    android:layout_width="0dp"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:padding="@dimen/size5"-->
+<!--                                    android:background="@drawable/rect_shape" />-->
+
+
+
+
+
+
+<!--                            </LinearLayout>-->
+
+
+
+<!--                        </LinearLayout>-->
+<!--                    </LinearLayout>-->
+
+
+
+
+
+
+
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        >-->
+
+
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="vertical">-->
+
+
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:padding="@dimen/size5"-->
+<!--                                android:orientation="horizontal">-->
+
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="0dp"-->
+<!--                                    android:layout_height="match_parent"-->
+<!--                                    android:layout_weight="0.5"-->
+<!--                                    android:text="To Date:"-->
+<!--                                    android:textColor="@android:color/black"-->
+<!--                                    android:padding="@dimen/size5"-->
+<!--                                    android:textStyle="bold"-->
+<!--                                    android:gravity="start"-->
+<!--                                    >-->
+
+
+
+
+<!--                                </TextView>-->
+
+<!--                                <TextView-->
+<!--                                    android:id="@+id/txt_weight_date_to"-->
+<!--                                    android:layout_width="0dp"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:padding="@dimen/size5"-->
+<!--                                    android:background="@drawable/rect_shape" />-->
+
+
+
+
+
+
+<!--                            </LinearLayout>-->
+
+
+
+<!--                        </LinearLayout>-->
+<!--                    </LinearLayout>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/btn_show_weight_history"-->
+<!--                        android:layout_width="wrap_content"-->
+
+
+<!--                        android:background="@color/line_color"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_above="@+id/dummyview"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_marginLeft="@dimen/size2"-->
+<!--                        android:layout_marginTop="@dimen/size10"-->
+<!--                        android:layout_marginRight="@dimen/size2"-->
+<!--                        android:layout_marginBottom="@dimen/size10"-->
+<!--                        android:gravity="center"-->
+<!--                        android:elevation="@dimen/_3sdp"-->
+<!--                        android:padding="@dimen/size6"-->
+
+
+<!--                        android:text="  View History  " />-->
+
+
+<!--                </LinearLayout>-->
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:layout_marginTop="@dimen/size5"-->
+<!--                    android:background="@color/line_grey_20"/>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/ll_weight_header"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:layout_marginTop="@dimen/_5sdp"-->
+<!--                    android:background="@color/line_color"-->
+<!--                    android:orientation="horizontal">-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/txt_date"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Date"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:layout_marginLeft="@dimen/_5sdp"-->
+<!--                        android:textColor="@android:color/black"-->
+<!--                        android:padding="@dimen/size5"-->
+<!--                        android:layout_weight="1"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/txt_weight"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:padding="@dimen/size5"-->
+<!--                        android:text="Weight(Kg)"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:textColor="@android:color/black"-->
+<!--                        android:layout_weight="1"/>-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity=""-->
+<!--                        android:padding="@dimen/_5sdp"-->
+<!--                        android:visibility="invisible"-->
+<!--                        android:src="@drawable/ic_edit"/>-->
+<!--                </LinearLayout>-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_no_weight"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/_300sdp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:layout_gravity="center"/>-->
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/list_reemonitor_history"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--                    android:layout_marginBottom="@dimen/size50"-->
+<!--                    android:layout_marginTop="@dimen/_10sdp"-->
+<!--                    android:nestedScrollingEnabled="false"-->
+<!--                    android:divider="@color/white"-->
+<!--                    />-->
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </ViewFlipper>-->
+</RelativeLayout>

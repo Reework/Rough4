@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:padding="@dimen/size5"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+android:layout_marginTop="10dp"
+
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:background="#F3F6F8"
+        android:padding="@dimen/_5sdp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/_5sdp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:layout_gravity="center"
+
+
+            android:orientation="vertical">
+            <TextView
+
+                android:id="@+id/txt_wellness_qn"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="10dp"
+                android:gravity="start"
+                android:visibility="visible"
+
+
+
+                android:layout_marginTop="0dp"
+                android:text="Enjoy Good Health"
+                android:textColor="#231F20"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                />
+
+            <TextView
+
+                android:id="@+id/txt_rmarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="10dp"
+                android:gravity="start"
+                android:visibility="visible"
+
+
+                android:layout_marginTop="0dp"
+                android:text="Enjoy Gooth"
+                android:layout_below="@+id/text_Interpretation_BodyWeight"
+                android:textColor="#263238"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_weight="1.7"
+            android:orientation="vertical">
+
+<!--            <com.hookedonplay.decoviewlib.DecoView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--android:visibility="gone"-->
+<!--                android:id="@+id/dynamicArcView"/>-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:layout_width="match_parent"
+                android:id="@+id/progress_circular_consumed"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_centerInParent="true"
+android:visibility="visible"
+                app:cpb_progressbar_color="#58C960"
+                app:cpb_progressbar_width="3dp" />
+
+                <TextView
+
+                    android:id="@+id/txt_percent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:text="22"
+                    android:textColor="#263238"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+</LinearLayout>

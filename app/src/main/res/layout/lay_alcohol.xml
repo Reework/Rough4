@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulishsemibold"
+            android:layout_marginStart="@dimen/size15"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_large"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Alcohol"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulishbold"
+            android:textSize="@dimen/text_x_xlarge"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="Do you consume alcohol?"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulishbold"
+            android:textSize="@dimen/text_large"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:alpha="0.6"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Please share your input below :"/>
+
+        <RelativeLayout
+            android:id="@+id/rel_alchol_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_done"
+            android:padding="@dimen/_10sdp"
+            android:layout_margin="@dimen/_15sdp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/mulishregular"
+                android:textColor="@color/black"
+
+                />
+            <ImageView
+                android:id="@+id/img_alchohol_yes"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/done"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/_25sdp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rel_alchol_no"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_black_box"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/size15"
+            android:layout_marginStart="@dimen/_15sdp">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/mulishregular"
+                android:textColor="@color/black"
+
+                />
+            <ImageView
+                android:id="@+id/img_alchohol_no"
+                android:src="@drawable/done"
+                android:visibility="invisible"
+
+                android:layout_width="@dimen/_25sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/_25sdp"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/ll_frequency_alcohol"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulishbold"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:textColor="@color/black"
+                android:alpha="0.6"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Frequency of alcohol consumption "/>
+
+            <RelativeLayout
+                android:id="@+id/rel_alcohol_occasionally"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_done"
+                android:padding="@dimen/_10sdp"
+                android:layout_margin="@dimen/_15sdp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Occasionally"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/mulishregular"
+                    android:textColor="@color/black"
+
+                    />
+                <ImageView
+                    android:id="@+id/img_alcohol_occasionaly"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/done"
+                    android:layout_centerVertical="true"
+                    android:layout_height="@dimen/_25sdp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rel_alcohol_regularly"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_black_box"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/size15"
+                android:layout_marginStart="@dimen/_15sdp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Regularly"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/mulishregular"
+                    android:textColor="@color/black"
+
+                    />
+                <ImageView
+                    android:id="@+id/img_alcohol_regularly"
+
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/done"
+                    android:visibility="invisible"
+
+
+                    android:layout_height="@dimen/_25sdp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

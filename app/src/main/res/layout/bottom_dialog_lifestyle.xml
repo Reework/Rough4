@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txt_close"
+                android:layout_width="wrap_content"
+                android:text="Close"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/mulishbold"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+android:id="@+id/txt_header"
+                android:layout_width="wrap_content"
+                android:text=" Add Activity"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:fontFamily="@font/mulishbold"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+         <LinearLayout
+        android:id="@+id/layoutPrint"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_marginTop="10dp"
+        android:padding="8dp">
+
+
+        <LinearLayout
+            android:id="@+id/ll_1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/size15"
+            android:layout_marginRight="@dimen/size15"
+
+            android:background="@drawable/bg_border_grey"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sub Activity Type"
+                android:visibility="gone"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+
+            <TextView
+                android:id="@+id/text_time_acrtivty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Select Time"
+                android:gravity="center|start"
+                android:visibility="visible"
+                android:paddingLeft="10dp"
+android:textSize="14dp"
+                android:fontFamily="@font/mulishregular"
+                android:textStyle="bold"
+                android:textColor="#99231F20"
+android:drawableRight="@drawable/ic_appointment_time"
+                android:paddingRight="10dp"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+
+        </LinearLayout>
+
+         </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/layoutEdit"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="8dp">
+
+
+            <AutoCompleteTextView
+                android:id="@+id/text_activity"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Activity Name"
+                android:textSize="14dp"
+                android:fontFamily="@font/mulishregular"
+                android:textStyle="bold"
+                android:textColor="#99231F20"
+                android:layout_marginRight="@dimen/size15"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/size15"
+                android:background="@drawable/bg_border_grey"
+                android:layout_toLeftOf="@+id/img_upload_medicine"
+                android:layout_alignParentStart="true"
+                android:inputType="textPersonName"
+                android:maxLength="70"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_hea"
+            android:layout_width="wrap_content"
+            android:text=" Duration"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/mulishsemibold"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:layout_marginTop="0dp"
+            android:padding="8dp">
+
+
+            <LinearLayout
+                android:layout_marginRight="@dimen/size15"
+
+                android:layout_marginLeft="@dimen/size15"
+                android:orientation="horizontal"
+android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <EditText
+                    android:layout_weight="1"
+                    android:id="@+id/hr_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center|start"
+                    android:visibility="gone"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_border_grey"
+                    android:inputType="number"
+                    android:text="0"
+
+                    android:textSize="14dp"
+                    android:fontFamily="@font/mulishregular"
+                    android:textStyle="bold"
+                    android:textColor="#99231F20"
+                    android:paddingRight="10dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+
+                <com.yanzhenjie.wheel.WheelView
+                    android:id="@+id/wheal_list_uom"
+                    android:layout_width="match_parent"
+android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toLeftOf="@+id/img_minus_water"
+
+                    android:layout_height="100dp"/>
+
+
+
+
+                <com.yanzhenjie.wheel.WheelView
+                    android:id="@+id/wheal_list_min"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toLeftOf="@+id/img_minus_water"
+
+                    android:layout_height="100dp"/>
+
+
+
+                <EditText
+                    android:layout_weight="1"
+                    android:id="@+id/min_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="0"
+                    android:gravity="center|start"
+                    android:visibility="gone"
+                    android:paddingLeft="10dp"
+
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/bg_border_grey"
+                    android:inputType="number"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/mulishregular"
+                    android:textStyle="bold"
+                    android:textColor="#99231F20"
+                    android:paddingRight="10dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/but_add_activity"
+        style="@style/button_Style_cal"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/size20"
+        android:layout_above="@+id/dummyview"
+        android:layout_marginBottom="@dimen/size10"
+
+
+        android:text="Add "
+        />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

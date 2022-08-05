@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Test value"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@android:color/black"
+            android:padding="@dimen/_10sdp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/img_quantity_close"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/close"
+            android:layout_alignParentRight="true" />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/size12"
+        android:layout_marginLeft="@dimen/size12"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edt_updated_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size10"
+            android:maxLength="5"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/size12"
+            android:background="@drawable/bg_light_box_border"
+            android:inputType="numberDecimal"/>
+        <TextView
+            android:id="@+id/edt_updated_unit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size12"
+            android:maxLength="5"
+            android:textColor="@color/black"
+            style="@style/TextStyle.CoolveticaRegular"
+            android:layout_weight="0.5"
+            android:layout_margin="@dimen/size10"
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Remark : "
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/size12"
+        android:layout_marginLeft="@dimen/size24"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_remark_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size24"
+        android:background="@drawable/bg_light_box_border"
+
+        android:minLines="4"
+        android:maxLines="4"/>
+
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/btn_submit_value"
+        android:layout_width="match_parent"
+        android:text="Update"
+        style="@style/button_Style_cal"
+
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

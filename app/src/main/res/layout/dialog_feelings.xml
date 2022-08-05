@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@drawable/bg_green_btn"
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+android:id="@+id/txt_close"
+            android:layout_width="wrap_content"
+            android:text="Close"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/mulishbold"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:text="Feelings"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/mulishbold"
+            android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/bg_white_button"
+        android:layout_width="match_parent"
+android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_height="140dp">
+
+
+
+        <LinearLayout
+            android:id="@+id/lay_happy"
+            android:layout_width="match_parent"
+           android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/img_userimage"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:visibility="visible"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/happynew"/>
+
+
+            <TextView
+android:id="@+id/txt_happy"
+                android:layout_width="wrap_content"
+                android:text="Happy"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="0dp"
+                android:fontFamily="@font/mulishbold"
+                android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lay_stressed"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_userimag"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:visibility="visible"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/stressednew"/>
+
+
+            <TextView
+                android:id="@+id/txt_stressed"
+
+                android:layout_width="wrap_content"
+                android:text="Stressed"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="0dp"
+                android:fontFamily="@font/mulishbold"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lay_neutral"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_userima"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:visibility="visible"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/neutralnew"/>
+
+
+            <TextView
+                android:id="@+id/txt_neutral"
+
+                android:layout_width="wrap_content"
+                android:text="Neutral"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="0dp"
+                android:fontFamily="@font/mulishbold"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPremiumWhite"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size4">
+
+        <TextView
+            android:id="@+id/labelMedicineTitle"
+            style="@style/TextStyle.CoolveticaRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Update this reminder"
+            android:textColor="@color/colorPremiumBlack"
+            android:textSize="@dimen/text_normal" />
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_popup_cancel" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgView_Reminder_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_my_reminders_activity" />
+            <TextView
+                android:id="@+id/textView_Reminder_item_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1.3"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Activity"
+                android:textColor="@color/colorPremiumBlack"
+                android:textSize="@dimen/text_small"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etActivityName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+
+            android:hint="Activity Title"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:inputType="text"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activty Type"
+            android:layout_marginLeft="@dimen/size4"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Spinner
+            android:id="@+id/spinner_activity_type"
+            style="@style/MySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/bkgr_view_line_light" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/size8"
+
+        android:paddingTop="@dimen/size10"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginRight="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Start Date"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/colorPremiumBlack"/>
+
+                <TextView
+                    android:id="@+id/tvStartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/calender"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="6dp"
+                    android:textColor="@color/colorPremiumBlack" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/bkgr_view_line_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="End Date"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/colorPremiumBlack" />
+
+                <TextView
+                    android:id="@+id/tvEndDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/calender"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="6dp"
+                    android:textColor="@color/colorPremiumBlack" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/bkgr_view_line_light" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+
+
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size2"
+                    android:drawableRight="@drawable/ic_appointment_time"
+                    android:text="Select Time"
+                    android:textColor="@color/colorPremiumBlack" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/bkgr_view_line_light" />
+                <LinearLayout
+                    android:id="@+id/linTime2"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/size10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvTime2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size2"
+                        android:drawableRight="@drawable/ic_appointment_time"
+                        android:text="Select Time"
+                        android:textColor="@color/colorPremiumBlack" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bkgr_view_line_light" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linTime3"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/size10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvTime3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size2"
+                        android:drawableRight="@drawable/ic_appointment_time"
+                        android:text="Select Time"
+                        android:textColor="@color/colorPremiumBlack" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bkgr_view_line_light" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linTime4"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/size10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvTime4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size2"
+                        android:drawableRight="@drawable/ic_appointment_time"
+                        android:text="Select Time"
+                        android:textColor="@color/colorPremiumBlack" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bkgr_view_line_light" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linTime5"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/size10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvTime5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size2"
+                        android:drawableRight="@drawable/ic_appointment_time"
+                        android:text="Select Time"
+                        android:textColor="@color/colorPremiumBlack" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bkgr_view_line_light" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linTime6"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/size10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvTime6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size2"
+                        android:drawableRight="@drawable/ic_appointment_time"
+                        android:text="Select Time"
+                        android:textColor="@color/colorPremiumBlack" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bkgr_view_line_light" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linTime7"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/size10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvTime7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size2"
+                        android:drawableRight="@drawable/ic_appointment_time"
+                        android:text="Select Time"
+                        android:textColor="@color/colorPremiumBlack" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bkgr_view_line_light" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linTime8"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/size10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvTime8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size2"
+                        android:drawableRight="@drawable/ic_appointment_time"
+                        android:text="Select Time"
+                        android:textColor="@color/colorPremiumBlack" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bkgr_view_line_light" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linTime9"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/size10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvTime9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size2"
+                        android:drawableRight="@drawable/ic_appointment_time"
+                        android:text="Select Time"
+                        android:textColor="@color/colorPremiumBlack" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bkgr_view_line_light" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linTime10"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/size10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvTime10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size2"
+                        android:drawableRight="@drawable/ic_appointment_time"
+                        android:text="Select Time"
+                        android:textColor="@color/colorPremiumBlack" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bkgr_view_line_light" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spinnerReminder"
+                    style="@style/MySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bkgr_view_line_light" />
+
+            </LinearLayout>
+            <!--<TextView
+                android:id="@+id/tvFrequency"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_spinner_bg"
+                android:padding="8dp"
+                android:text="Select Frequency"
+                android:gravity="center"
+                android:textColor="@color/colorPremiumBlack" />-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSave"
+        style="@style/button_Style_cal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="@dimen/size4"
+        android:layout_marginTop="@dimen/size8"
+        android:layout_marginBottom="@dimen/size8"
+        android:text="Save" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

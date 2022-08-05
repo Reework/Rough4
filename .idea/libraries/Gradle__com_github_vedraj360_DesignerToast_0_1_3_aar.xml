@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.vedraj360:DesignerToast:0.1.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7b546a9b0da97799bbc334d0e8e7b848/jetified-DesignerToast-0.1.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7b546a9b0da97799bbc334d0e8e7b848/jetified-DesignerToast-0.1.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7b546a9b0da97799bbc334d0e8e7b848/jetified-DesignerToast-0.1.3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.vedraj360/DesignerToast/0.1.3/2f08d07cb464937a872bfec24590edb51bd62ba1/DesignerToast-0.1.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

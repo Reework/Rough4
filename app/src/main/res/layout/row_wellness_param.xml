@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_edit_text_box_border"
+    android:orientation="vertical"
+    android:padding="@dimen/size5"
+
+    android:layout_margin="@dimen/size10"
+
+    tools:context="com.shamrock.reework.activity.InterpretationModule.activity.InterpretationActivity">
+
+    <TextView
+        android:id="@+id/txt_wellness_qn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Body Weight"
+        android:textColor="@color/colorPremiumBlack" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_wellness"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="@dimen/size3"
+        android:layout_below="@id/text_Interpretation_BodyWeight"
+        android:progressDrawable="@drawable/progressbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_wellness_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txt_wellness_score_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="70-80kg"
+            android:textColor="@color/colorRobinEggBlue"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_future_score"
+        android:layout_width="match_parent"
+        android:background="@color/line_color"
+        android:text="Future Score : 4.0"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/size2"
+        android:visibility="gone"
+        android:padding="@dimen/_4sdp"
+        android:textSize="@dimen/text_tiny"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/txt_rmarks"
+        android:layout_width="match_parent"
+        android:background="@color/line_color"
+        android:text="Reamrk : use healthy diet"
+        android:textColor="@color/black"
+        android:padding="@dimen/_4sdp"
+        android:textSize="@dimen/text_tiny"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

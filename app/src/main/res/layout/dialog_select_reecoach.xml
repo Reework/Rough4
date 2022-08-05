@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll_mediceine"
+        android:fadeScrollbars="false"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPremiumWhite"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_lable_expired"
+                    style="@style/TextStyle.CoolveticaRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:text="Select Now"
+                    android:textColor="@color/colorPremiumBlack"
+                    android:textSize="@dimen/text_large" />
+
+                <ImageView
+                    android:id="@+id/close_dialg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_popup_cancel" />
+            </RelativeLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_normal"
+                    android:visibility="gone"
+                    android:id="@+id/txt_header_reeacoch_patho"
+                    android:text="Selet Reecoach and pathologist"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size10"
+                    android:layout_weight="1">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <Button
+
+        android:id="@+id/btn_select_now"
+
+        android:layout_alignParentRight="true"
+        style="@style/button_Style_cal"
+
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size2"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/size2"
+        android:layout_marginRight="@dimen/size2"
+        android:layout_marginTop="@dimen/size10"
+        android:layout_above="@+id/dummyview"
+        android:layout_marginBottom="@dimen/size10"
+
+
+        android:text="Reecoach"
+        />
+    <Button
+
+        android:layout_alignParentRight="true"
+        style="@style/button_Style_cal"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size2"
+        android:id="@+id/btn_select_patho"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/size2"
+        android:layout_marginRight="@dimen/size2"
+        android:layout_marginTop="@dimen/size10"
+        android:visibility="gone"
+        android:layout_above="@+id/dummyview"
+        android:layout_marginBottom="@dimen/size10"
+
+
+        android:text="Pathologist"
+        />
+
+
+
+</LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txt_later"
+                android:layout_width="wrap_content"
+                android:text="Later"
+                android:padding="@dimen/_5sdp"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:textSize="@dimen/text_large"
+                style="@style/TextStyle.CoolveticaRegular"
+
+
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorTransparent"
+    android:layout_margin="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll_mediceine"
+        android:layout_above="@+id/buttonAddMedicine"
+        android:fadeScrollbars="false"
+        android:layout_alignParentTop="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPremiumWhite"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/labelMedicineTitle"
+                    style="@style/TextStyle.CoolveticaRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Activity"
+                    android:layout_marginLeft="@dimen/size15"
+                    android:textColor="@color/colorPremiumBlack"
+                    android:textSize="@dimen/text_normal" />
+
+                <ImageView
+                    android:id="@+id/imageView_AddMedicine_CloseDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/remove" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size10"
+                android:padding="@dimen/size4"
+                android:layout_marginTop="@dimen/size15"
+                android:orientation="vertical">
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:layout_marginLeft="@dimen/size2"
+                    android:padding="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:letterSpacing="0.1"
+                    style="@style/TextStyle.CoolveticaRegular"
+                    android:visibility="visible"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/text_time_acrtivty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:drawableRight="@drawable/clocknew"
+                    android:paddingBottom="5dp"
+                    android:padding="@dimen/size8"
+
+
+                    android:hint="Select time"
+                    android:textColor="@color/colorPremiumBlack" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bkgr_view_line_light" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Activity  Name"
+                    android:layout_marginTop="@dimen/size15"
+                    android:layout_marginLeft="@dimen/size2"
+                    android:visibility="visible"
+                    android:textColor="@color/black"
+                    android:letterSpacing="0.1"
+                    style="@style/TextStyle.CoolveticaRegular"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <EditText
+                    android:id="@+id/text_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:padding="@dimen/size8"
+                    android:background="@color/white"
+                    android:hint="Write activity name"
+                    android:textColor="@color/colorPremiumBlack" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bkgr_view_line_light" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Duration  Time"
+                    android:layout_marginTop="@dimen/size15"
+                    android:layout_marginLeft="@dimen/size2"
+                    android:visibility="visible"
+                    android:textColor="@color/black"
+                    android:letterSpacing="0.1"
+                    style="@style/TextStyle.CoolveticaRegular"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hrs"
+                        android:layout_marginTop="@dimen/size10"
+                        android:layout_marginLeft="@dimen/size2"
+                        android:visibility="visible"
+                        android:textStyle="bold"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                    <ImageView
+                        android:id="@+id/hrs_dec"
+                        android:layout_marginStart="@dimen/size8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circle_minus"
+                        android:layout_marginTop="@dimen/size10"
+
+                        android:layout_marginLeft="@dimen/size2"
+                        android:visibility="gone"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                    <EditText
+                        android:id="@+id/hr_tv"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:background="@drawable/bg_edit_text_box_border"
+                        android:layout_marginTop="@dimen/size10"
+                        android:padding="@dimen/_5sdp"
+                        android:inputType="number"
+                        android:layout_marginLeft="@dimen/size8"
+                        android:visibility="visible"
+                        android:textStyle="bold"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                    <ImageView
+                        android:id="@+id/hrs_inc"
+                        android:layout_marginStart="@dimen/size8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/plus"
+                        android:layout_marginTop="@dimen/size10"
+                        android:layout_marginLeft="@dimen/size2"
+                        android:visibility="gone"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                    <TextView
+                        android:layout_marginStart="@dimen/size30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mins"
+                        android:layout_marginTop="@dimen/size10"
+                        android:layout_marginLeft="@dimen/size2"
+                        android:visibility="visible"
+                        android:textStyle="bold"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                    <ImageView
+                        android:id="@+id/mins_dec"
+                        android:layout_marginStart="@dimen/size8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circle_minus"
+                        android:layout_marginTop="@dimen/size10"
+                        android:layout_marginLeft="@dimen/size2"
+                        android:visibility="gone"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                    <EditText
+                        android:id="@+id/min_tv"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:background="@drawable/bg_edit_text_box_border"
+                        android:layout_marginTop="@dimen/size10"
+                        android:layout_marginLeft="@dimen/size8"
+                        android:inputType="number"
+                        android:padding="@dimen/_5sdp"
+                        android:visibility="visible"
+                        android:textStyle="bold"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                    <ImageView
+                        android:id="@+id/mins_imc"
+                        android:layout_marginStart="@dimen/size8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/plus"
+                        android:layout_marginTop="@dimen/size10"
+                        android:layout_marginLeft="@dimen/size2"
+                        android:visibility="gone"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size20"
+                    android:visibility="invisible"
+                    android:background="@drawable/bkgr_view_line_light" />
+
+                <Button
+                    android:id="@+id/but_add_activity"
+                    style="@style/button_Style_cal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/size2"
+                    android:layout_margin="@dimen/size2"
+                    android:layout_above="@+id/dummyview"
+                    android:layout_marginBottom="@dimen/size10"
+
+                    android:text="Save"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

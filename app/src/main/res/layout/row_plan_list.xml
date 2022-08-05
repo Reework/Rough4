@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_landing"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="@dimen/size20"
+        android:layout_height="@dimen/size20"
+        android:layout_marginTop="@dimen/size15"
+        android:src="@drawable/checkmark"
+        android:layout_marginLeft="@dimen/size30">
+
+
+    </ImageView>
+<TextView
+    android:background="@android:color/white"
+    android:id="@+id/service_tv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/size10"
+    android:layout_marginTop="@dimen/size15"
+    android:textColor="@android:color/black"
+
+    android:text="Diet Plan"/>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_margin="@dimen/size10">-->
+<!--        <android.support.v7.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:cardCornerRadius="@dimen/size10"-->
+<!--            app:cardElevation="@dimen/size20">-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--                <LinearLayout-->
+<!--                    android:background="@drawable/app"-->
+<!--                    android:id="@+id/img_background"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:orientation="vertical"-->
+
+
+
+<!--                    />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="120dp"-->
+<!--                    android:layout_height="120dp"-->
+<!--                    android:layout_below="@+id/img_background"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_marginTop="-60dp"-->
+<!--                    android:padding="@dimen/size5"-->
+<!--                    android:id="@+id/ll_amount"-->
+<!--                    android:background="@drawable/fab_white_bg"-->
+<!--                    android:src="@mipmap/ic_launcher" >-->
+<!--                    <TextView-->
+<!--                        android:layout_width="110dp"-->
+<!--                        android:layout_height="110dp"-->
+<!--                        android:layout_below="@+id/img_background"-->
+<!--                        android:padding="@dimen/size5"-->
+<!--                        android:text="Rs.300"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="@dimen/text_large"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:background="@drawable/fab_bg"-->
+<!--                        android:src="@mipmap/ic_launcher" />-->
+<!--                </LinearLayout>-->
+
+
+<!--                <ListView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/ll_amount"-->
+<!--                    android:layout_above="@+id/btn_payemnt"-->
+<!--                    />-->
+
+
+
+
+<!--                <Button-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    style="@style/button_Style_cal"-->
+<!--                    android:padding="@dimen/size10"-->
+<!--                    android:layout_margin="@dimen/size30"-->
+<!--                    android:text="Payment"-->
+<!--                    android:id="@+id/btn_payemnt"-->
+<!--                    android:layout_alignParentBottom="true"/>-->
+<!--            </RelativeLayout>-->
+
+<!--        </android.support.v7.widget.CardView>-->
+
+<!--    </LinearLayout>-->
+
+
+
+</LinearLayout>

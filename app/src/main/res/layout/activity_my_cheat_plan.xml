@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/line_color"
+    tools:context=".reework.activity.cheatplan.MyCheatPlanActivity">
+
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:visibility="gone">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:background="@color/white"
+           android:visibility="gone"
+           android:weightSum="2">
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:paddingLeft="10dp"
+               android:paddingRight="10dp"
+               android:orientation="vertical">
+
+               <TextView
+                   android:id="@+id/text_MyPlan_Category"
+                   style="@style/TextStyle.CoolveticaRegular"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Today's Plan"
+                   android:textColor="@color/colorPremiumBlack" />
+
+               <TextView
+                   android:id="@+id/text_MyPlan_Date"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/text_MyPlan_Category"
+                   android:text="Today's Plan"
+                   android:textColor="@color/colorRobinEggBlue"
+                   android:textStyle="bold" />
+           </LinearLayout>
+           <Spinner
+               android:id="@+id/spinner_MyPlan_Category"
+               style="@style/MySpinner"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"/>
+       </LinearLayout>
+
+
+
+
+       <LinearLayout
+           android:id="@+id/ll_cheat_header"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:visibility="invisible"
+           android:orientation="horizontal">
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/_10sdp"
+                   android:layout_marginLeft="@dimen/_15sdp"
+                   android:textColor="@android:color/black"
+                   style="@style/TextStyle.CoolveticaRegular"
+                   android:text="Select Occasion :"/>
+               <Spinner
+                   android:id="@+id/spinner_occasion"
+                   style="@style/MySpinnerWeight"
+                   android:layout_marginLeft="@dimen/_15sdp"
+                   android:textColor="@android:color/black"
+                   android:layout_marginTop="@dimen/_10sdp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/_10sdp"
+                   android:layout_marginLeft="@dimen/_15sdp"
+                   android:textColor="@android:color/black"
+                   style="@style/TextStyle.CoolveticaRegular"
+                   android:text="Select Category :"/>
+               <Spinner
+                   android:id="@+id/spinner_category"
+                   style="@style/MySpinnerWeight"
+                   android:layout_marginLeft="@dimen/_15sdp"
+                   android:layout_marginTop="@dimen/_10sdp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+           </LinearLayout>
+
+       </LinearLayout>
+
+
+
+       <TextView
+           android:id="@+id/txt_no_cheaet"
+           android:layout_width="match_parent"
+           android:text="No Cheat Plan available"
+           android:layout_gravity="center_vertical"
+           android:gravity="center"
+
+           android:layout_height="match_parent">
+
+       </TextView>
+
+
+
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:id="@+id/recyler_plansData"
+           android:layout_marginTop="@dimen/_10sdp"
+           android:layout_margin="@dimen/_5sdp"
+           android:orientation="vertical"
+           app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+           android:layout_height="match_parent"/>
+   </LinearLayout>
+    <SearchView
+        android:id="@+id/search_chaet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:queryHint="Search Item"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/squarebtn"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_3sdp"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/squarebtn"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt_group_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:letterSpacing="0.1"
+                    style="@style/TextStyle.CoolveticaRegular"
+
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:layout_marginTop="@dimen/size8"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:text="Item"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_height="match_parent"/>
+                <View
+                    android:layout_width="1dp"
+                    android:background="@color/haldi"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/txt_test_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:letterSpacing="0.1"
+                    style="@style/TextStyle.CoolveticaRegular"
+
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:layout_marginTop="@dimen/size8"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:text="Reeplace Item"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_height="match_parent"/>
+                <View
+                    android:layout_width="1dp"
+                    android:background="@color/haldi"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/txt_avalable"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/black"
+                    android:letterSpacing="0.1"
+                    style="@style/TextStyle.CoolveticaRegular"
+                    android:layout_marginBottom="@dimen/size8"
+                    android:layout_marginTop="@dimen/size8"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:text="Energy Saved/100kg"
+                    android:textSize="@dimen/_11sdp"
+
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/haldi"
+                android:layout_height="@dimen/_5sdp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyler_newcheat"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/row_newcheat"
+
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

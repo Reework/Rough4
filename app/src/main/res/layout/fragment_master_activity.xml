@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg"
+    tools:context=".reework.fragment.MasterActivityFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_master_item"
+            android:background="@color/colorTransparent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imageView_AddDevice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_master_add_device" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Add My Device"
+                android:textColor="@color/colorPremiumBlack" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/TextStyle.CoolveticaRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Track My Activity"
+                android:textColor="@color/colorPremiumBlack"
+                android:textSize="@dimen/text_normal" />
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorBlueGreen1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleView_TrackMyActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_view_line_spacing_4dp" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_half_view_more_bottom_white">
+
+            <LinearLayout
+                android:id="@+id/linLay_activity_week_analysis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/appbar_padding_top"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:background="@drawable/bkgr_button_white_radius"
+                android:orientation="vertical"
+                android:padding="@dimen/appbar_padding_top"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/TextStyle.CoolveticaRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weekly Analysis"
+                    android:textColor="@color/colorPremiumBlack" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleView_LastActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonActivity_ViewMore"
+                style="@style/button_Style_round"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linLay_activity_week_analysis"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="View Last 7 days" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

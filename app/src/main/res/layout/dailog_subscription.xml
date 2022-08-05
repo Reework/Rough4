@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageView_ReecoachProfile_Photo_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+
+                <ImageView
+                    android:id="@+id/img_reecoach_photo"
+                    android:layout_width="@dimen/size128"
+                    android:layout_height="@dimen/size128"
+                    android:layout_marginTop="@dimen/size155"
+                    android:src="@drawable/subscription_done"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/reecoach_name_dailog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Congratulations"
+                    android:gravity="center"
+                    android:letterSpacing="0.1"
+                    android:layout_marginTop="@dimen/size30"
+                    android:textColor="@android:color/black"
+                    style="@style/TextStyle.CoolveticaRegular"
+                    android:layout_below="@+id/img_reecoach_photo"
+                    android:textSize="@dimen/text_x_x_xlarge"/>
+
+
+                <View
+                    android:id="@+id/v"
+                    android:layout_width="@dimen/size40"
+                    android:layout_marginTop="@dimen/size20"
+                    android:layout_height="3dp"
+
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_centerHorizontal="true"
+
+                    android:layout_below="@+id/reecoach_name_dailog"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="You have become a subscribe member now"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/size8"
+                    android:layout_marginRight="@dimen/size8"
+
+                    android:layout_marginTop="@dimen/size30"
+                    android:textColor="@android:color/black"
+                    style="@style/TextStyle.CalibriLight"
+                    android:layout_below="@+id/v"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_large"/>
+
+
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    style="@style/button_Style_cal"
+                    android:id="@+id/btn_subscription_done"
+                    android:padding="@dimen/size10"
+                    android:text="Take Me Through App"
+                    android:textStyle="bold"
+                    android:layout_marginRight="@dimen/size10"
+                    android:layout_marginBottom="@dimen/size20"
+                    android:layout_marginLeft="@dimen/size10"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

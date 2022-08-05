@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Quantity"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@android:color/black"
+            android:padding="@dimen/_10sdp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/img_quantity_close"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/close"
+            android:layout_alignParentRight="true" />
+
+
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/edt_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/bg_light_box_border"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/btn_submit_quantity"
+        android:layout_width="match_parent"
+        android:text="Submit"
+        style="@style/button_Style_cal"
+
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

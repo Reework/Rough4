@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:id="@+id/h1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="#F3F6F8"
+
+        android:overScrollMode="always"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:background="#F3F6F8"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/custom_btn_radio_bg_food"
+                    android:button="@null"
+                    android:visibility="gone"
+                    android:onClick="onclick"
+                    android:checked="true"
+                    android:text="Dailyd Entry" />
+
+                <RadioButton
+                    android:id="@+id/buttonFoodMaster_AllMeals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:background="@drawable/custom_white_radio_new"
+                    android:button="@null"
+                    android:textColor="@color/white"
+                    android:onClick="onclick"
+                    android:checked="true"
+                    android:text="Daily entry" />
+
+                <RadioButton
+                    android:id="@+id/btn_food_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/custom_white_radio_new1"
+                    android:button="@null"
+                    android:onClick="onclick"
+                    android:text="History" />
+                <RadioButton
+                    android:id="@+id/buttonFoodMaster_Suggestions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:onClick="onclick"
+                    android:background="@drawable/custom_white_radio_new1"
+                    android:button="@null"
+                    android:text="Healthy-Tips" />
+
+
+
+
+
+
+                <RadioButton
+                    android:id="@+id/button_video"
+                    android:layout_width="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/custom_white_radio_new1"
+                    android:button="@null"
+                    android:text="Video"
+                    android:visibility="visible" />
+                <RadioButton
+                    android:id="@+id/buttonFoodMaster_FoodTrip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/custom_btn_radio_bg_food"
+                    android:button="@null"
+                    android:visibility="visible"
+                    android:onClick="onclick"
+                    android:text="Food Snapping" />
+
+
+
+                <RadioButton
+                    android:id="@+id/buttonFoodMaster_Others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/custom_btn_radio_bg_food"
+                    android:button="@null"
+                    android:visibility="gone"
+
+                    android:onClick="onclick"
+                    android:text=". . ."
+                    android:textStyle="bold" />
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer_Food"
+        android:layout_width="match_parent"
+        android:background="#F3F6F8"
+        android:layout_below="@id/h1"
+        android:layout_above="@+id/ll_bottom_home"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_home"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/_50sdp">
+
+
+        <LinearLayout
+            android:id="@+id/layout_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:src="@drawable/ic_profile"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_20sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textSize="@dimen/text_tiny"
+                android:fontFamily="@font/mulishsemibold"
+                android:layout_gravity="center_horizontal"
+                android:text="Profile"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:src="@drawable/ic_home_gray"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_20sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textSize="@dimen/text_tiny"
+                android:textStyle="bold"
+                android:fontFamily="@font/mulishsemibold"
+                android:layout_gravity="center_horizontal"
+                android:text="Home"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:src="@drawable/ic_settings"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_20sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textSize="@dimen/text_tiny"
+                android:textStyle="bold"
+                android:fontFamily="@font/mulishsemibold"
+                android:layout_gravity="center_horizontal"
+                android:text="Settings"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

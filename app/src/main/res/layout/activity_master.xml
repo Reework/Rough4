@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPremiumWhite"
+    tools:context=".reework.activity.AppoinmentModule.activity.AppointmentsActivity">
+
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />
+
+
+
+
+    <include
+        android:id="@+id/no_internet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/custom_toolbar"
+        layout="@layout/no_internet_screen"
+        android:visibility="gone"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeContainer"
+        android:layout_below="@+id/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/buttonScheduleAppointment"
+                android:layout_below="@id/custom_toolbar"
+                android:background="@color/colorPremiumWhite"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:id="@+id/view_act"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/line_grey_20"/>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/lg"
+                        android:layout_below="@+id/view_act"
+                        android:layout_marginLeft="@dimen/size40"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/reeplan"
+                        android:layout_marginStart="@dimen/size40" />
+
+                    <TextView
+                        style="@style/TextStyle.CoolveticaRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/lg"
+                        android:id="@+id/hddd"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_vertical"
+                        android:text=" Activity"
+                        android:textColor="@color/colorPremiumBlack"
+                        android:layout_toEndOf="@+id/lg" />
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/size4"
+                        android:id="@+id/ll_create_Activity"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/fab_bg"
+                        android:layout_alignParentEnd="true">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+
+                            android:src="@drawable/ic_add_black_24dp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtNoData"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:dividerHeight="5dp"
+                    android:text="No Activity for the day."
+                    android:textColor="@color/black_overlay_dark"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+                <ListView
+                    android:id="@+id/reclerview_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:divider="@color/white"
+                    android:dividerHeight="5dp"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    android:visibility="gone"
+                    android:layout_weight="1"/>
+
+
+                <Button
+                    android:id="@+id/buttonScheduleAppointments"
+                    style="@style/button_Style_cal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Schedule Appointment"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

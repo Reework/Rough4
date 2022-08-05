@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "833644050628",
+    "firebase_url": "https://reework-c6ec3.firebaseio.com",
+    "project_id": "reework-c6ec3",
+    "storage_bucket": "reework-c6ec3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833644050628:android:07f553b0cbba04b728b191",
+        "android_client_info": {
+          "package_name": "com.shamrock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833644050628-km21ft8bmmkcshp03ksr8cntljgg7og4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shamrock",
+            "certificate_hash": "7f51984d4b809adc273a1516d40d7710cf44842c"
+          }
+        },
+        {
+          "client_id": "833644050628-ccq7hf6ks8a6gcj3u1omr4l8m4v3p8v9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7GAxtkItmuWW13DMhL_sW6p83-vWJzGo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833644050628-ccq7hf6ks8a6gcj3u1omr4l8m4v3p8v9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

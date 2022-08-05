@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_white"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="10dp"
+
+    android:layout_height="wrap_content">
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_weight="0.8"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1.4"
+                android:layout_width="match_parent"
+                android:layout_gravity="end|center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView_MyReminder_icon"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+
+                    app:srcCompat="@mipmap/ic_launcher"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_weight="0.6"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tvActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:ellipsize="marquee"
+                    android:textSize="14dp"
+                    android:text="jbjhbjbjb"
+                    android:singleLine="true"
+                    android:fontFamily="@font/mulishsemibold"
+                    android:textColor="#231F20"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/tvFrequency"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/mulishsemibold"
+                    android:textStyle="bold"
+                    android:textColor="#99231F20"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:text="1800 calories"
+
+                    android:textSize="10dp"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:fontFamily="@font/mulishsemibold"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="jhjjhvjvjvj"
+                    android:textSize="10dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:visibility="visible"
+                    android:textStyle="bold"
+                    android:textColor="#99231F20"
+                    />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_weight="1.2"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+
+                    android:gravity="end"
+
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="39dp"
+                        android:background="@drawable/bg_green_button"
+                        android:layout_margin="@dimen/size3"
+                        android:id="@+id/lay_edit"
+
+                        android:layout_height="23dp">
+                        <TextView
+                            android:id="@+id/ivEdit"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_3sdp"
+                            android:textColor="#FFFFFF"
+                            android:padding="3dp"
+
+                            style="@style/TextStyle.mulishsemibold"
+                            android:text="Edit"
+                            android:gravity="center"
+                            android:textSize="12dp"
+
+                            android:layout_height="wrap_content"
+
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+
+                    android:gravity="center"
+
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+
+                        android:layout_width="55dp"
+                        android:background="@drawable/bg_pink_button"
+                        android:layout_margin="@dimen/size3"
+                        android:id="@+id/lay_current"
+
+                        android:layout_height="23dp">
+
+                        <TextView
+                            android:id="@+id/ivClose"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_3sdp"
+                            android:textColor="#FFFFFF"
+                            android:padding="3dp"
+
+                            style="@style/TextStyle.mulishsemibold"
+                            android:text="Delete"
+                            android:gravity="center"
+                            android:textSize="12dp"
+
+                            android:layout_height="wrap_content"
+
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

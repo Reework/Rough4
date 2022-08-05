@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6F8"
+    tools:context=".reework.activity.FoodModule.fragment.FoodHistoryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:background="#F3F6F8"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/size30"
+                android:layout_marginTop="@dimen/size8"
+                android:fontFamily="@font/mulishbold"
+                android:text="Food History"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/historydatte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="@dimen/size30"
+                android:layout_marginTop="@dimen/size8"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/mulishregular"
+                android:text="Food history"
+                android:textColor="#92989B"
+
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size10"
+
+                android:background="#F3F6F8">
+
+                <RelativeLayout
+                    android:id="@+id/txt_header"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/TextStyle.CoolveticaRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/size10"
+                        android:text="Food History"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_small"
+
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_add_sleep_date"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="end"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:src="@drawable/green_date"
+
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="#F3F6F8"
+
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_sleep_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_header"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/size5"
+                        android:layout_marginBottom="@dimen/size8"
+                        android:background="@drawable/bg_white"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_edit_text_box_border"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_10sdp">
+
+                            <TextView
+                                android:id="@+id/txt_show_sleep_from"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/size10"
+                                android:text="From Date"
+                                android:textColor="#99231F20"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_17sdp"
+                                android:layout_height="@dimen/_17sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_gravity="end"
+                                android:gravity="end"
+
+
+                                android:src="@drawable/grey_date" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@drawable/bg_edit_text_box_border"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_10sdp">
+
+                            <TextView
+                                android:id="@+id/txt_show_sleep_to"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/size10"
+                                android:text="To Date"
+                                android:textColor="#99231F20"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_17sdp"
+                                android:layout_height="@dimen/_17sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginLeft="@dimen/size15"
+                                android:src="@drawable/red_date" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/ll_sleep_date"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical"
+
+
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/mulishbold"
+                            android:gravity="start"
+                            android:textSize="16dp"
+                            android:padding="@dimen/size4"
+                            android:text="Average  Nutrition"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"
+
+                            />
+
+
+                        <LinearLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/size5"
+                            android:layout_marginBottom="@dimen/size8"
+                            android:background="@drawable/bg_white"
+                            android:orientation="vertical"
+                            >
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_avg_nutrition"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/size8"
+                                android:layout_marginTop="@dimen/size8"
+                                android:layout_marginRight="@dimen/size8"
+
+                                android:background="@drawable/bg_white"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:padding="@dimen/_10sdp">
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1">
+
+                                        <TextView
+                                            android:id="@+id/txtproti"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="@dimen/_3sdp"
+                                            android:fontFamily="@font/mulishsemibold"
+                                            android:textSize="12dp"
+                                            android:text="Protein" />
+
+                                        <TextView
+                                            android:id="@+id/txt_avg_protine"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/txtproti"
+                                            android:layout_centerInParent="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:layout_toRightOf="@+id/imfprotin"
+                                            android:fontFamily="@font/mulishbold"
+                                            android:text="-"
+                                            android:textColor="@color/black"
+                                            android:textStyle="bold"
+                                            android:textSize="14dp"
+
+                                            />
+
+                                        <ImageView
+                                            android:id="@+id/imfprotin"
+                                            style="@style/TextStyle.CoolveticaRegular"
+                                            android:layout_width="@dimen/_12sdp"
+                                            android:layout_height="@dimen/_12sdp"
+                                            android:layout_below="@+id/txtproti"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_weight="1"
+
+                                            android:background="@drawable/prohist_circle"
+
+                                            android:gravity="center"
+
+                                            android:text="0" />
+
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1">
+
+                                        <TextView
+                                            android:id="@+id/txtproti1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="@dimen/_3sdp"
+                                            android:fontFamily="@font/mulishsemibold"
+                                            android:textSize="12dp"
+                                            android:text="Carb" />
+
+                                        <TextView
+                                            android:id="@+id/txt_avg_carb"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/txtproti1"
+                                            android:layout_centerInParent="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:layout_toRightOf="@+id/imfprotin2"
+                                            android:fontFamily="@font/mulishbold"
+                                            android:text="-"
+                                            android:textColor="@color/black"
+                                            android:textStyle="bold"
+                                            android:textSize="14dp"
+
+
+                                            />
+
+                                        <ImageView
+                                            android:id="@+id/imfprotin2"
+                                            style="@style/TextStyle.CoolveticaRegular"
+                                            android:layout_width="@dimen/_12sdp"
+                                            android:layout_height="@dimen/_12sdp"
+                                            android:layout_below="@+id/txtproti1"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_weight="1"
+
+                                            android:background="@drawable/fathist_circle"
+
+                                            android:gravity="center"
+
+                                            android:text="0" />
+
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1">
+
+                                        <TextView
+                                            android:id="@+id/txtproti2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="@dimen/_3sdp"
+                                            android:fontFamily="@font/mulishsemibold"
+                                            android:textSize="12dp"
+                                            android:text="Fat" />
+
+                                        <TextView
+                                            android:id="@+id/txt_avg_fat"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/txtproti2"
+                                            android:layout_centerInParent="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:layout_toRightOf="@+id/imfprotin3"
+                                            android:fontFamily="@font/mulishbold"
+                                            android:text="-"
+                                            android:textColor="@color/black"
+                                            android:textStyle="bold"
+                                            android:textSize="14dp"
+
+
+                                            />
+
+                                        <ImageView
+                                            android:id="@+id/imfprotin3"
+                                            style="@style/TextStyle.CoolveticaRegular"
+                                            android:layout_width="@dimen/_12sdp"
+                                            android:layout_height="@dimen/_12sdp"
+                                            android:layout_below="@+id/txtproti2"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_weight="1"
+
+                                            android:background="@drawable/carbhist_circle"
+
+                                            android:gravity="center"
+
+                                            android:text="0" />
+
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1">
+
+                                        <TextView
+                                            android:id="@+id/txtproti4"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="@dimen/_3sdp"
+                                            android:fontFamily="@font/mulishsemibold"
+                                            android:textSize="12dp"
+                                            android:text="Fibre" />
+
+                                        <TextView
+                                            android:id="@+id/txt_avg_fibre"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/txtproti4"
+                                            android:layout_centerInParent="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:layout_toRightOf="@+id/imfprotin4"
+                                            android:fontFamily="@font/mulishbold"
+                                            android:text="-"
+                                            android:textColor="@color/black"
+                                            android:textStyle="bold"
+                                            android:textSize="14dp"
+
+
+                                            />
+
+                                        <ImageView
+                                            android:id="@+id/imfprotin4"
+                                            style="@style/TextStyle.CoolveticaRegular"
+                                            android:layout_width="@dimen/_12sdp"
+                                            android:layout_height="@dimen/_12sdp"
+                                            android:layout_below="@+id/txtproti4"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_weight="1"
+
+                                            android:background="@drawable/fiberhist_circle"
+
+                                            android:gravity="center"
+
+                                            android:text="0" />
+
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/ll_avg_food"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/border_new_bottom_yellow"
+                                android:orientation="horizontal"
+
+
+                                android:visibility="visible">
+
+                                <ImageView
+                                    android:id="@+id/img_fire"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:src="@drawable/ic_fire" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_toRightOf="@+id/img_fire"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Average Calorie Consumed  "
+                                        android:textColor="@color/white"
+                                        android:textSize="12dp"
+
+
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_avg_food"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+
+                                        android:textSize="14dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recler_food_history"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/size15"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:nestedScrollingEnabled="false"
+                            android:visibility="visible" />
+
+
+                        <TextView
+                            android:id="@+id/txt_no_food"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_gravity="end"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="No records found  "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_small"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

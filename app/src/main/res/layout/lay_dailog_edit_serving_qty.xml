@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="@dimen/size10"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:text="Update Serving Quanity "
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edt_serving_qty"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/size10"
+        android:padding="@dimen/size10"
+        android:inputType="numberDecimal"
+        android:background="@drawable/bg_edit_text_box_border"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_update_serving_qty"
+        android:layout_width="match_parent"
+        style="@style/button_squarebtn"
+        android:text="Update"
+        android:layout_margin="@dimen/size10"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

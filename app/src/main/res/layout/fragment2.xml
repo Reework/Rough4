@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+
+    tools:context=".reework.activity.reeworkerhealth.app.Fragment2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/size10"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you consume Alcohol?"
+                style="@style/TextStyle.CoolveticaRegular"
+
+                android:textColor="@android:color/black"
+                android:padding="@dimen/size5"/>
+
+            <RadioGroup
+                android:id="@+id/rd_group_alcohol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/rd_alcohol_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Yes"/>
+                <RadioButton
+                    android:id="@+id/rd_alcohol_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="No"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size10"
+                android:text="Frequency of alcohol consumption"
+                style="@style/TextStyle.CoolveticaRegular"
+
+                android:textColor="@android:color/black"
+                android:padding="@dimen/size5"/>
+
+            <Spinner
+                android:id="@+id/spinner_alcohol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/size10"
+            android:visibility="gone"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you Smoke?"
+                style="@style/TextStyle.CoolveticaRegular"
+                android:textColor="@android:color/black"
+                android:padding="@dimen/size5"/>
+
+            <RadioGroup
+                android:id="@+id/rd_group_smoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/rd_smoke_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Yes"/>
+                <RadioButton
+                    android:id="@+id/rd_smoke_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="No"/>
+            </RadioGroup>
+
+            <TextView
+                android:text="Smoking frequency :"
+                style="@style/TextStyle.CoolveticaRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:padding="@dimen/size5"/>
+
+            <Spinner
+                android:id="@+id/spinner_smoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:id="@+id/customOptionLL"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

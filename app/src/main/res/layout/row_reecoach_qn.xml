@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_reecoach_qn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size5"
+        style="@style/TextStyle.CoolveticaRegular"
+        android:textColor="@color/black"
+        android:letterSpacing="0.1"
+
+        android:text="This is test question in this app ?"
+        android:layout_margin="@dimen/size5"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:padding="@dimen/size5"
+        android:background="@drawable/bg_edit_text_box_border"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_marginRight="@dimen/size10"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />
+
+    <Button
+        android:id="@+id/btnSave"
+        style="@style/button_Style_cal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/llAdd"
+        android:layout_margin="16dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/llAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/custom_toolbar"
+        tools:layout_editor_absoluteX="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMealTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/profile_btn_bg"
+                android:visibility="visible"
+                android:padding="@dimen/_7sdp"
+                android:drawableEnd="@drawable/ic_appointment_time"
+
+
+                android:text="Select Meal Time"
+                android:drawableRight="@drawable/ic_appointment_time" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMealTypeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/profile_btn_bg"
+                android:drawableEnd="@drawable/arrow_down_grey"
+                android:padding="@dimen/_7sdp"
+
+                android:text="Meal Type"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@drawable/bkgr_view_line_light" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/size10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_uom_measurement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/profile_btn_bg"
+                android:padding="@dimen/_7sdp"
+                android:drawableEnd="@drawable/arrow_down_grey"
+
+                android:text="Select Measurement" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@drawable/bkgr_view_line_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvMeals"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_7sdp"
+                        android:drawableEnd="@drawable/arrow_down_grey"
+                        android:background="@drawable/profile_btn_bg"
+
+                        android:text="Please wait data is Loading....." />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:id="@+id/ivRemove"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_remove_circle" />
+
+                    <EditText
+                        android:id="@+id/tvQty"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:hint="0.00"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:inputType="numberDecimal"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:padding="@dimen/_7sdp"
+                        android:background="@drawable/bg_light_box_border"
+                        android:textColor="@color/colorPremiumBlack"
+                        android:textSize="@dimen/text_normal" />
+
+                    <ImageView
+                        android:id="@+id/ivAdd"
+                        android:layout_width="0dp"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="24dp"
+                        android:layout_weight=".3"
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_add_circle" />
+
+                    <TextView
+                        android:id="@+id/tvAdd"
+                        style="@style/button_Style_cal_Selector"
+                        android:layout_width="0dp"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/_7sdp"
+                        android:text="Add"
+                        android:textColor="@color/colorPremiumWhite" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:background="@drawable/bkgr_view_line_light" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

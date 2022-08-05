@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreyLight_BgListView"
+    tools:context=".reework.activity.RemindersListActivity">
+
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />
+
+    <Button
+        android:id="@+id/buttonSubmit_Reminders"
+        style="@style/button_Style_cal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listView_RemindersList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonSubmit_Reminders"
+        android:layout_below="@id/custom_toolbar"
+        android:background="@color/colorGreyLight_BgListView"
+        android:divider="@color/colorGreyLight_BgListView"
+        android:dividerHeight="5dp"
+        android:listSelector="@color/colorTransparent"
+        android:overScrollMode="never"
+        android:paddingBottom="4dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp"
+        android:scrollbars="none"
+        tools:listitem="@layout/list_row_reminder" />
+
+</RelativeLayout>

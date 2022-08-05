@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.Mobikwik:Android-SDK:3.13@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d9bbabdec0ea83d72ae072c1c4ef08a5/jetified-Android-SDK-3.13/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d9bbabdec0ea83d72ae072c1c4ef08a5/jetified-Android-SDK-3.13/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d9bbabdec0ea83d72ae072c1c4ef08a5/jetified-Android-SDK-3.13/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

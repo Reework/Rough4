@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ana_bg"
+
+    android:orientation="vertical"
+    tools:context=".reework.activity.AnalysisModule.activity.MyAnalysisActivity">
+
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bkgr_view_line_light" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_5sdp"
+
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+
+                app:columnCount="2">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+
+                    app:layout_columnWeight="1"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_15sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardBackgroundColor="@android:color/holo_green_light"
+
+
+                    android:layout_height="@dimen/height_grid_layout_item"
+
+
+                    >
+                    <RelativeLayout
+                        android:id="@+id/rlReescore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+
+                        android:background="@drawable/custom_shadow"
+                        app:layout_columnWeight="1"
+                        android:padding="@dimen/_10sdp"
+
+
+
+                        android:elevation="@dimen/_10sdp"
+                        app:layout_gravity="fill_horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:maxLines="2"
+                            android:id="@+id/txtrescore"
+                            android:text="My Reescore (PWS-Personal Wellness Score)"
+                            android:textAlignment="center"
+                            android:singleLine="true"
+                            android:letterSpacing="0.1"
+                            style="@style/TextStyle.CoolveticaRegular"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:ellipsize="marquee"
+
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/size40"
+                            android:layout_height="@dimen/size40"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/reescore_white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+
+                    app:layout_columnWeight="1"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+
+
+                    android:layout_height="@dimen/height_grid_layout_item"
+
+
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/rlNutrition"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_grid_layout_item"
+                        android:background="@drawable/custom_shadow"
+                        app:layout_columnWeight="1"
+                        app:layout_gravity="fill_horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:maxLines="2"
+                            android:letterSpacing="0.1"
+                            style="@style/TextStyle.CoolveticaRegular"
+                            android:text="Macro Nutrients"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/nutrition_white" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+
+                    app:layout_columnWeight="1"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_15sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+
+
+                    android:layout_height="@dimen/height_grid_layout_item">
+                    <RelativeLayout
+                        android:id="@+id/rlCaloriesConsumption"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_grid_layout_item"
+
+                        android:background="@drawable/custom_shadow"
+                        app:layout_columnWeight="1"
+                        app:layout_gravity="fill_horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_CaloriesConsumption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:singleLine="true"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:ellipsize="marquee"
+                            android:letterSpacing="0.1"
+                            style="@style/TextStyle.CoolveticaRegular"
+                            android:text="Trend Calories Consumption"
+
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/size40"
+                            android:layout_height="@dimen/size40"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/calories_white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+
+                    app:layout_columnWeight="1"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_15sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+
+
+                    android:layout_height="@dimen/height_grid_layout_item">
+                    <RelativeLayout
+                        android:id="@+id/rlMyActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_grid_layout_item"
+                        android:background="@drawable/custom_shadow"
+                        app:layout_columnWeight="1"
+                        app:layout_gravity="fill_horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:maxLines="2"
+                            android:text="Activity Discipline"
+                            android:textAlignment="center"
+                            android:letterSpacing="0.1"
+                            style="@style/TextStyle.CoolveticaRegular"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/size40"
+                            android:layout_height="@dimen/size40"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/activity_white" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+
+                    app:layout_columnWeight="1"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_15sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+
+
+                    android:layout_height="@dimen/height_grid_layout_item">
+                    <RelativeLayout
+                        android:id="@+id/rlWater"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_grid_layout_item"
+                        android:background="@drawable/custom_shadow"
+                        app:layout_columnWeight="1"
+                        app:layout_gravity="fill_horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_trend_water"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:text="Trend Water Consumption"
+                            android:textAlignment="center"
+                            android:singleLine="true"
+                            android:letterSpacing="0.1"
+                            style="@style/TextStyle.CoolveticaRegular"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:ellipsize="marquee"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/size40"
+                            android:layout_height="@dimen/size40"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/water_white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+
+                    app:layout_columnWeight="1"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_15sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+
+
+                    android:layout_height="@dimen/height_grid_layout_item">
+                    <RelativeLayout
+                        android:id="@+id/rlSleep"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_grid_layout_item"
+                        android:background="@drawable/custom_shadow"
+                        app:layout_columnWeight="1"
+                        app:layout_gravity="fill_horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:maxLines="2"
+                            android:text="Trend Sleep Quota"
+                            android:textAlignment="center"
+                            android:letterSpacing="0.1"
+                            style="@style/TextStyle.CoolveticaRegular"
+                            android:textColor="@color/white"
+
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/size40"
+                            android:layout_height="@dimen/size40"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/sleep_white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+
+                    app:layout_columnWeight="1"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_15sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+
+
+                    android:layout_height="@dimen/height_grid_layout_item">
+                    <RelativeLayout
+                        android:id="@+id/rlStress"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_grid_layout_item"
+                        android:background="@drawable/custom_shadow"
+                        app:layout_columnWeight="1"
+                        app:layout_gravity="fill_horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:maxLines="2"
+                            android:text="Mind"
+                            android:letterSpacing="0.1"
+                            style="@style/TextStyle.CoolveticaRegular"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/size40"
+                            android:layout_height="@dimen/size40"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/mind_white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+
+                    app:layout_columnWeight="1"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_15sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+
+
+                    android:layout_height="@dimen/height_grid_layout_item">
+                    <RelativeLayout
+                        android:id="@+id/rlweightsanalysis"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_grid_layout_item"
+                        android:background="@drawable/custom_shadow"
+                        app:layout_columnWeight="1"
+                        android:visibility="visible"
+                        app:layout_gravity="fill_horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:maxLines="2"
+                            android:text="Weight"
+                            android:letterSpacing="0.1"
+                            style="@style/TextStyle.CoolveticaRegular"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/size40"
+                            android:layout_height="@dimen/size40"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/weight_scale_white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+
+                    app:layout_columnWeight="1"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_15sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+
+
+                    android:layout_height="@dimen/height_grid_layout_item">
+
+                    <RelativeLayout
+                        android:id="@+id/rlReeplan"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_grid_layout_item"
+                        android:background="@drawable/custom_shadow"
+                        app:layout_columnWeight="1"
+
+                        android:visibility="visible"
+                        app:layout_gravity="fill_horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:maxLines="2"
+                            android:letterSpacing="0.1"
+                            style="@style/TextStyle.CoolveticaRegular"
+                            android:text="Sleep Discipline"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/size40"
+                            android:layout_height="@dimen/size40"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/sleep_white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+
+                    app:layout_columnWeight="1"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_15sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+
+
+
+                    android:layout_height="@dimen/height_grid_layout_item">
+                    <RelativeLayout
+                        android:id="@+id/rlBloodReport"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_grid_layout_item"
+                        app:layout_columnWeight="1"
+
+                        android:background="@drawable/custom_shadow"
+
+                        android:visibility="visible"
+                        app:layout_gravity="fill_horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:maxLines="2"
+                            android:text="Food Discipline"
+                            android:textAlignment="center"
+                            android:letterSpacing="0.1"
+                            style="@style/TextStyle.CoolveticaRegular"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/size40"
+                            android:layout_height="@dimen/size40"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/food_white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+
+                android:layout_margin="@dimen/_5sdp"
+                app:cardElevation="@dimen/_15sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                app:cardBackgroundColor="@android:color/holo_green_light"
+
+
+                android:layout_height="@dimen/height_grid_layout_item"
+
+
+                >
+                <RelativeLayout
+                    android:id="@+id/rlReeevaluate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:background="@drawable/custom_shadow"
+                    app:layout_columnWeight="1"
+                    android:padding="@dimen/_10sdp"
+
+
+
+                    android:elevation="@dimen/_10sdp"
+                    app:layout_gravity="fill_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:maxLines="2"
+                        android:gravity="center"
+                        android:text="Reevaluate"
+                        android:textAlignment="center"
+                        android:singleLine="true"
+                        android:letterSpacing="0.1"
+                        style="@style/TextStyle.CoolveticaRegular"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:ellipsize="marquee"
+
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/size40"
+                        android:layout_height="@dimen/size40"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/reescore_white" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

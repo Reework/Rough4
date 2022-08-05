@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".reework.activity.AppoinmentModule.activity.ServiceAppointmentActivity">
+
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bkgr_button_green_no_radius"
+        >
+        <RadioGroup
+            android:id="@+id/radioGroup_sleep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="@dimen/size8"
+            android:padding="@dimen/size3"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/rd_button_reecoach"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/cutom_rect_radio"
+                android:layout_weight="1"
+                android:button="@null"
+                android:padding="@dimen/size5"
+                android:gravity="center"
+                android:checked="true"
+                android:text="  Reecoach  " />
+
+            <RadioButton
+                android:id="@+id/rd_button_path"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:padding="@dimen/size5"
+                android:background="@drawable/cutom_rect_radio"
+                android:gravity="center"
+                android:layout_marginRight="15dp"
+                android:button="@null"
+                android:text="Pathologist" />
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_appointemnt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/no_internet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/custom_toolbar"
+            layout="@layout/no_internet_screen"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/buttonScheduleAppointment"
+                android:layout_below="@id/custom_toolbar"
+                android:background="@color/colorPremiumWhite"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rel_appointment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/lg"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/reeplan"
+                        />
+
+                    <TextView
+                        style="@style/TextStyle.CoolveticaRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/lg"
+                        android:id="@+id/hddd"
+
+                        android:layout_centerVertical="true"
+                        android:text="Schedule Appointments"
+                        android:textColor="@color/colorPremiumBlack"
+                        android:layout_toEndOf="@+id/lg" />
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:id="@+id/buttonScheduleAppointment"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/fab_bg"
+                        android:layout_alignParentEnd="true">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+
+                            android:src="@drawable/ic_add_black_24dp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtNoData"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:dividerHeight="5dp"
+                    android:text="No Appointments for the day."
+                    android:textColor="@color/black_overlay_dark"
+                    android:textStyle="bold"
+                    android:visibility="invisible"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvAppoinments"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:divider="@color/white"
+                    android:dividerHeight="5dp"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    android:visibility="gone"
+                    android:layout_weight="1"/>
+
+
+                <Button
+                    android:id="@+id/buttonScheduleAppointments"
+                    style="@style/button_Style_cal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Schedule Appointment"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

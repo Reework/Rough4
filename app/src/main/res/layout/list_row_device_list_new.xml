@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/size10"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/img_device_image"
+        android:layout_width="@dimen/size76"
+        android:padding="@dimen/size10"
+        android:src="@drawable/defaultmedicine"
+        android:layout_height="@dimen/size76"/>
+    <TextView
+        android:id="@+id/txt_device_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fibit"
+        android:layout_marginLeft="@dimen/size15"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_small"
+        android:layout_gravity="center_vertical"/>
+
+</LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_select_bca_plan"
+            android:layout_width="wrap_content"
+            android:text="Select Plan "
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:padding="@dimen/size5"
+            android:textColor="@android:color/white"
+
+            android:layout_alignParentStart="true"
+
+            android:background="@color/colorGreen4"
+            android:layout_margin="@dimen/size8"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txt_View_bca_details"
+            android:layout_width="wrap_content"
+            android:text="View Plan Details"
+            android:padding="@dimen/size5"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/white"
+
+            android:background="@color/colorGreen4"
+            android:layout_margin="@dimen/size8"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

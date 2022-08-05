@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_margin="@dimen/size10">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="@dimen/size10"
+        android:layout_margin="@dimen/size10"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/img_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:textSize="@dimen/_16sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/size6"
+                android:singleLine="true"
+                android:background="@drawable/squarebtn"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+
+
+                android:text="Health and Wellness"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/coolvetica_regular"
+                android:id="@+id/txt_plan_name"/>
+
+            <TextView
+
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="@dimen/size10"
+
+                android:id="@+id/txt_plan_description"
+                android:textStyle="bold"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/coolvetica_regular"
+                android:text="It will provide personal willness score which is a scientic approach.any defiecieny is this score will be provided with advisores"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>

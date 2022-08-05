@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />
+
+    <include
+        android:id="@+id/no_internet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/custom_toolbar"
+        layout="@layout/no_internet_screen"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/custom_toolbar"
+        android:visibility="visible"
+        android:layout_above="@+id/buttonScheduleRemindwer"
+        android:orientation="vertical">
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:id="@+id/img_logo_reminder"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:src="@drawable/reeplan" />-->
+
+<!--            <TextView-->
+<!--                style="@style/TextStyle.CoolveticaRegular"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_toRightOf="@+id/img_logo_reminder"-->
+<!--                android:text="All Reminders"-->
+<!--                android:textColor="@color/colorPremiumBlack" />-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:id="@+id/buttonScheduleAppointment"-->
+<!--                android:background="@drawable/fab_bg"-->
+<!--                android:layout_alignParentRight="true">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="34dp"-->
+<!--                    android:layout_height="34dp"-->
+
+<!--                    android:src="@drawable/ic_add_black_24dp" />-->
+<!--            </LinearLayout>-->
+
+<!--        </RelativeLayout>-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:visibility="visible"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/lg"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/reminderallnew"
+                />
+
+            <TextView
+                style="@style/TextStyle.CoolveticaRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/lg"
+                android:id="@+id/hddd"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:text=" All Reminders"
+                android:textColor="@color/colorPremiumBlack"
+                android:layout_toEndOf="@+id/lg" />
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:id="@+id/buttonScheduleReminder"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/fab_bg"
+                android:layout_alignParentEnd="true">
+
+                <ImageView
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+
+                    android:src="@drawable/ic_add_black_24dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/txt_no_reminder"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/icon_my_reminders" />
+
+                <TextView
+                    style="@style/TextStyle.CoolveticaRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="25dp"
+                    android:text="Set your reminder"
+                    android:textColor="@color/colorPremiumBlack" />
+
+
+
+
+
+
+
+         </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+
+            android:background="@color/white"
+            android:divider="@color/white"
+            android:dividerHeight="5dp"
+            app:spanCount="2"
+            android:visibility="visible"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonScheduleRemindwer"
+        style="@style/button_Style_cal"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:text="Schedule Your Reminder"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/relLay_MyReminder_AddClock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/custom_toolbar"
+        android:visibility="gone"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/labelScheduleReminder"
+            style="@style/TextStyle.CoolveticaRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="No reminders to show"
+            android:textColor="@color/colorPremiumBlack" />
+
+        <ImageView
+            android:id="@+id/imageView_ScheduleReminder_AddClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@id/labelScheduleReminder"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_my_reminders" />
+    </RelativeLayout>
+
+</RelativeLayout>

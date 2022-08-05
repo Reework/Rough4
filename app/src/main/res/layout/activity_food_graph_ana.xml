@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorInterpretation_ViewMore"
+
+    android:orientation="vertical"
+>
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/labelMyProgress"
+            style="@style/TextStyle.CoolveticaRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Progress"
+            android:textColor="@color/colorPremiumWhite" />
+
+        <Spinner
+            android:id="@+id/spinner_Weight_Months"
+            style="@style/MySpinnerWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/spinner_padding_right"
+            android:prompt="@string/select_month"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:layout_margin="@dimen/size5"
+        android:background="@color/colorInterpretation_ViewMore"
+        android:id="@+id/linegraph"/>
+
+</LinearLayout>
+
+    <!--    <?xml version="1.0" encoding="utf-8"?>-->
+    <!--<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:fillViewport="true"-->
+    <!--android:scrollbars="horizontal"-->
+    <!--tools:context=".reework.activity.AnalysisModule.activity.coloriesanalysis.ColoriesAnalysisActivty">-->
+
+    <!--<LinearLayout-->
+    <!--    android:layout_width="1000dp"-->
+    <!--    android:layout_height="wrap_content">-->
+
+    <!--    <com.github.mikephil.charting.charts.LineChart-->
+    <!--        android:layout_width="1000dp"-->
+    <!--        android:layout_height="500dp"-->
+    <!--        android:id="@+id/linegraph"/>-->
+    <!--</LinearLayout>-->
+
+
+
+
+    <!--</HorizontalScrollView>-->

@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPremiumWhite"
+    android:orientation="vertical"
+    tools:context="com.shamrock.reework.activity.InterpretationModule.activity.InterpretationActivity">
+
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />
+
+    <!--    <include-->
+
+    <!--        layout="@layout/content_interpretation" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="#F3F6F8"
+                android:padding="@dimen/_10sdp">
+
+
+
+                <RelativeLayout
+                    android:id="@+id/r1"
+                    android:layout_below="@+id/linear_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.hookedonplay.decoviewlib.DecoView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:visibility="visible"
+                        android:id="@+id/dynamicArcView"/>
+
+                    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                        android:layout_width="match_parent"
+                        android:id="@+id/progress_circular_consumed"
+                        android:layout_height="150dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone"
+                        app:cpb_progressbar_color="#58C960"
+                        app:cpb_progressbar_width="3dp" />
+                    <TextView
+
+                        android:id="@+id/txt_user_newScore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center"
+                        android:visibility="visible"
+                        android:autoSizeMaxTextSize="20dp"
+                        android:layout_below="@+id/healthnew"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="0dp"
+                        android:text="95"
+                        android:textColor="#231F20"
+                        android:textStyle="bold"
+                        android:textSize="33dp"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/healthnew"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="17dp"
+
+                        android:orientation="horizontal">
+                        <ImageView
+
+                            android:src="@drawable/healthnew"
+                            android:layout_width="60dp"
+
+                            android:layout_height="60dp"/>
+
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+
+                <TextView
+
+                    android:id="@+id/txt_viewsteps12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:autoSizeMaxTextSize="20dp"
+                    android:layout_below="@+id/r1"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Enjoy Good Health"
+                    android:textColor="#231F20"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    />
+                <TextView
+
+                    android:id="@+id/txt_rescore_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:autoSizeMaxTextSize="20dp"
+                    android:layout_below="@+id/txt_viewsteps12"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="0dp"
+                    android:text="Anoop Kumar"
+                    android:textColor="#00D5BC"
+                    android:textStyle="bold"
+                    android:textSize="32sp"
+                    />
+
+                <TextView
+
+                    android:id="@+id/txt_viewsteps1234"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:autoSizeMaxTextSize="20dp"
+                    android:layout_below="@+id/txt_rescore_name"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Health is Wealth"
+                    android:textColor="#7B7979"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    />
+
+            </RelativeLayout>
+</LinearLayout>
+
+
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="#F3F6F8"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+
+                    android:id="@+id/txt_viewste12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="start"
+                    android:visibility="visible"
+
+
+
+                    android:layout_marginTop="0dp"
+                    android:text="Health Summary  "
+                    android:textColor="#231F20"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    />
+
+                <TextView
+
+                    android:id="@+id/txt_health_summery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="start"
+                    android:visibility="visible"
+
+
+                    android:layout_marginTop="0dp"
+                    android:text="At first, I would like to congratulate you for showing consciousness towards your health  enrolling in REEwork. “The lockdown has served the purpose of putting a check on coronavirus"
+                    android:layout_below="@+id/txt_viewste12"
+                    android:textColor="#263238"
+                    android:textStyle="bold"
+                    android:textSize="12dp"
+                    />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/lay_view"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+
+                >
+
+
+
+
+
+            </RelativeLayout>
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+
+            <!--                android:layout_marginTop="@dimen/_5sdp"-->
+
+            <!--                android:orientation="vertical">-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyler_wellness"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:scrollbars="vertical"
+                android:layout_marginTop="-20dp"
+                />
+
+            <!--            </LinearLayout>-->
+
+
+            <Button
+                android:id="@+id/buttonSubmit_MyProfiless"
+                style="@style/button_Style_cal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Next"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_marginLeft="10dp"-->
+    <!--        android:layout_marginRight="10dp">-->
+
+
+    <!--        - -->
+
+    <!--&lt;!&ndash;        <ScrollView&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_above="@id/imgViewNext_Interpretation"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_marginLeft="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_marginRight="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:overScrollMode="never"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:scrollbars="none">&ndash;&gt;-->
+
+
+    <!--            - -->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_above="@+id/imgViewNext_Interpretation"-->
+    <!--                android:orientation="vertical">-->
+
+
+    <!--                - -->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:background="@drawable/bkgr_button_green_extra_radius"-->
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:layout_marginEnd="@dimen/size10"-->
+    <!--                    android:layout_marginStart="@dimen/size10"-->
+    <!--                    android:orientation="vertical"-->
+    <!--                    android:padding="10dp">-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/txt_user_newScore"-->
+    <!--                        style="@style/TextStyle.CoolveticaRegular"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_marginTop="@dimen/_5sdp"-->
+    <!--                        android:gravity="center"-->
+    <!--                        android:text="50"-->
+    <!--                        android:textAppearance="?android:attr/textAppearanceLarge"-->
+    <!--                        android:textColor="@color/colorPremiumWhite"-->
+    <!--                        android:textSize="@dimen/stpi_default_bottom_indicator_width"-->
+    <!--                        android:textStyle="bold" />-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/tvUser"-->
+    <!--                        style="@style/TextStyle.CalibriLight"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:textColor="@color/colorPremiumWhite"-->
+    <!--                        android:visibility="gone" />-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/txt_rescore_name"-->
+    <!--                        style="@style/TextStyle.CalibriLight"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="sunit"-->
+    <!--                        android:textColor="@color/colorPremiumWhite"-->
+    <!--                        android:textSize="@dimen/text_large"-->
+    <!--                        android:textStyle="bold" />-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/txt_lable_2"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="Embrace for your Reescore!!!"-->
+    <!--                        android:textColor="@color/colorPremiumWhite" />-->
+
+    <!--                </LinearLayout>-->
+
+
+    <!--                - -->
+
+    <!--                <LinearLayout-->
+
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginTop="10dp"-->
+
+    <!--                    android:gravity="center_horizontal"-->
+    <!--                    android:orientation="vertical">-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/txt_health_summery"-->
+    <!--                        style="@style/TextStyle.CoolveticaRegular"-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="@dimen/_140sdp"-->
+    <!--                        android:background="@drawable/bkgr_button_green_extra_radius"-->
+    <!--                        android:scrollbars="vertical"-->
+    <!--                        android:letterSpacing="0.1"-->
+    <!--                        android:layout_marginEnd="@dimen/size10"-->
+    <!--                        android:layout_marginStart="@dimen/size10"-->
+    <!--                        android:padding="@dimen/size5"-->
+    <!--                        android:text="Health Summary"-->
+    <!--                        android:textColor="@color/white" />-->
+
+    <!--                    <androidx.recyclerview.widget.RecyclerView-->
+    <!--                        android:id="@+id/recyler_wellness"-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_marginTop="@dimen/size10"-->
+    <!--                        android:layout_height="match_parent"-->
+    <!--                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />-->
+
+
+    <!--                    - -->
+
+    <!--                    <LinearLayout-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:orientation="vertical"-->
+    <!--                        android:visibility="gone">-->
+
+
+    <!--                        - -->
+
+    <!--                        <RelativeLayout-->
+    <!--                            android:layout_width="match_parent"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:background="@drawable/bg_light_box_border"-->
+    <!--                            android:padding="5dp">-->
+
+    <!--                            <TextView-->
+    <!--                                android:id="@+id/text_Interpretation_BodyWeight"-->
+    <!--                                android:layout_width="wrap_content"-->
+    <!--                                android:layout_height="wrap_content"-->
+    <!--                                android:text="Body Weight"-->
+    <!--                                android:textColor="@color/colorPremiumBlack" />-->
+
+    <!--                            &lt;!&ndash;https://github.com/natasam/Android-PercentProgressBar-lib&ndash;&gt;-->
+
+
+    <!--                            &lt;!&ndash;https://github.com/techery/progresshint?utm_source=android-arsenal.com&utm_medium=referral&utm_campaign=1932&ndash;&gt;-->
+
+
+    <!--                            <ProgressBar-->
+    <!--                                android:id="@+id/progressBarBodyWeight"-->
+    <!--                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+    <!--                                android:layout_width="match_parent"-->
+    <!--                                android:layout_height="5dp"-->
+    <!--                                android:layout_below="@id/text_Interpretation_BodyWeight"-->
+    <!--                                android:progressDrawable="@drawable/progressbar" />-->
+
+    <!--                            <TextView-->
+    <!--                                android:id="@+id/text_Interpretation_BodyWeight_Total"-->
+    <!--                                android:layout_width="wrap_content"-->
+    <!--                                android:layout_height="wrap_content"-->
+    <!--                                android:layout_below="@id/progressBarBodyWeight"-->
+    <!--                                android:layout_alignParentEnd="true"-->
+    <!--                                android:layout_alignParentRight="true"-->
+    <!--                                android:textSize="12sp" />-->
+
+    <!--                            <TextView-->
+    <!--                                android:id="@+id/text_Interpretation_BodyWeight_Progress"-->
+    <!--                                android:layout_width="wrap_content"-->
+    <!--                                android:layout_height="wrap_content"-->
+    <!--                                android:layout_below="@id/progressBarBodyWeight"-->
+    <!--                                android:layout_alignParentBottom="true"-->
+    <!--                                android:text="70-80kg"-->
+    <!--                                android:textColor="@color/colorRobinEggBlue"-->
+    <!--                                android:textSize="12sp" />-->
+
+    <!--                        </RelativeLayout>-->
+
+
+    <!--                        - -->
+
+    <!--                        <RelativeLayout-->
+    <!--                            android:layout_width="match_parent"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:layout_marginTop="5dp"-->
+    <!--                            android:background="@drawable/bg_light_box_border"-->
+    <!--                            android:padding="5dp">-->
+
+    <!--                            <TextView-->
+    <!--                                android:id="@+id/text_Interpretation_BMI"-->
+    <!--                                android:layout_width="wrap_content"-->
+    <!--                                android:layout_height="wrap_content"-->
+    <!--                                android:text="BMI"-->
+    <!--                                android:textColor="@color/colorPremiumBlack" />-->
+
+    <!--                            <ProgressBar-->
+    <!--                                android:id="@+id/progressBarBMI"-->
+    <!--                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+    <!--                                android:layout_width="match_parent"-->
+    <!--                                android:layout_height="5dp"-->
+    <!--                                android:layout_below="@id/text_Interpretation_BMI"-->
+    <!--                                android:progressDrawable="@drawable/progressbar" />-->
+
+    <!--                            <TextView-->
+    <!--                                android:id="@+id/text_Interpretation_BMI_Total"-->
+    <!--                                android:layout_width="wrap_content"-->
+    <!--                                android:layout_height="wrap_content"-->
+    <!--                                android:layout_below="@id/progressBarBMI"-->
+    <!--                                android:layout_alignParentEnd="true"-->
+    <!--                                android:layout_alignParentRight="true"-->
+    <!--                                android:textSize="12sp" />-->
+
+    <!--                            <TextView-->
+    <!--                                android:id="@+id/text_Interpretation_BMI_Progress"-->
+    <!--                                android:layout_width="wrap_content"-->
+    <!--                                android:layout_height="wrap_content"-->
+    <!--                                android:layout_below="@id/progressBarBMI"-->
+    <!--                                android:layout_alignParentBottom="true"-->
+    <!--                                android:textColor="@color/colorRobinEggBlue"-->
+    <!--                                android:textSize="12sp" />-->
+
+    <!--                        </RelativeLayout>-->
+
+
+    <!--                        - -->
+
+    <!--                        <RelativeLayout-->
+    <!--                            android:layout_width="match_parent"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:layout_marginTop="5dp"-->
+    <!--                            android:background="@drawable/bg_light_box_border"-->
+    <!--                            android:padding="5dp">-->
+
+    <!--                            <TextView-->
+    <!--                                android:id="@+id/text_Interpretation_CalorieIntake"-->
+    <!--                                android:layout_width="wrap_content"-->
+    <!--                                android:layout_height="wrap_content"-->
+    <!--                                android:text="Calorie Intake"-->
+    <!--                                android:textColor="@color/colorPremiumBlack" />-->
+
+    <!--                            <ProgressBar-->
+    <!--                                android:id="@+id/progressBarCalorieIntake"-->
+    <!--                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+    <!--                                android:layout_width="match_parent"-->
+    <!--                                android:layout_height="5dp"-->
+    <!--                                android:layout_below="@id/text_Interpretation_CalorieIntake"-->
+    <!--                                android:progressDrawable="@drawable/progressbar" />-->
+
+    <!--                            <TextView-->
+    <!--                                android:id="@+id/text_Interpretation_CalorieIntake_Total"-->
+    <!--                                android:layout_width="wrap_content"-->
+    <!--                                android:layout_height="wrap_content"-->
+    <!--                                android:layout_below="@id/progressBarCalorieIntake"-->
+    <!--                                android:layout_alignParentEnd="true"-->
+    <!--                                android:layout_alignParentRight="true"-->
+    <!--                                android:textSize="12sp" />-->
+
+    <!--                            <TextView-->
+    <!--                                android:id="@+id/text_Interpretation_CalorieIntake_Progress"-->
+    <!--                                android:layout_width="wrap_content"-->
+    <!--                                android:layout_height="wrap_content"-->
+    <!--                                android:layout_below="@id/progressBarCalorieIntake"-->
+    <!--                                android:layout_alignParentBottom="true"-->
+    <!--                                android:textColor="@color/colorRobinEggBlue"-->
+    <!--                                android:textSize="12sp" />-->
+
+    <!--                        </RelativeLayout>-->
+
+
+    <!--                        - -->
+
+    <!--                        <RelativeLayout-->
+    <!--                            android:layout_width="match_parent"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:layout_marginTop="5dp"-->
+    <!--                            android:background="@drawable/bg_light_box_border"-->
+    <!--                            android:padding="5dp">-->
+
+    <!--                            <TextView-->
+    <!--                                android:id="@+id/text_Interpretation_Sleep"-->
+    <!--                                android:layout_width="wrap_content"-->
+    <!--                                android:layout_height="wrap_content"-->
+    <!--                                android:text="Sleep"-->
+    <!--                                android:textColor="@color/colorPremiumBlack" />-->
+
+    <!--                            <ProgressBar-->
+    <!--                                android:id="@+id/progressBarSleep"-->
+    <!--                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+    <!--                                android:layout_width="match_parent"-->
+    <!--                                android:layout_height="5dp"-->
+    <!--                                android:layout_below="@id/text_Interpretation_Sleep"-->
+    <!--                                android:progressDrawable="@drawable/progressbar" />-->
+
+    <!--                            <TextView-->
+    <!--                                android:id="@+id/text_Interpretation_Sleep_Total"-->
+    <!--                                android:layout_width="wrap_content"-->
+    <!--                                android:layout_height="wrap_content"-->
+    <!--                                android:layout_below="@id/progressBarSleep"-->
+    <!--                                android:layout_alignParentEnd="true"-->
+    <!--                                android:layout_alignParentRight="true"-->
+    <!--                                android:textSize="12sp" />-->
+
+    <!--                            <TextView-->
+    <!--                                android:id="@+id/text_Interpretation_Sleep_Progress"-->
+    <!--                                android:layout_width="wrap_content"-->
+    <!--                                android:layout_height="wrap_content"-->
+    <!--                                android:layout_below="@id/progressBarSleep"-->
+    <!--                                android:layout_alignParentLeft="true"-->
+    <!--                                android:layout_alignParentBottom="true"-->
+    <!--                                android:layout_centerHorizontal="true"-->
+    <!--                                android:textColor="@color/colorRobinEggBlue"-->
+    <!--                                android:textSize="12sp" />-->
+
+    <!--                        </RelativeLayout>-->
+
+    <!--                    </LinearLayout>-->
+
+    <!--                </LinearLayout>-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/txt_activty_level"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginTop="@dimen/size20"-->
+    <!--                    android:text="Activity Level"-->
+    <!--                    android:textColor="@color/colorPremiumBlack"-->
+    <!--                    android:textStyle="bold"-->
+    <!--                    android:visibility="gone" />-->
+
+
+    <!--                - -->
+
+    <!--                <RadioGroup-->
+    <!--                    android:id="@+id/RadioGroupActivityLevel"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:orientation="vertical"-->
+    <!--                    android:visibility="gone">-->
+
+    <!--                    <RadioButton-->
+    <!--                        android:id="@+id/radioButtonSecondary"-->
+    <!--                        style="@style/MyRadioButtonStyle"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="Sedentary" />-->
+
+    <!--                    <RadioButton-->
+    <!--                        android:id="@+id/radioButtonActive"-->
+    <!--                        style="@style/MyRadioButtonStyle"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="Active" />-->
+
+    <!--                </RadioGroup>-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/txt_smoke"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginTop="@dimen/size20"-->
+    <!--                    android:text="Do You Smoke"-->
+    <!--                    android:textColor="@color/colorPremiumBlack"-->
+    <!--                    android:textStyle="bold"-->
+    <!--                    android:visibility="gone" />-->
+
+
+    <!--                - -->
+
+    <!--                <RadioGroup-->
+    <!--                    android:id="@+id/RadioGroupSmoke"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:orientation="vertical"-->
+    <!--                    android:visibility="gone">-->
+
+    <!--                    <RadioButton-->
+    <!--                        android:id="@+id/radioButtonSmokeNo"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="No" />-->
+
+    <!--                    <RadioButton-->
+    <!--                        android:id="@+id/radioButtonSmokeYes"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="Yes" />-->
+
+    <!--                </RadioGroup>-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/txt_medical_state"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginTop="@dimen/size20"-->
+    <!--                    android:text="Medical State"-->
+    <!--                    android:textColor="@color/colorPremiumBlack"-->
+    <!--                    android:textStyle="bold"-->
+    <!--                    android:visibility="gone" />-->
+
+
+    <!--                - -->
+
+    <!--                <RadioGroup-->
+    <!--                    android:id="@+id/RadioGroupMedicalState"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:orientation="vertical"-->
+    <!--                    android:visibility="gone">-->
+
+    <!--                    <RadioButton-->
+    <!--                        android:id="@+id/radioButtonAcidic"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="Acidic" />-->
+
+    <!--                    <RadioButton-->
+    <!--                        android:id="@+id/radioButtonIncreaseAlkalineFood"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:text="Increase Alkaline Food" />-->
+
+    <!--                </RadioGroup>-->
+
+    <!--            </LinearLayout>-->
+
+    <!--&lt;!&ndash;        </ScrollView>&ndash;&gt;-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/imgViewNext_Interpretation"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:layout_marginBottom="@dimen/_10sdp"-->
+    <!--            android:layout_marginTop="@dimen/_3sdp"-->
+    <!--            android:background="@drawable/btn_viewmore"-->
+    <!--            android:elevation="@dimen/_3sdp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:padding="@dimen/_5sdp"-->
+    <!--            android:text=" View More "-->
+    <!--            android:textColor="@color/black" />-->
+
+    <!--    </RelativeLayout>-->
+
+</LinearLayout>

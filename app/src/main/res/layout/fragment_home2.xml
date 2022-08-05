@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--android:background="@drawable/bkgr_button_green"-->
+
+    <RelativeLayout
+        android:id="@+id/relFragmentToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="5dp"-->
+        <!--android:src="@drawable/user_welcome" />-->
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/labelHome_WishMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bkgr_splash"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="30dp"
+                    android:text="@string/home_good_morning"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPremiumWhite"
+                    android:textSize="20sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/card_main"
+                    app:cardBackgroundColor="@color/colorPremiumWhite"
+                    app:cardCornerRadius="10dp"
+                    android:layout_margin="@dimen/_10sdp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:id="@+id/rel_home_fragment"
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="@dimen/_150sdp">
+
+                            <ImageView
+                                android:id="@+id/img_main_background"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/home_banner"/>
+
+                            <ImageView
+                                android:id="@+id/imgHome_sun"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:scaleType="fitXY"
+                                />
+
+                            <TextView
+                                android:id="@+id/labelHome_LargeMessage"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imgHome_sun"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginRight="25dp"
+                                android:maxLines="3"
+                                android:textStyle="bold"
+
+                                android:justificationMode="inter_word"
+                                android:gravity="center_horizontal"
+                                android:lineSpacingExtra="@dimen/text_view_line_spacing_4dp"
+
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:textColor="@color/colorPremiumWhite"
+                                android:textSize="@dimen/_14sdp" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPremiumWhite"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+
+                    android:layout_marginTop="@dimen/_5sdp"
+
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:visibility="gone"
+
+                            android:orientation="horizontal"
+                            android:layout_margin="@dimen/size4"
+                            android:id="@+id/ll_add_hisktory_record_date"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:id="@+id/txt_date_history"
+                                android:textColor="@android:color/black"
+                                android:text="12-4-4"/>
+                            <ImageView
+                                android:layout_width="34dp"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/size2"
+                                android:src="@drawable/ic_edit" />
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:id="@+id/ll_add_history_record_date"
+                            android:background="@android:color/white"
+
+                            android:layout_height="wrap_content">
+                            <TextView
+                                style="@style/TextStyle.CalibriLight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Today's Status"
+                                android:textAlignment="center"
+                                android:layout_alignParentLeft="true"
+                                android:id="@+id/heaser"
+                                android:layout_marginTop="@dimen/size2"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                                android:textColor="@color/colorPremiumBlack"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="34dp"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/size2"
+                                android:layout_marginTop="@dimen/size2"
+
+                                android:layout_alignParentEnd="true"
+                                android:layout_gravity="right"
+                                android:background="@drawable/bg_light_box_border"
+
+                                android:src="@drawable/ic_edit" />
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            style="@style/TextStyle.CalibriLight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text=""
+                            android:layout_below="@+id/ll_add_history_record_date"
+                            android:id="@+id/txt_header_todays_Status"
+                            android:textAlignment="center"
+
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="@dimen/text_size_13"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constrainFood_Master"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_light_box_border"
+                        >
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:id="@+id/imgHome_Food"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="12dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/foodanimation"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            style="@style/TextStyle.CoolveticaRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="Food"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:id="@+id/txt_food"
+                            android:textColor="@color/colorPremiumBlack"
+                            app:layout_constraintLeft_toRightOf="@id/imgHome_Food"
+                            app:layout_constraintStart_toEndOf="@id/imgHome_Food"
+                            app:layout_constraintTop_toTopOf="@id/imgHome_Food" />
+
+                        <TextView
+                            android:id="@+id/textHome_Food_Total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:visibility="invisible"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            app:layout_constraintTop_toBottomOf="@+id/txt_food"
+
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@id/imgHome_Food"
+                            app:layout_constraintLeft_toRightOf="@id/imgHome_Food"
+                            app:layout_constraintStart_toEndOf="@+id/imgHome_Food" />
+
+                        <ImageView
+                            android:id="@+id/imgHome_AddFood"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:visibility="invisible"
+                            android:background="@drawable/ic_add_plus"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintRight_toRightOf="parent" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:visibility="invisible"
+                            app:layout_constraintRight_toLeftOf="@id/imgHome_AddFood"
+                            tools:ignore="MissingConstraints">
+
+                            <TextView
+                                android:id="@+id/txtCalPer"
+                                style="@style/TextStyle.CoolveticaRegular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/colorPremiumBlack" />
+
+                            <ProgressBar
+                                android:id="@+id/progressBarCal"
+                                style="?android:progressBarStyleHorizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:visibility="invisible"
+                                android:layout_centerVertical="true"
+                                android:progressDrawable="@drawable/bg_progressbar_circle" />
+                        </RelativeLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constrainWater_Master"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3"
+                            android:background="@drawable/bg_light_box_border"
+                            tools:ignore="MissingConstraints">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <pl.droidsonroids.gif.GifImageView
+                                    android:id="@+id/imgHome_Water"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginTop="12dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/wateranimation"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center|start">
+
+                                    <TextView
+                                        android:id="@+id/text"
+                                        style="@style/TextStyle.CoolveticaRegular"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        android:text="Water"
+                                        android:textColor="@color/colorPremiumBlack"/>
+
+                                    <TextView
+                                        android:id="@+id/textHome_Water_Total"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        android:textColor="@color/colorPremiumBlack"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rvGlassess"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginRight="8dp"
+                                    android:orientation="horizontal"
+                                    android:divider="@null" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imgHome_AddWater"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/ic_add_plus"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintRight_toRightOf="parent" />
+
+                        <!--
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginLeft="8dp"
+                                                    android:layout_marginRight="8dp"
+                                                    android:gravity="end"
+                                                    android:orientation="horizontal"
+                                                    app:layout_constraintBottom_toBottomOf="parent"
+                                                    app:layout_constraintLeft_toRightOf="@id/text"
+                                                    app:layout_constraintRight_toLeftOf="@id/imgHome_AddWater"
+                                                    app:layout_constraintTop_toTopOf="parent">
+
+                                                    <ImageView
+                                                        android:id="@+id/imgHome_Glass1"
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_margin="2dp"
+                                                        android:layout_weight="1"
+                                                        android:src="@drawable/water_animation" />
+
+                                                    <ImageView
+                                                        android:id="@+id/imgHome_Glass2"
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_margin="2dp"
+                                                        android:layout_weight="1"
+                                                        android:src="@drawable/water_animation" />
+
+                                                    <ImageView
+                                                        android:id="@+id/imgHome_Glass3"
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_margin="2dp"
+                                                        android:layout_weight="1"
+                                                        android:src="@drawable/water_animation" />
+
+                                                    <ImageView
+                                                        android:id="@+id/imgHome_Glass4"
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_margin="2dp"
+                                                        android:layout_weight="1"
+                                                        android:src="@drawable/water_animation" />
+
+                                                    <ImageView
+                                                        android:id="@+id/imgHome_Glass5"
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_margin="2dp"
+                                                        android:layout_weight="1"
+                                                        android:src="@drawable/water_animation" />
+
+                                                    <ImageView
+                                                        android:id="@+id/imgHome_Glass6"
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_margin="2dp"
+                                                        android:layout_weight="1"
+                                                        android:src="@drawable/water_animation" />
+
+                                                    <ImageView
+                                                        android:id="@+id/imgHome_Glass7"
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_margin="2dp"
+                                                        android:layout_weight="1"
+                                                        android:src="@drawable/water_animation" />
+
+                                                    <ImageView
+                                                        android:id="@+id/imgHome_Glass8"
+                                                        android:layout_width="0dp"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_margin="2dp"
+                                                        android:layout_weight="1"
+                                                        android:src="@drawable/water_animation" />
+
+                                                </LinearLayout>
+                        -->
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constrainSleep_Master"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_light_box_border">
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:id="@+id/imgHome_Sleep"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/sleepaniamtion"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            style="@style/TextStyle.CoolveticaRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="Sleep"
+                            android:textColor="@color/colorPremiumBlack"
+                            app:layout_constraintLeft_toRightOf="@id/imgHome_Sleep"
+                            app:layout_constraintStart_toEndOf="@+id/imgHome_Sleep"
+                            app:layout_constraintTop_toTopOf="@id/imgHome_Sleep" />
+
+                        <TextView
+                            android:id="@+id/textHome_Sleep_Total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:textColor="@color/colorPremiumBlack"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@id/imgHome_Sleep"
+                            app:layout_constraintLeft_toRightOf="@id/imgHome_Sleep"
+                            app:layout_constraintStart_toEndOf="@+id/imgHome_Sleep" />
+
+                        <ImageView
+                            android:id="@+id/imgHome_AddSleep"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/ic_add_plus"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintRight_toRightOf="parent" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:visibility="invisible"
+                            app:layout_constraintRight_toLeftOf="@id/imgHome_AddSleep"
+                            tools:ignore="MissingConstraints">
+
+                            <ImageView
+                                android:id="@+id/imgHome_Sleep_ClockHand"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_clock" />
+
+                            <ProgressBar
+                                android:id="@+id/progressBar_Home_Sleep"
+                                style="?android:progressBarStyleHorizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:layout_centerVertical="true"
+                                android:progressDrawable="@drawable/bg_progressbar_circle" />
+                            <!--android:max="8"-->
+                        </RelativeLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constrainActivity_Master"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_light_box_border">
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:id="@+id/imgHome_Activity"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/activityanimation"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            style="@style/TextStyle.CoolveticaRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="Activities"
+                            android:textColor="@color/colorPremiumBlack"
+                            app:layout_constraintLeft_toRightOf="@id/imgHome_Activity"
+                            app:layout_constraintStart_toEndOf="@+id/imgHome_Activity"
+                            app:layout_constraintTop_toTopOf="@id/imgHome_Activity" />
+
+                        <TextView
+                            android:id="@+id/textHome_Activity_Total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:textColor="@color/colorPremiumBlack"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@id/imgHome_Activity"
+                            app:layout_constraintLeft_toRightOf="@id/imgHome_Activity"
+                            app:layout_constraintStart_toEndOf="@+id/imgHome_Activity" />
+
+                        <ImageView
+                            android:id="@+id/imgHome_AddActivity"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:visibility="invisible"
+                            android:background="@drawable/ic_add_plus"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintRight_toRightOf="parent" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:visibility="invisible"
+                            app:layout_constraintRight_toLeftOf="@id/imgHome_AddActivity"
+                            tools:ignore="MissingConstraints">
+
+                            <ImageView
+                                android:id="@+id/imgHome_Activity_ClockHand"
+                                style="@style/TextStyle.CoolveticaRegular"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_clock" />
+
+                            <ProgressBar
+                                android:id="@+id/progressBar_Home_Activity"
+                                style="?android:progressBarStyleHorizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:layout_centerVertical="true"
+                                android:progressDrawable="@drawable/bg_progressbar_circle" />
+                            <!--android:max="12"-->
+                        </RelativeLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constrainMind_Master"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_light_box_border">
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:id="@+id/imgHome_Mind"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/mindanimation"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            style="@style/TextStyle.CoolveticaRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="Feelings"
+                            android:textColor="@color/colorPremiumBlack"
+                            app:layout_constraintLeft_toRightOf="@id/imgHome_Mind"
+                            app:layout_constraintStart_toEndOf="@+id/imgHome_Mind"
+                            app:layout_constraintTop_toTopOf="@id/imgHome_Mind" />
+
+                        <TextView
+                            android:id="@+id/textHome_Mind_Total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:textColor="@color/colorPremiumBlack"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@id/imgHome_Mind"
+                            app:layout_constraintLeft_toRightOf="@id/imgHome_Mind"
+                            app:layout_constraintStart_toEndOf="@+id/imgHome_Mind" />
+
+                        <ImageView
+                            android:id="@+id/imgHome_AddMind"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:visibility="visible"
+                            android:background="@drawable/ic_add_plus"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintRight_toRightOf="parent" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintRight_toLeftOf="@id/imgHome_AddMind"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/ivMood"
+                                style="@style/TextStyle.CoolveticaRegular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"/>
+                        </RelativeLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constrainweight_Master"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_light_box_border">
+
+                        <ImageView
+                            android:id="@+id/imgHome_weight"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/scale"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginStart="@dimen/size5"
+
+                            app:layout_constraintStart_toEndOf="@+id/imgHome_weight"
+                            app:layout_constraintTop_toTopOf="@id/imgHome_weight"
+                            android:layout_marginLeft="@dimen/size5">
+
+                            <TextView
+                                style="@style/TextStyle.CoolveticaRegular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:text="Weight"
+                                android:textColor="@color/colorPremiumBlack"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/textHome_wt_Total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:textColor="@color/colorPremiumBlack"
+                                android:textSize="12sp"
+                                android:text=""
+                                />
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:id="@+id/imgHome_Addweight"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:visibility="invisible"
+                            android:background="@drawable/ic_add_plus"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintRight_toRightOf="parent" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:visibility="invisible"
+                            tools:ignore="MissingConstraints">
+
+                            <ImageView
+                                android:id="@+id/imgHome_dSleep_ClockHand"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_clock" />
+
+                            <ProgressBar
+                                android:id="@+id/progressBfar_Home_Sleep"
+                                style="?android:progressBarStyleHorizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:layout_centerVertical="true"
+                                android:progressDrawable="@drawable/bg_progressbar_circle" />
+                            <!--android:max="8"-->
+                        </RelativeLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_light_box_border"
+
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Calories Calculation"
+                            android:gravity="center"
+
+                            android:padding="@dimen/size4"
+                            android:textColor="@android:color/black"
+                            style="@style/TextStyle.CoolveticaRegular"
+
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/line_grey_20">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Consumed"
+                                android:gravity="center"
+
+                                android:padding="@dimen/size2"
+                                style="@style/TextStyle.CoolveticaRegular"
+
+                                android:layout_weight="1"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/size2"
+                                android:text="Burnt"
+                                android:gravity="center"
+
+                                style="@style/TextStyle.CoolveticaRegular"
+
+                                android:layout_weight="1"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/size2"
+                                android:gravity="center"
+                                android:text="Net"
+
+                                style="@style/TextStyle.CoolveticaRegular"
+
+                                android:layout_weight="1"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:gravity="center"
+                                android:id="@+id/txt_total_cal_consumed"
+
+                                android:padding="@dimen/size2"
+                                style="@style/TextStyle.CoolveticaRegular"
+
+                                android:layout_weight="1"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/size2"
+                                android:text="0"
+                                android:id="@+id/txt_total_cal_burned"
+                                android:gravity="center"
+
+                                style="@style/TextStyle.CoolveticaRegular"
+
+                                android:layout_weight="1"/>
+
+                            <TextView
+                                android:id="@+id/txt_net_cal_burned"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/size2"
+                                android:gravity="center"
+                                android:text="0"
+
+                                style="@style/TextStyle.CoolveticaRegular"
+
+                                android:layout_weight="1"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:background="@drawable/bg_light_box_border"
+                        android:layout_marginBottom="@dimen/size10">
+
+                        <TextView
+                            android:id="@+id/txt_total_cal_chgonsumed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/size5"
+                            android:textColor="@color/colorPremiumBlack"
+                            style="@style/TextStyle.CoolveticaRegular"
+                            android:layout_marginLeft="@dimen/size10"
+                            android:text="Total Calories Consumed : 0"
+                            android:layout_marginBottom="@dimen/size2"/>
+                        <TextView
+                            android:id="@+id/txt_total_cal_buhrned"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/size2"
+                            android:textColor="@color/colorPremiumBlack"
+                            style="@style/TextStyle.CoolveticaRegular"
+                            android:layout_marginLeft="@dimen/size10"
+                            android:text="Total Calories Burned    : 0"
+
+                            android:layout_marginBottom="@dimen/size2"/>
+
+                        <TextView
+                            android:id="@+id/txt_net_cal_burnfed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/size2"
+                            android:textColor="@color/colorPremiumBlack"
+                            style="@style/TextStyle.CoolveticaRegular"
+                            android:visibility="visible"
+                            android:layout_marginLeft="@dimen/size10"
+                            android:text="Net Colories              :"
+
+                            android:layout_marginBottom="@dimen/size5">
+
+                        </TextView>
+
+
+
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorGreyWhite"
+                    android:padding="10dp">
+
+                    <TableRow
+                        android:paddingBottom="10dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cvHealth"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/colorPremiumWhite"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="0dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_margin="10dp"
+                                    android:src="@drawable/ic_home_health_monitoring" />
+
+                                <TextView
+                                    style="@style/TextStyle.CalibriLight"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="REEmonitor"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                    android:textColor="@color/colorPremiumBlack"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cvReport"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/colorPremiumWhite"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="0dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_margin="10dp"
+                                    android:src="@drawable/ic_home_reeport" />
+
+                                <TextView
+                                    style="@style/TextStyle.CalibriLight"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="REEports"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                    android:textColor="@color/colorPremiumBlack"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cvReevaluate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/colorPremiumWhite"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="0dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_margin="10dp"
+                                    android:src="@drawable/ic_home_reevaluate" />
+
+                                <TextView
+                                    style="@style/TextStyle.CalibriLight"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="REEvaluate"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                    android:textColor="@color/colorPremiumBlack"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cvReeplan"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/colorPremiumWhite"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="0dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_margin="10dp"
+                                    android:src="@drawable/ic_analysis_my_reescore" />
+
+                                <TextView
+                                    style="@style/TextStyle.CalibriLight"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="REEplan"
+                                    android:visibility="gone"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                    android:textColor="@color/colorPremiumBlack"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    style="@style/TextStyle.CalibriLight"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="REEscore"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                    android:textColor="@color/colorPremiumBlack"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

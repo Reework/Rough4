@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPremiumWhite"
+    tools:context=".reework.activity.WelcomeSubscriptionActivity">
+
+    <!--<include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />-->
+
+    <TextView
+        android:id="@+id/textWelcomeBold"
+        style="@style/TextStyle.CoolveticaRegular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congratulation!!"
+        android:textColor="@color/colorPremiumBlack"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/congratulation"
+        app:layout_constraintBottom_toTopOf="@id/textWelcomeBold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:lineSpacingExtra="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPremiumBlack"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/textWelcomeBold" />
+
+    <View
+        android:layout_width="45dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorGreen4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textWelcomeMessage" />
+
+    <Button
+        android:id="@+id/buttonTakeMeThroughApp"
+        style="@style/button_Style_cal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Take Me Through App"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

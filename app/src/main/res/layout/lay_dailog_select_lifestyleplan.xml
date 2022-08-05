@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/gggg"
+
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Select lifestyle actvity"
+            android:padding="@dimen/size10"
+            android:gravity="center"
+            android:textStyle="bold"
+
+            android:textColor="@color/white"
+            android:layout_alignParentTop="true"
+
+            android:background="@color/dark_grey_blue"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/img_close_wekly"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/size5"
+            android:src="@drawable/ic_clear_white_24dp"
+
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/reclyer_select_lifesyle_shotcut"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/gggg"
+        android:background="@android:color/white"
+        android:layout_above="@+id/btn_add_shotcut_weekly"
+
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/btn_add_shotcut_weekly"
+        android:layout_width="match_parent"
+        style="@style/button_squarebtn"
+        android:text="Submit"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

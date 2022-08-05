@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulishsemibold"
+            android:layout_marginStart="@dimen/size15"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_large"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Your nutrition"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulishbold"
+            android:textSize="@dimen/text_x_xlarge"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="Do you have any food allergy?"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:alpha="0.6"
+            android:fontFamily="@font/mulishbold"
+            android:text="Your twin  will avoid recommending foods with known allergens,but always check for sensitive ingredients?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_large"
+            android:textStyle="bold" />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reclycler_foodalergy"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/white"
+            android:nestedScrollingEnabled="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/ll_remark_foodallergy_condition"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulishbold"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:textColor="@color/black"
+                android:alpha="0.6"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:text="Please enter the remarks "/>
+
+
+
+            <EditText
+                android:id="@+id/edt_remark_foodallergy_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size15"
+                android:layout_marginTop="@dimen/size15"
+                android:layout_marginStart="@dimen/size15"
+                android:layout_marginEnd="@dimen/size15"
+                android:hint="Remark"
+                android:background="@drawable/bg_black_box"
+
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/mulishregular"
+                android:textColor="@color/black"
+
+                />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/size15"
+            android:layout_marginTop="@dimen/size15"
+            android:layout_marginStart="@dimen/size15"
+            android:layout_marginEnd="@dimen/size15"
+            android:text="Remark"
+            android:visibility="invisible"
+            android:background="@drawable/bg_black_box"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mulishregular"
+            android:textColor="@color/black"
+
+            />
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rel_foodallegy_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_done"
+            android:padding="@dimen/_10sdp"
+            android:visibility="gone"
+            android:layout_margin="@dimen/_15sdp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes, please specify the name in remarks"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/mulishregular"
+                android:textColor="@color/black"
+
+                />
+            <ImageView
+                android:id="@+id/img_foodallergy_yes"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/done"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/_25sdp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rel_foodallegy_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_black_box"
+            android:padding="@dimen/_10sdp"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/size15"
+            android:layout_marginStart="@dimen/_15sdp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/mulishregular"
+                android:textColor="@color/black"
+
+                />
+            <ImageView
+                android:id="@+id/img_foodallergy_no"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/done"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/_25sdp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_food_allergy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulishbold"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:textColor="@color/black"
+                android:alpha="0.6"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:text="Please enter the remarks "/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_black_box"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/size15"
+                android:layout_marginEnd="@dimen/size15"
+                android:layout_marginStart="@dimen/_15sdp">
+                <EditText
+                    android:id="@+id/edt_food_allergy_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Remark"
+                    android:background="@color/white"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/mulishregular"
+                    android:textColor="@color/black"
+
+                    />
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="@dimen/_25sdp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

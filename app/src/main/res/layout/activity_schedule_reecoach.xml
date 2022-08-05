@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPremiumWhite"
+    tools:context=".reework.activity.ScheduleReecoachActivity">
+
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/custom_toolbar"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgMyReecoach_Photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/congratulation" />
+
+        <TextView
+            android:id="@+id/textWelcomeBold"
+            style="@style/TextStyle.CoolveticaRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emma Watson"
+            android:textColor="@color/colorPremiumBlack"
+            android:textSize="26sp" />
+
+
+        <TextView
+            android:id="@+id/textWelcomeMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:lineSpacingExtra="5dp"
+            android:text="I am your Reecoach!!!"
+            android:textAlignment="center"
+            android:textColor="@color/colorPremiumBlack"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="45dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorGreen4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="5dp"
+            android:text="I will be assisting you to reework your mind and body for you have  only one life to live."
+            android:textAlignment="center"
+            android:textColor="@color/colorPremiumBlack"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="5dp"
+            android:text="Let's meet and discuss about your health more and reboot your mind and body."
+            android:textAlignment="center"
+            android:textColor="@color/colorPremiumBlack"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonTakeMeThroughApp"
+        style="@style/button_Style_cal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Take Me Through App"
+        android:textStyle="bold"
+        />
+</RelativeLayout>

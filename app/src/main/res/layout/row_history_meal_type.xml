@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_AllMeal_TypeName"
+            style="@style/TextStyle.CoolveticaRegular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Oats Idli"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/colorPremiumBlack" />
+
+        <!--        <ProgressBar-->
+        <!--            android:id="@+id/progressBarAllMeal"-->
+        <!--            style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="4dp"-->
+        <!--            android:layout_gravity="center_vertical"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:progressBackgroundTint="#DDDDDD"-->
+        <!--            android:progress="10"-->
+        <!--            android:progressDrawable="@drawable/progressbar" />-->
+        <!--        -->
+    </LinearLayout>
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal">-->
+
+    <!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_width="0dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:text="Calories Consumed"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:textSize="@dimen/text_tiny" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;        <RelativeLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_width="0dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_gravity="center_vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_weight="1">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:id="@+id/text_AllMeal_Cal_Min"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:text="900"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:textStyle="bold"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:textColor="@color/black" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:id="@+id/text_AllMeal_Cal_Max"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_alignParentRight="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:text="1500"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:textStyle="bold"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_marginRight="@dimen/_5sdp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:textColor="@color/colorPremiumBlack" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;        </RelativeLayout>&ndash;&gt;-->
+    <!--    </LinearLayout>-->
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyler_meal_list"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="@dimen/size2"
+        android:layout_marginBottom="@dimen/size3"
+
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/text_AllMeal_Cal_Min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="900"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/text_AllMeal_Cal_Max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="1500"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textColor="@color/colorPremiumBlack" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calories Consumed"
+                android:textStyle="bold"
+                android:textSize="11dp"
+                android:textColor="#99231F20" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Total Calories"
+                android:textStyle="bold"
+                android:textSize="11dp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textColor="#99231F20"/>
+
+        </RelativeLayout>
+
+
+
+        <ProgressBar
+            android:id="@+id/progressBarAllMeal"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:progressBackgroundTint="#DDDDDD"
+            android:progress="10"
+            android:progressDrawable="@drawable/progressbar" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/v"
+        android:layout_below="@+id/txt_msg"
+        android:background="#0D231F20"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:elevation="4dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+
+
+</LinearLayout>

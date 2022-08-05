@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_large"
+        android:textColor="@android:color/black"
+        android:text="Log Out"
+        android:padding="@dimen/size12"
+        style="@style/TextStyle.CoolveticaRegular"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:text="Are you sure you want to Logout ?"
+        android:padding="@dimen/size12"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/size20"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_cacel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:layout_marginBottom="@dimen/size20"
+
+            android:textColor="@android:color/white"
+
+            style="@style/button_Style_cal"
+
+            android:layout_marginEnd="@dimen/size8"
+            android:layout_marginStart="@dimen/size8"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Logout"
+            android:layout_marginBottom="@dimen/size20"
+
+            android:textColor="@android:color/white"
+            style="@style/button_Style_red"
+            android:layout_marginEnd="@dimen/size8"
+            android:layout_marginStart="@dimen/size8"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

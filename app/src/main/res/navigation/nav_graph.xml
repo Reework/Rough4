@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashActivity">
+
+    <activity
+        android:id="@+id/splashActivity"
+        android:name="com.shamrock.reework.SplashActivity"
+        android:label="activity_splash"
+        tools:layout="@layout/activity_splash">
+        <action
+            android:id="@+id/action_splashActivity_to_healthParameters1Fragment"
+            app:destination="@id/loginActivity" />
+    </activity>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.shamrock.reework.activity.LoginModule.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login">
+        <action
+            android:id="@+id/action_loginActivity_to_otpDialogFragment"
+            app:destination="@id/otpDialogFragment" />
+        <action
+            android:id="@+id/action_loginActivity_to_registerActivity"
+            app:destination="@id/registerActivity" />
+    </activity>
+    <fragment
+        android:id="@+id/otpDialogFragment"
+        android:name="com.shamrock.reework.activity.LoginModule.OtpDialogFragment"
+        android:label="dialog_fragment_otp"
+        tools:layout="@layout/dialog_fragment_otp">
+        <action
+            android:id="@+id/action_otpDialogFragment_to_welcomeActivity"
+            app:destination="@id/welcomeActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.shamrock.reework.activity.HomeModule.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_homeActivity"
+            app:destination="@id/homeActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.shamrock.reework.activity.HomeModule.activity.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home">
+        <action
+            android:id="@+id/action_homeActivity_to_healthParametersActivity"
+            app:destination="@id/healthParametersActivity" />
+        <action
+            android:id="@+id/action_homeActivity_to_myReecoachProfileActivity"
+            app:destination="@id/myReecoachProfileActivity" />
+        <action
+            android:id="@+id/action_homeActivity_to_weightActivity"
+            app:destination="@id/weightActivity" />
+        <action
+            android:id="@+id/action_homeActivity_to_myMedicinesActivity"
+            app:destination="@id/myMedicinesActivity" />
+        <action
+            android:id="@+id/action_homeActivity_to_bloodReportActivity"
+            app:destination="@id/bloodReportActivity" />
+        <action
+            android:id="@+id/action_homeActivity_to_scheduleBloodTestActivity"
+            app:destination="@id/scheduleBloodTestActivity" />
+    </activity>
+    <activity
+        android:id="@+id/healthParametersActivity"
+        android:name="com.shamrock.reework.activity.HealthModule.activity.HealthParametersActivity"
+        android:label="activity_health_parameters"
+        tools:layout="@layout/activity_health_parameters">
+        <action
+            android:id="@+id/action_healthParametersActivity_to_healthParameters1Fragment"
+            app:destination="@id/healthParameters1Fragment" />
+    </activity>
+    <fragment
+        android:id="@+id/healthParameters1Fragment"
+        android:name="com.shamrock.reework.activity.HealthModule.fragments.HealthParameters1Fragment"
+        android:label="fragment_health_parameters1"
+        tools:layout="@layout/fragment_health_parameters1">
+        <action
+            android:id="@+id/action_healthParameters1Fragment_to_healthParameters2Fragment"
+            app:destination="@id/healthParameters2Fragment" />
+        <action
+            android:id="@+id/action_healthParameters1Fragment_to_healthParameterDialogFragment"
+            app:destination="@id/healthParameterDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/healthParameters2Fragment"
+        android:name="com.shamrock.reework.activity.HealthModule.fragments.HealthParameters2Fragment"
+        android:label="fragment_health_parameters2"
+        tools:layout="@layout/fragment_health_parameters2">
+        <action
+            android:id="@+id/action_healthParameters2Fragment_to_healthParameters3Fragment"
+            app:destination="@id/healthParameters3Fragment" />
+    </fragment>
+    <activity
+        android:id="@+id/registerActivity"
+        android:name="com.shamrock.reework.activity.RegistrationModule.activity.RegisterActivity"
+        android:label="activity_register"
+        tools:layout="@layout/activity_register" />
+    <fragment
+        android:id="@+id/healthParameters3Fragment"
+        android:name="com.shamrock.reework.activity.HealthModule.fragments.HealthParameters3Fragment"
+        android:label="fragment_health_parameters3"
+        tools:layout="@layout/fragment_health_parameters3">
+        <action
+            android:id="@+id/action_healthParameters3Fragment_to_healthParameterGoodJobActivity"
+            app:destination="@id/healthParameterGoodJobActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/healthParameterGoodJobActivity"
+        android:name="com.shamrock.reework.activity.HealthModule.activity.HealthParameterGoodJobActivity"
+        android:label="activity_health_parameter_thank_you"
+        tools:layout="@layout/activity_health_parameter_thank_you"></activity>
+    <fragment
+        android:id="@+id/healthParameterDialogFragment"
+        android:name="com.shamrock.reework.activity.HealthModule.dialog.HealthParameterDialogFragment"
+        android:label="dialog_fragment_health"
+        tools:layout="@layout/dialog_fragment_health" />
+    <activity
+        android:id="@+id/myReecoachProfileActivity"
+        android:name="com.shamrock.reework.activity.MyRecoachModule.activity.MyReecoachProfileActivity"
+        android:label="activity_my_reecoach_profile"
+        tools:layout="@layout/activity_my_reecoach_profile" />
+    <activity
+        android:id="@+id/weightActivity"
+        android:name="com.shamrock.reework.activity.WeightModule.activity.WeightActivity"
+        android:label="activity_weight"
+        tools:layout="@layout/activity_weight" />
+    <activity
+        android:id="@+id/myMedicinesActivity"
+        android:name="com.shamrock.reework.activity.MedicineModule.activity.MyMedicinesActivity"
+        android:label="activity_my_medicines"
+        tools:layout="@layout/activity_my_medicines">
+        <action
+            android:id="@+id/action_myMedicinesActivity_to_addMedicineDialogFragment"
+            app:destination="@id/addMedicineDialogFragment" />
+    </activity>
+    <fragment
+        android:id="@+id/addMedicineDialogFragment"
+        android:name="com.shamrock.reework.activity.MedicineModule.dialog.AddMedicineDialogFragment"
+        android:label="dialog_fragment_add_medicine"
+        tools:layout="@layout/dialog_fragment_add_medicine" />
+    <activity
+        android:id="@+id/bloodReportActivity"
+        android:name="com.shamrock.reework.activity.BloodTestModule.activity.AllReportActivity"
+        android:label="activity_blood_report"
+        tools:layout="@layout/activity_blood_report" />
+    <activity
+        android:id="@+id/scheduleBloodTestActivity"
+        android:name="com.shamrock.reework.activity.BloodTestModule.activity.ScheduleBloodTestActivity"
+        android:label="activity_schedule_blood_test"
+        tools:layout="@layout/activity_schedule_blood_test">
+        <action
+            android:id="@+id/action_myMedicinesActivity_to_SBT_ConfirmationFragment"
+            app:destination="@id/SBT_ConfirmationFragment" />
+    </activity>
+    <fragment
+        android:id="@+id/SBT_ConfirmationFragment"
+        android:name="com.shamrock.reework.activity.BloodTestModule.dialog.SBT_ConfirmationFragment"
+        android:label="dialog_fragment_sbt"
+        tools:layout="@layout/dialog_fragment_sbt" />
+    <activity
+        android:id="@+id/welcomeActivity"
+        android:name="com.shamrock.reework.activity.WelcomeModule.WelcomeActivity"
+        android:label="activity_welcome"
+        tools:layout="@layout/activity_welcome">
+        <action
+            android:id="@+id/action_otpDialogFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </activity>
+
+</navigation>

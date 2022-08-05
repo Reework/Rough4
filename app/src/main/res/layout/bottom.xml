@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/black"
+
+                android:layout_height="@dimen/_200sdp">
+                <ImageView
+                    android:id="@+id/img_close_food_dailog"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/ic_back_food"/>
+                <ImageView
+                    android:id="@+id/img_add_recipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.6"
+
+
+
+
+                    android:src="@drawable/deafault_recipe"
+                    android:scaleType="fitXY"
+                    />
+                <TextView
+                    android:id="@+id/txt_recipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:textSize="@dimen/text_large"
+                    android:textColor="@color/white"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textStyle="bold"
+                style="@style/TextStyle.CalibriLight"
+                android:textSize="@dimen/text_small"
+
+                android:textColor="@color/black"
+                android:text=" Pick the Quantity of Food"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.yanzhenjie.wheel.WheelView
+                    android:id="@+id/wheal_list"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="@dimen/_20sdp"
+
+
+
+
+
+                    android:layout_height="@dimen/_80sdp"/>
+
+                <com.yanzhenjie.wheel.WheelView
+                    android:id="@+id/wheal_list_uom"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_margin="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+
+
+
+
+
+                    android:layout_height="@dimen/_80sdp"/>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_10sdp"
+                style="@style/TextStyle.CalibriLight"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_small"
+                android:text="  Nutrition Information per 100 gm"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_tiny"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+
+                        android:text="Protein"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_weight="1">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/myCardView"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            app:cardCornerRadius="@dimen/_25sdp"
+                            android:background="@color/colorReescore_BlueYellow"
+
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            >
+                            <ImageView
+                                android:id="@+id/roundedimag"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_protein"
+                                android:padding="@dimen/_10sdp"
+                                android:background="@color/colorReescore_BlueYellow"
+
+                                android:scaleType="centerCrop"
+
+
+                                />
+                        </androidx.cardview.widget.CardView>
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/txt_protin_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        style="@style/TextStyle.CalibriLight"
+
+                        android:textSize="@dimen/text_tiny"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="3 g"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_tiny"
+                        android:textStyle="bold"
+
+
+                        android:text="Fibre"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_weight="1">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            app:cardCornerRadius="@dimen/_25sdp"
+                            android:background="@color/dark_red"
+
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_fibre"
+                                android:padding="@dimen/_10sdp"
+                                android:background="@android:color/holo_green_light"
+
+                                android:scaleType="centerCrop"
+
+
+                                />
+                        </androidx.cardview.widget.CardView>
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/txt_fibre_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        style="@style/TextStyle.CalibriLight"
+                        android:textSize="@dimen/text_tiny"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="3 g"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_tiny"
+                        android:textStyle="bold"
+
+
+                        android:text="Fats"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_weight="1">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            app:cardCornerRadius="@dimen/_25sdp"
+                            android:background="@color/colorReescore_BlueYellow"
+
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_fats"
+                                android:padding="@dimen/_10sdp"
+                                android:background="@color/dark_red"
+
+                                android:scaleType="centerCrop"
+
+
+                                />
+                        </androidx.cardview.widget.CardView>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txt_fat_value"
+                        style="@style/TextStyle.CalibriLight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="3 g"
+                        android:textSize="@dimen/text_tiny"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_tiny"
+                        android:textStyle="bold"
+
+
+                        android:text="Carbs"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_weight="1">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            app:cardCornerRadius="@dimen/_25sdp"
+                            android:background="@color/colorReescore_BlueYellow"
+
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_carb"
+                                android:padding="@dimen/_10sdp"
+                                android:background="@color/haldi"
+
+                                android:scaleType="centerCrop"
+
+
+                                />
+                        </androidx.cardview.widget.CardView>
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/txt_carb_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        style="@style/TextStyle.CalibriLight"
+                        android:textSize="@dimen/text_tiny"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="3 g"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/btn_data_to_meal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:text="Add to Breakfast"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            style="@style/button_squarebtn"
+            android:textStyle="bold"
+            android:layout_marginRight="@dimen/size10"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginBottom="@dimen/size30"
+            android:textSize="@dimen/text_normal"
+
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:layout_gravity="end"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

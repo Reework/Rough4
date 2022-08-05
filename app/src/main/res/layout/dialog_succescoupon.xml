@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3490DC">
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/img_ordersuccess"
+        android:layout_width="match_parent"
+        android:src="@drawable/ordersuccess"
+        android:layout_height="@dimen/_400sdp"/>
+    <TextView
+        android:id="@+id/txt_coupon_successmsg"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/img_ordersuccess"
+        style="@style/TextStyle.CoolveticaRegular"
+        android:layout_margin="@dimen/_12sdp"
+        android:textSize="@dimen/text_large"
+        android:textColor="@color/white"
+        android:justificationMode="inter_word"
+        android:gravity="center"
+        android:text="Congratulations!! You have successfully applied the coupon code. Now total amount is XXXXX"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:background="@drawable/squarebtn_haldi"
+        android:layout_margin="@dimen/_12sdp"
+        android:padding="@dimen/_12sdp"
+        android:id="@+id/btn_proceedpayment"
+        android:layout_alignParentBottom="true"
+        android:text="Proceed"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        style="@style/button_Style_cal"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkgr_splash"
+>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:adjustViewBounds="true"
+        android:paddingTop="25dp"
+        android:id="@+id/logos"
+        android:src="@drawable/logo" />
+
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_headthy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:lineSpacingExtra="4dp"
+            android:textAlignment="center"
+            android:text="Stay Healthy"
+            android:textStyle="bold"
+
+            android:layout_below="@+id/logos"
+            android:gravity="center"
+
+
+            android:textColor="@color/colorPremiumWhite"
+            android:textSize="@dimen/size40" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_20"
+
+            android:padding="@dimen/size10"
+
+
+            android:text="Thank you"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColor="@color/colorBlue1"
+            android:gravity="center"
+            android:padding="@dimen/size15"
+            android:id="@+id/btn_close"
+            android:text="Go to Re-Login">
+
+        </TextView>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

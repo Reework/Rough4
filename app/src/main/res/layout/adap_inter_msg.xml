@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/bg_rounded_corner"
+
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+
+
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/_6sdp"
+                android:layout_height="@dimen/_6sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:visibility="gone"
+                android:background="@drawable/squarebtn_new_color" />
+
+            <TextView
+                android:id="@+id/tvMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:alpha="0.6"
+
+
+                style="@style/TextStyle.mulishsemibold"
+                android:text="You are highly obese or (you fall in grade 1-obesity)"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_tiny"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_ingradient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/mulishregular"
+android:textStyle="italic"
+            android:textColor="@color/colorPremiumBlack"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:textSize="@dimen/text_small"/>
+
+    </LinearLayout>
+</LinearLayout>

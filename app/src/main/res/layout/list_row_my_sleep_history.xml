@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/ll_mind"
+    android:background="#F3F6F8"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp"
+
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_weight="0.8"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/lay"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/sleep_d"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Date :"
+                                android:padding="@dimen/size5"
+
+
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black"
+
+                                android:layout_alignParentTop="true"/>
+
+                            <TextView
+                                android:id="@+id/sleep_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+
+                                android:layout_marginEnd="@dimen/size5"
+                                android:layout_marginBottom="@dimen/size5"
+                                android:layout_toLeftOf="@+id/img_edit_sleep_new"
+
+                                android:text="kdjjdene"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/txt_header"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="5"
+                            android:layout_below="@+id/lay"
+                            android:layout_alignParentStart="true"
+                            android:padding="@dimen/size5"
+                            android:text="Actual Mind Status"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/text_tiny"
+                            android:fontFamily="@font/mulishsemibold"
+                            android:alpha="0.6"
+                            android:layout_toLeftOf="@+id/lay_edit"
+
+
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true" />
+
+
+                        <TextView
+                            android:id="@+id/txt_actual_sleep_hous"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="5"
+                            android:layout_below="@+id/txt_header"
+                            android:layout_alignParentStart="true"
+                            android:padding="@dimen/size5"
+                            android:textStyle="bold"
+                            android:layout_toLeftOf="@+id/lay_edit"
+
+
+                            android:textColor="@android:color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true" />
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_weight="1.2"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:gravity="bottom"
+                        android:layout_gravity="bottom"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/lay_edit"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="23dp"
+
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/bg_green_button">
+
+                            <TextView
+                                android:id="@+id/img_edit_sleep_new"
+
+                                style="@style/TextStyle.mulishsemibold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_3sdp"
+                                android:gravity="center"
+
+                                android:padding="3dp"
+                                android:text="Edit"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12dp"
+
+
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+
+                            android:layout_width="wrap_content"
+                            android:background="@drawable/bg_pink_button"
+
+                            android:id="@+id/lay_current"
+
+                            android:layout_height="23dp">
+
+                            <TextView
+                                android:id="@+id/img_delete_water_power"
+                                android:layout_width="wrap_content"
+
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_3sdp"
+                                android:textColor="#FFFFFF"
+                                android:padding="3dp"
+
+                                style="@style/TextStyle.mulishsemibold"
+                                android:text="Delete"
+                                android:gravity="center"
+                                android:textSize="12dp"
+
+                                android:layout_height="wrap_content"
+                                />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_schedule_sleep_hous"
+                android:layout_width="match_parent"
+                android:padding="@dimen/size5"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textColor="@android:color/black"
+                android:layout_margin="@dimen/size5"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.yanzhenjie:wheel:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fc9ffa039a70c309508c38e02eabe563/jetified-wheel-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fc9ffa039a70c309508c38e02eabe563/jetified-wheel-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fc9ffa039a70c309508c38e02eabe563/jetified-wheel-1.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yanzhenjie/wheel/1.0.0/e584e20542f4129f65ea9df9acd19664ca5e98d5/wheel-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yanzhenjie/wheel/1.0.0/1d8fd627a657bc9d29a163b0e36e8919cef8d9cf/wheel-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,1170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/parent"
+
+    tools:context=".reework.fragment.MasterMindFragment">
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />
+
+
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_white"
+                android:visibility="visible"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="0dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_ing"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="0dp">
+
+                        <Button
+                            android:id="@+id/btn_weekly"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+
+                            android:background="@color/white_recipe"
+                            android:text="Weekly"
+                            android:textAllCaps="false"
+
+
+                            android:textColor="@color/black_recipe"
+                            android:textStyle="bold" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="0dp">
+
+                        <Button
+                            android:id="@+id/btn_3months"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+
+                            android:background="@color/white"
+                            android:text="3 Months"
+                            android:textAllCaps="false"
+
+
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="0dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+
+
+                    <androidx.cardview.widget.CardView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="0dp">
+
+                        <Button
+                            android:id="@+id/btn_6months"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+
+                            android:background="@color/white_recipe"
+                            android:text="6 Months"
+                            android:textAllCaps="false"
+
+
+                            android:textColor="@color/black_recipe"
+                            android:textStyle="bold" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_nut"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="0dp">
+
+                        <Button
+                            android:id="@+id/btn_selectdate"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+
+                            android:background="@color/white"
+                            android:text="Select Date"
+                            android:textAllCaps="false"
+
+
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/bg_edit_text_box_border"
+                        android:layout_weight="1"
+                        android:layout_marginRight="3dp"
+                        android:padding="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/txt_show_sleep_from"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size10"
+                            android:text="From Date"
+                            android:textColor="#99231F20"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_17sdp"
+                            android:layout_height="@dimen/_17sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end"
+                            android:gravity="end"
+
+
+                            android:src="@drawable/grey_date" />
+
+                    </RelativeLayout>
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/bg_edit_text_box_border"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:padding="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/txt_show_sleep_to"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size10"
+                            android:text="To Date"
+                            android:textColor="#99231F20"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_17sdp"
+                            android:layout_height="@dimen/_17sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginLeft="@dimen/size15"
+                            android:src="@drawable/red_date" />
+
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_marginBottom="@dimen/size10"
+
+                android:layout_marginTop="@dimen/size20"
+                android:layout_marginLeft="@dimen/size10">
+
+                <RelativeLayout
+                    android:id="@+id/txt_header"
+                    android:background="@color/white"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size10"
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/labelMyProgress"
+                        style="@style/TextStyle.CoolveticaRegular"
+                        android:background="@drawable/round_rect_green"
+                        android:text=" Export "
+                        android:padding="@dimen/size4"
+                        android:visibility="gone"
+                        android:textColor="@color/black_overlay"
+                        />
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/sendicon"
+                        android:id="@+id/img_send"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/_15sdp"
+
+                        android:layout_gravity="end"
+                        />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_sleep_date"
+                    android:background="@color/white"
+
+                    android:layout_marginTop="@dimen/size5"
+                    android:layout_below="@+id/txt_header">
+
+                    <ImageView
+                        android:layout_width="@dimen/_17sdp"
+                        android:layout_height="@dimen/_17sdp"
+                        android:visibility="gone"
+                        android:src="@drawable/grey_date"/>
+
+                    <TextView
+                        android:id="@+id/txt_show_sleep_from1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size10"
+                        android:text=""/>
+
+                    <ImageView
+                        android:layout_width="@dimen/_17sdp"
+                        android:layout_height="@dimen/_17sdp"
+                        android:layout_marginLeft="@dimen/size15"
+                        android:visibility="gone"
+                        android:src="@drawable/red_date"/>
+
+                    <TextView
+                        android:id="@+id/txt_show_sleep_to1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size10"
+                        android:text=""/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:layout_below="@+id/txt_header"
+                    android:layout_marginTop="5dp"
+
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/layout_open"
+                        android:layout_width="wrap_content"
+                        android:visibility="visible"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:src="@drawable/imgopen"
+                            android:id="@+id/imgopen"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:layout_gravity="end"
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_close"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/imgclose"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/imgclose"
+                            android:visibility="visible"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:layout_gravity="end"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size5"
+                android:visibility="gone"
+                android:background="@drawable/list_divider_line_grey_20_full_width"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/labelMyProgress1"
+                    style="@style/TextStyle.CoolveticaRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Export "
+                    android:padding="@dimen/size4"
+                    android:visibility="visible"
+                    android:layout_marginTop="@dimen/size5"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/size5"
+                    android:layout_marginBottom="@dimen/size5"
+
+                    android:background="@drawable/round_rect_green"
+
+                    android:textColor="@color/black_overlay" />
+
+                <Spinner
+                    android:id="@+id/spinner_Weight_Months"
+                    style="@style/MySpinnerWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size5"
+
+                    android:paddingRight="@dimen/spinner_padding_right"
+                    android:prompt="@string/select_month"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bkgr_button_green_no_radius"
+
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mind"
+                    android:visibility="gone"
+
+                    android:layout_gravity="center"
+
+
+                    android:padding="@dimen/size12"
+                    android:textSize="@dimen/text_size_20"
+                    android:textStyle="bold"
+                    android:gravity="center"
+
+
+                    android:textColor="@color/white"/>
+                <RadioGroup
+                    android:id="@+id/radioGroup_sleep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:gravity="center_horizontal"
+                    android:layout_margin="@dimen/size8"
+                    android:padding="@dimen/size3"
+                    android:orientation="horizontal"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/rd_button_mind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/custom_btn_radio_bg_food"
+                        android:button="@null"
+                        android:checked="true"
+                        android:text="Current Status" />
+
+                    <RadioButton
+                        android:id="@+id/rd_button_mind_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/custom_btn_radio_bg_food"
+                        android:button="@null"
+                        android:text="      History     " />
+
+
+
+
+
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+
+
+            <ViewFlipper
+                android:id="@+id/vp_mind"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/size5">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPremiumWhite"
+                    >
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:layout_above="@+id/buttonSubmitMind"
+                        android:layout_alignParentTop="true"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:id="@+id/linLay_Mind_Submit"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorInterpretation_ViewMore"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="gone">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/mind_banner" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginRight="20dp"
+                                        android:gravity="center_horizontal"
+                                        android:lineSpacingExtra="@dimen/text_view_line_spacing_4dp"
+                                        android:text="This will track your mood for the day and makes sure that you feel positive and your stress is at bay with the help reminders and mindfulness tips."
+                                        android:textColor="@color/colorPremiumWhite"
+                                        android:textSize="@dimen/text_large"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layout_padding"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/TextStyle.CoolveticaRegular"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:visibility="gone"
+                                        android:text="How are you feeling today?"
+                                        android:textColor="@color/colorPremiumBlack" />
+
+                                    <RadioGroup
+                                        android:id="@+id/RadioGroupfeeling"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:visibility="gone"
+                                        android:layout_marginTop="5dp"
+                                        android:orientation="horizontal">
+
+                                        <RadioButton
+                                            android:id="@+id/radioButtonHappy"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:background="@color/colorTransparent"
+                                            android:button="@null"
+                                            android:checked="true"
+                                            android:onClick="onClick"
+                                            android:drawableTop="@drawable/custom_btn_radio_happy"
+                                            android:gravity="center"
+                                            android:text="Happy" />
+
+                                        <RadioButton
+                                            android:id="@+id/radioButtonAnxious"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:background="@color/colorTransparent"
+                                            android:button="@null"
+                                            android:visibility="gone"
+                                            android:onClick="onClick"
+                                            android:drawableTop="@drawable/custom_btn_radio_anxious"
+                                            android:gravity="center"
+                                            android:text="Anxious" />
+
+                                        <RadioButton
+                                            android:id="@+id/radioButtonStressed"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:background="@color/colorTransparent"
+                                            android:button="@null"
+                                            android:onClick="onClick"
+                                            android:drawableTop="@drawable/custom_btn_radio_stressed"
+                                            android:gravity="center"
+                                            android:text="Stress" />
+
+                                        <RadioButton
+                                            android:id="@+id/radioButtonConfused"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:background="@color/colorTransparent"
+                                            android:button="@null"
+                                            android:onClick="onClick"
+                                            android:drawableTop="@drawable/custom_btn_radio_confused"
+                                            android:gravity="center"
+                                            android:text="Neutral" />
+
+                                    </RadioGroup>
+
+                                    <TextView
+                                        style="@style/TextStyle.CoolveticaRegular"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:visibility="gone"
+                                        android:text="Do you binge on large quantity when you are stressed?"
+                                        android:textColor="@color/colorPremiumBlack" />
+
+                                    <RadioGroup
+                                        android:id="@+id/RadioGroupMind"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:visibility="gone"
+                                        android:orientation="vertical">
+
+                                        <RadioButton
+                                            android:id="@+id/radioButtonMindYes"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:checked="true"
+                                            android:onClick="onClick"
+                                            android:text="Yes" />
+
+                                        <RadioButton
+                                            android:id="@+id/radioButtonMindNo"
+                                            android:layout_width="wrap_content"
+                                            android:onClick="onClick"
+                                            android:layout_height="wrap_content"
+                                            android:text="No" />
+
+                                        <RadioButton
+                                            android:id="@+id/radioButtonMindSometime"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:onClick="onClick"
+                                            android:text="Sometime" />
+
+                                    </RadioGroup>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="10dp"
+                                        android:orientation="vertical">
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@color/colorInterpretation_ViewMore"
+                                            >
+
+                                            <TextView
+                                                android:id="@+id/labelMoodTracking"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Feelings Tracking"
+                                                android:layout_marginTop="2dp"
+                                                android:layout_marginLeft="@dimen/size4"
+                                                android:visibility="gone"
+                                                android:textColor="@color/colorGreen3"
+                                                android:textStyle="bold" />
+
+                                            <LinearLayout
+                                                android:id="@+id/linData"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@id/labelMoodTracking"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_marginEnd="0dp"
+                                                android:layout_marginRight="0dp"
+                                                android:gravity="right"
+                                                android:orientation="horizontal">
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:visibility="gone"
+                                                    android:orientation="horizontal"
+                                                    android:layout_marginBottom="@dimen/size5"
+                                                    android:layout_marginLeft="10dp">
+
+                                                    <ImageView
+                                                        android:layout_width="10dp"
+                                                        android:layout_height="10dp"
+                                                        android:layout_gravity="center"
+                                                        android:layout_marginLeft="5dp"
+                                                        android:background="@drawable/protine_circle"
+                                                        android:gravity="center" />
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="Feelings"
+                                                        android:layout_marginLeft="5dp"
+                                                        android:textColor="@color/colorPremiumBlack"
+                                                        android:textSize="10sp"
+                                                        android:textStyle="bold"
+                                                        android:layout_marginRight="10dp"/>
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:visibility="gone"
+                                                    android:layout_marginRight="@dimen/size6"
+                                                    android:orientation="horizontal">
+
+                                                    <ImageView
+                                                        android:layout_width="10dp"
+                                                        android:layout_height="10dp"
+                                                        android:layout_gravity="center"
+                                                        android:layout_marginLeft="5dp"
+                                                        android:background="@drawable/bing_circle"
+                                                        android:gravity="center" />
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="Binge"
+                                                        android:layout_marginLeft="5dp"
+                                                        android:textColor="@color/colorPremiumBlack"
+                                                        android:textSize="10sp"
+                                                        android:textStyle="bold" />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                            <com.github.mikephil.charting.charts.LineChart
+                                                android:id="@+id/lineChart_mood"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/height_graph"
+                                                android:background="@android:color/black"
+                                                android:layout_below="@id/linData" />
+                                        </RelativeLayout>
+
+
+
+                                        <TextView
+                                            style="@style/TextStyle.CoolveticaRegular"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Better Sleep Tips"
+                                            android:visibility="gone"
+                                            android:layout_marginTop="@dimen/size10"
+                                            android:id="@+id/txt_header_mind"
+                                            android:textColor="@color/colorPremiumBlack" />
+
+                                        <View
+                                            android:layout_width="40dp"
+                                            android:layout_height="4dp"
+                                            android:layout_marginTop="6dp"
+                                            android:background="@color/colorBlueGreen1" />
+
+                                        <androidx.recyclerview.widget.RecyclerView
+                                            android:id="@+id/recyclerView_tips1"
+                                            android:visibility="gone"
+                                            android:layout_height="wrap_content"
+                                            android:layout_width="match_parent"
+                                            />
+
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/buttonSubmitMinds"
+                                        style="@style/button_Style_cal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="15dp"
+                                        android:text="Submit"
+                                        android:visibility="gone"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linLay_Mind_Graph"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPremiumWhite"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageView_Mind_Mood"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_margin="@dimen/text_view_line_spacing_4dp"
+                                        />
+
+                                    <TextView
+                                        style="@style/TextStyle.CoolveticaRegular"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:text="Today's Feelings"
+                                        android:textColor="@color/colorPremiumBlack"
+                                        android:textSize="@dimen/text_normal" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:text="Do you binge on large quantity when you are stressed?"
+                                        android:textColor="@color/colorPremiumBlack" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButtonMind_Stressed"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginBottom="@dimen/text_tiny"
+                                        android:checked="true"
+                                        android:text="Yes" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <TextView
+                                        style="@style/TextStyle.CoolveticaRegular"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/size10"
+
+                                        android:text="Better Sleep Tips"
+                                        android:textColor="@color/colorPremiumBlack" />
+
+                                    <View
+                                        android:layout_width="50dp"
+                                        android:layout_height="5dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@color/colorBlueGreen1" />
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/recyclerView_tips"
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="match_parent"
+                                        />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+
+                    </androidx.core.widget.NestedScrollView>
+
+                    <Button
+                        android:id="@+id/buttonSubmitMind"
+                        style="@style/button_Style_cal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:visibility="gone"
+                        android:layout_alignParentBottom="true"
+                        android:text="Submit"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/size10"
+                        android:background="@color/white">
+
+
+
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/img_close"
+                            android:padding="@dimen/size2"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:visibility="gone"
+
+                            android:src="@drawable/close"
+                            android:layout_alignParentEnd="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@android:color/black"
+                            android:text="Sleep Hours"
+                            android:visibility="gone"
+                            android:textStyle="bold"
+                            android:gravity="center">
+
+                        </TextView>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_choosedate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_close"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:orientation="vertical">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/size8"
+                                    android:layout_weight="1">
+
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:padding="@dimen/size5"
+                                            android:orientation="horizontal">
+
+
+                                            <TextView
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="0.5"
+                                                android:text="From Date :"
+                                                android:textColor="@android:color/black"
+                                                android:padding="@dimen/size5"
+                                                android:textStyle="bold"
+                                                >
+
+
+
+
+                                            </TextView>
+
+                                            <TextView
+                                                android:id="@+id/txt_mind_date_from"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:padding="@dimen/size5"
+                                                android:background="@drawable/rect_shape" />
+
+
+
+
+
+
+                                        </LinearLayout>
+
+
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+
+
+
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:padding="@dimen/size5"
+                                            android:orientation="horizontal">
+
+
+                                            <TextView
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="0.5"
+                                                android:text="To Date:"
+                                                android:textColor="@android:color/black"
+                                                android:padding="@dimen/size5"
+                                                android:textStyle="bold"
+                                                android:gravity="start"
+                                                >
+
+
+
+
+                                            </TextView>
+
+                                            <TextView
+                                                android:id="@+id/txt_mind_date_to"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:padding="@dimen/size5"
+                                                android:background="@drawable/rect_shape" />
+
+
+
+
+
+
+                                        </LinearLayout>
+
+
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/btn_show_mind_history"
+                                    style="@style/button_Style_cal"
+                                    android:padding="@dimen/size6"
+
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/size2"
+                                    android:layout_marginRight="@dimen/size2"
+                                    android:layout_marginTop="@dimen/size10"
+                                    android:layout_above="@+id/dummyview"
+                                    android:layout_marginBottom="@dimen/size10"
+
+
+                                    android:text="      View History     "
+                                    />
+
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="@dimen/size5"
+                                android:background="@color/line_grey_20"/>
+
+                            <ListView
+                                android:id="@+id/list_mind_history"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/size50"
+                                android:divider="@color/white"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+
+            </ViewFlipper>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

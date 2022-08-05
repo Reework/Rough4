@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPremiumWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/imgViewNext_InterpretationViewMore"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/custom_toolbar"
+            layout="@layout/custom_toolbar" />
+
+        <include
+
+            layout="@layout/content_interpretation_parameter" />
+
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:orientation="vertical">-->
+
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="0dp"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:id="@+id/ll_bca_parameter"-->
+        <!--                android:orientation="vertical">-->
+
+        <!--                <TextView-->
+        <!--                    style="@style/TextStyle.CoolveticaRegular"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_marginEnd="@dimen/size10"-->
+        <!--                    android:layout_marginStart="@dimen/size10"-->
+        <!--                    android:background="@drawable/squarebtn"-->
+
+        <!--                    android:letterSpacing="0.1"-->
+        <!--                    android:padding="@dimen/size5"-->
+        <!--                    android:text="BCA Parameters"-->
+        <!--                    android:textColor="@color/white" />-->
+
+        <!--                <androidx.recyclerview.widget.RecyclerView-->
+        <!--                    android:id="@+id/recyler_bca_param"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:fadeScrollbars="true"-->
+        <!--                    android:scrollbars="vertical"-->
+        <!--                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />-->
+        <!--            </LinearLayout>-->
+
+        <!--            <LinearLayout-->
+        <!--                android:id="@+id/ll_patho_parameter"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="0dp"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:orientation="vertical">-->
+
+        <!--                <TextView-->
+        <!--                    style="@style/TextStyle.CoolveticaRegular"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_marginTop="@dimen/size10"-->
+        <!--                    android:background="@drawable/squarebtn"-->
+        <!--                    android:letterSpacing="0.1"-->
+        <!--                    android:padding="@dimen/size5"-->
+        <!--                    android:layout_marginEnd="@dimen/size10"-->
+        <!--                    android:layout_marginStart="@dimen/size10"-->
+        <!--                    android:text="Patho Parameters"-->
+        <!--                    android:textColor="@color/white" />-->
+
+        <!--                <androidx.recyclerview.widget.RecyclerView-->
+        <!--                    android:id="@+id/recyler_patho_param"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:fadeScrollbars="true"-->
+        <!--                    android:scrollbars="vertical"-->
+        <!--                    android:layout_marginBottom="@dimen/size5"-->
+
+        <!--                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />-->
+        <!--            </LinearLayout>-->
+        <!--        </LinearLayout>-->
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_next_homepage"
+        style="@style/button_Style_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="Home Page" />
+    <TextView
+        android:id="@+id/imgViewNext_InterpretationViewMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="@dimen/size10"
+
+        android:layout_marginTop="@dimen/size5"
+        android:elevation="@dimen/_3sdp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text=" Home Page "
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_viewmore" />
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/imgViewNext_InterpretationViewMore"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginBottom="@dimen/size5"-->
+
+    <!--        android:orientation="horizontal">-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btn_back_vp"-->
+    <!--            style="@style/button_Style_cal"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_alignParentStart="true"-->
+    <!--            android:text="Back" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btn_next_homepage"-->
+    <!--            style="@style/button_Style_cal"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:text="Home Paage" />-->
+
+    <!--    </RelativeLayout>-->
+
+</RelativeLayout>

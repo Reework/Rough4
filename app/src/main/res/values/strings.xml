@@ -1,0 +1,398 @@
+<resources>
+    <string name="app_name">Reework</string>
+    <string-array name="strategy_bz_maharaj">
+        <item>Samasya/Need of people</item>
+        <item>Your Niyat</item>
+        <item>Saujanyshilata</item>
+        <item>paryay</item>
+    </string-array>
+
+    <string-array name="languages">
+        <item>English</item>
+    </string-array>
+    <string-array name="subscription_types">
+        <item>Yearly</item>
+    </string-array>
+    <string-array name="country_list">
+        <item>India</item>
+    </string-array>
+    <string-array name="food_preferences">
+        <item>Vegetarian</item>
+        <item>Jain</item>
+        <item>Eggetarian</item>
+        <item>Non- Vegetarian</item>
+    </string-array>
+    <string-array name="food_culture">
+        <item>Punjabi</item>
+        <item>Bengali</item>
+        <item>Marathi</item>
+        <item>Gujarati</item>
+    </string-array>
+    <string-array name="avg_sleep_hrs">
+        <item>1 Hrs</item>
+        <item>2 Hrs</item>
+        <item>3 Hrs</item>
+        <item>4 Hrs</item>
+        <item>5 Hrs</item>
+        <item>6 Hrs</item>
+        <item>7 Hrs</item>
+        <item>8 Hrs</item>
+        <item>9 Hrs</item>
+        <item>10 Hrs</item>
+        <item>11 Hrs</item>
+        <item>12 Hrs</item>
+        <item>13 Hrs</item>
+        <item>14 Hrs</item>
+        <item>15 Hrs</item>
+        <item>16 Hrs</item>
+        <item>17 Hrs</item>
+        <item>18 Hrs</item>
+        <item>19 Hrs</item>
+        <item>20 Hrs</item>
+        <item>21 Hrs</item>
+        <item>22 Hrs</item>
+        <item>23 Hrs</item>
+        <item>24 Hrs</item>
+    </string-array>
+    <string-array name="water_intake">
+        <item>1 Glass</item>
+        <item>2 Glasses</item>
+        <item>3 Glasses</item>
+        <item>4 Glasses</item>
+        <item>5 Glasses</item>
+        <item>6 Glasses</item>
+        <item>7 Glasses</item>
+        <item>8 Glasses</item>
+        <item>9 Glasses</item>
+        <item>10 Glasses</item>
+        <item>11 Glasses</item>
+        <item>12 Glasses</item>
+    </string-array>
+    <string-array name="medical_conditions">
+        <item>None</item>
+        <item>Diabetes Type I</item>
+        <item>Diabetes Type II</item>
+        <item>High Blood Pressure</item>
+        <item>Low Blood Pressure</item>
+        <item>Acidity</item>
+        <item>PCOD</item>
+        <item>High Cholesterol</item>
+        <item>Water Retention</item>
+        <item>High Uric Acid</item>
+        <item>Heart Disease</item>
+        <item>Thyroid [Hypo]</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="reminder_frequency">
+        <item>Select Frequency</item>
+        <item>1 time</item>
+        <item>2 times</item>
+        <item>3 times</item>
+        <item>4 times</item>
+        <item>5 times</item>
+        <item>6 times</item>
+        <item>7 times</item>
+        <item>8 times</item>
+        <item>9 times</item>
+        <item>10 times</item>
+    </string-array>
+
+    <string-array name="medicine_frequency">
+        <item>Select Frequency</item>
+        <item>Once a Day</item>
+        <item>Twice a day</item>
+        <item>Thrice a day</item>
+
+    </string-array>
+
+    <string-array name="sleep_type">
+        <item>Deep Sleep</item>
+        <item>Disturbed Sleep</item>
+
+
+    </string-array>
+
+    <string-array name="medicine_frequency_when">
+        <item>Select When</item>
+        <item>Empty Stomach</item>
+        <item>Before Breakfast</item>
+        <item>After Breakfast</item>
+        <item>Before Lunch</item>
+        <item>After Lunch</item>
+        <item>Before Dinner</item>
+        <item>After Dinner</item>
+        <item>Others</item>
+
+
+    </string-array>
+    <string-array name="activity_type">
+        <item>Select Activity</item>
+        <item>Medicine</item>
+        <item>Water</item>
+        <item>Sleep</item>
+        <item>Activity</item>
+        <item>Food</item>
+
+    </string-array>
+
+
+
+
+
+    <string-array name="activity_hr">
+        <item>0 Hr</item>
+        <item>1 Hr</item>
+        <item>2 Hr</item>
+        <item>3 Hr</item>
+        <item>4 Hr</item>
+        <item>5 Hr</item>
+        <item>6 Hr</item>
+        <item>7 Hr</item>
+        <item>8 Hr</item>
+        <item>9 Hr</item>
+        <item>10 Hr</item>
+        <item>11 Hr</item>
+        <item>12 Hr</item>
+
+    </string-array>
+
+
+
+    <string-array name="activity_min">
+        <item>0 Min</item>
+        <item>1 Min</item>
+        <item>2 Min</item>
+        <item>3 Min</item>
+        <item>4 Min</item>
+        <item>5 Min</item>
+        <item>6 Min</item>
+        <item>7 Min</item>
+        <item>8 Min</item>
+        <item>9 Min</item>
+        <item>10 Min</item>
+        <item>11 Min</item>
+        <item>12 Min</item>
+        <item>13 Min</item>
+        <item>14 Min</item>
+        <item>15 Min</item>
+        <item>16 Min</item>
+        <item>17 Min</item>
+        <item>18 Min</item>
+        <item>19 Min</item>
+        <item>20 Min</item>
+        <item>21 Min</item>
+        <item>22 Min</item>
+        <item>23 Min</item>
+        <item>24 Min</item>
+        <item>25 Min</item>
+        <item>26 Min</item>
+        <item>27 Min</item>
+        <item>28 Min</item>
+        <item>29 Min</item>
+        <item>30 Min</item>
+        <item>31 Min</item>
+        <item>32 Min</item>
+        <item>33 Min</item>
+        <item>34 Min</item>
+        <item>35 Min</item>
+        <item>36 Min</item>
+        <item>37 Min</item>
+        <item>38 Min</item>
+        <item>39 Min</item>
+        <item>40 Min</item>
+        <item>41 Min</item>
+        <item>42 Min</item>
+        <item>43 Min</item>
+        <item>44 Min</item>
+        <item>45 Min</item>
+        <item>46 Min</item>
+        <item>47 Min</item>
+        <item>48 Min</item>
+        <item>49 Min</item>
+        <item>50 Min</item>
+        <item>51 Min</item>
+        <item>52 Min</item>
+        <item>53 Min</item>
+        <item>54 Min</item>
+        <item>55 Min</item>
+        <item>56 Min</item>
+        <item>57 Min</item>
+        <item>58 Min</item>
+        <item>59 Min</item>
+        <item>60 Min</item>
+
+
+    </string-array>
+
+
+
+
+    <string-array name="medicine_days">
+        <item>Select All</item>
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+
+
+    <string-array name="week_days">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+    <string-array name="graph_months">
+        <item>Oct-2018</item>
+        <item>Nov-2018</item>
+        <item>Dec-2018</item>
+        <item>Jan-2019</item>
+        <item>Feb-2019</item>
+        <item>Mar-2019</item>
+        <item>Apr-2019</item>
+    </string-array>
+    <string-array name="plan_types">
+        <item>Today\'s Plan</item>
+        <item>Supplement Plan</item>
+        <item>Nutrition Plan</item>
+        <item>Lifestyle Plan</item>
+        <item>Food Plan</item>
+        <item>Cheat Plan</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="good_job">\"Good Job\"</string>
+    <string name="title_health_parameters">Health Parameters</string>
+    <string name="message_reescore">Measure your Health Progress \"Not just in KGs\" because \"You are not just what you weigh\"!!!</string>
+    <string name="reescore_big_message">This is your personal wellness score based on your body composition Analysis, Body vitals, Blood reports and counselling.It simplifies the health status of an individual into just one number which is a scientifically calculated number from 1 (low) to 100 (high).Health Score is based on who you are (body), how you feel (mind) and how you live (lifestyle)</string>
+
+    <string name="reescore_introduction"> Reescore is designed by highly qualified Nutrition Experts who have designed Algorithm to calculate the PWS( Personal Wellness Score) taking into account your BMI, Body Composition Analysis, Body Vitals, Blood reports, various Health parameters, Body Types, Body shapes, Medical Conditions, Physical Activity, Lifestyles, Food intake, Food portion sizes, eating habits and pattern, Sleep, Smoking Alcohol, stress. \n\n It simplifies your health status into just one number which is scientifically calculated number from 1 (low) to 100 (High)• \n\n It is a score based on who you are (body), how you feel (mind) and how you live (lifestyle).</string>
+    <string name="interpretation">Interpretation</string>
+
+    <string name="splash_message">Are you ready to start your\njourney of thousand miles which\nbegins with a single step?</string>
+
+
+    <string name="app_snippet_reengage">REENGAGE: login your details and set your profile information.</string>
+    <string name="app_snippet_reeasses">REEASSES: Know your current Health</string>
+    <string name="app_snippet_body_vital">Body vitals</string>
+    <string name="app_snippet_blood_test">Pathology Test</string>
+    <string name="Data_not_found">Data not found</string>
+    <string name="app_snippet_reescore">REESCORE: It is an overall rating of the quality of your lifestyle, nutrition, sleep patterns, hydration levels and your mind. Higher the score means you are following holistic approach to optimize your Health.</string>
+    <string name="app_snippet_reeevaluate">Reeevaluate:Detailed questionnaire for your reecoach to understand better and help you achieve your health goals.</string>
+    <string name="app_snippet_reetest">Reetest: Important Blood tests to know your body vitals.</string>
+    <string name="app_snippet_get_a_reecoach">Get a Reecoach:</string>
+    <string name="app_snippet_counselling">COUNSELLING</string>
+    <string name="app_snippet_assessment">ASSESSMENT</string>
+    <string name="app_snippet_assign_achievable_targets">ASSIGN ACHIEVABLE TARGETS.</string>
+    <string name="app_snippet_get_customized_reeplans">Get customized Reeplans</string>
+    <string name="app_snippet_get_LifestylePlans">Lifestyle Plans</string>
+    <string name="app_snippet_get_NutritionPlans">Nutrition Plans</string>
+    <string name="app_snippet_get_FoodPlans">Food Plans</string>
+    <string name="app_snippet_get_SupplementPlans">Supplement Plans</string>
+    <string name="app_snippet_get_CheatPlans">Cheat Plans</string>
+    <string name="app_snippet_reeports">Reeports - Personal wellness REPORT</string>
+    <string name="app_snippet_reengage_start">Reengage: Start logging in your activity/Nutrition/Water/Sleep and mood of the day.</string>
+    <string name="app_snippet_reevitalise">Reevitalise: Track progress of your Health</string>
+    <string name="app_snippet_reefocus">Reefocus: Get instant Reminders/Notifications for better adherence with constant monitoring and motivations</string>
+    <string name="app_snippet_reestore">Reestore:Buy online foods,products and superfoods</string>
+    <string name="view_more">View More</string>
+    <string name="sbt_confirmation_message">While planning to move for Pathology Test, please make sure you at fasting state for 12 hours.</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="health_confirmation_message">When you make it a priority to take care of your mind and body\'s health and wellness, you\'ll reap the benefits in all facets of your life. When you feel good about yourself, you tend to make healthy choices  and live a healthy lifestyle.</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="why_health_amp_wellness">Why Health &amp; Wellness</string>
+    <string name="select_country">Select Country</string>
+    <string name="select_city">Select City</string>
+    <string name="select_language">Select Language</string>
+    <string name="title_schedule_blood_test">Schedule Pathology Test</string>
+    <string name="select_days">Select Days</string>
+    <string name="delete">Delete</string>
+    <string name="home_good_morning">Good Morning , </string>
+    <string name="home_good_night">Good Night</string>
+    <string name="home_good_afternoon">Good Afternoon</string>
+    <string name="home_good_evening">Good Evening</string>F
+
+    <string name="terms_condition">Terms &amp; Conditions</string>
+    <string name="select_state">Select State</string>
+    <string name="title_image_picker">Image Picker</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="before">Before</string>
+    <string name="after">After</string>
+    <string name="select_month">Select Month</string>
+    <string name="internet_connection_unavailable">Plase check your internet connection and try again</string>
+    <string name="welcome_page_message">We are happy to have you and welcome you to experience the “Reework Way” towards Holistic Health, far above weight loss / control</string>
+    <string name="email_id">Email ID</string>
+    <string name="address">Address</string>
+    <string name="last_name">Last Name</string>
+    <string name="home_large_message">There is no NOBILITY in fighting. Sometimes it is best to SMILE and move on</string>
+    <string name="add_medicine">Add Medicine</string>
+    <string name="edit_medicine">Edit Medicine</string>
+    <string name="medicine_name">Medicine Name</string>
+    <string name="frequency">Frequency</string>
+    <string name="set_your_health_goal_here">Set Your Health Goal Here</string>
+    <string name="health_amp_wellness">Health &amp; Wellness</string>
+    <string name="weight_control">Weight Control</string>
+    <string name="weight_gain">Weight Gain</string>
+    <string name="easy_monitoring_of_body_parameters">Easy Monitoring of body parameters</string>
+    <string name="select_your_body_shape">Select Your Body Shape </string>
+    <string name="pear">Pear</string>
+    <string name="apple">Apple</string>
+    <string name="enter_your_weight_height">Enter Your Weight &amp; Height</string>
+    <string name="weight_kg">Weight (kg)</string>
+    <string name="height_in_cms">Height (in cms)</string>
+    <string name="reecoach">REEcoach</string>
+
+    //shared preference
+    <string name="coming_from">coming_from</string>
+
+    <string name="bodyshape"><![CDATA[
+<p><b><font color="black">Pear Shape:</font></b><font color="black">A pear body shape is one where most of your weight is situated around your thighs, hips and buttocks and you have slim arms and shoulders and a bust that is smaller than your hips.</font></p>
+
+<p><b><font color="black">Apple Shape:</font></b> <font color="black">If you have an apple-shaped body, then your body is "top heavy," meaning you have a wide torso, broad shoulders, and a full bust, waist, and upper back.
+</font></p>
+
+]]></string>
+
+
+    <string name="bodytype"><![CDATA[
+<p><b><font color="black">Mesomorph Body:</font></b><font color="black">Mesomorphs have a large bone structure, large muscles and an athletic physique.</font></p>
+
+<p><b><font color="black">Ectomorph Body:</font></b> <font color="black">Ectomorphs have a light build with small joints and lean muscle.</font></p>
+
+<p><b><font color="black">Endomorph Body:</font></b><font color="black">Endomorphs have a shorter build with thick arms and legs and gain fat very easily.</font></p>
+]]></string>
+
+
+    <string name="activty_status"><![CDATA[
+<p><b><font color="black">Sedentary:</font></b><font color="black">Spending most of the day sitting and not doing any intentional Physical activity for atleast 30 minutes every day.</font></p>
+
+<p><b><font color="black">Mildly Active:</font></b> <font color="black">Spending good Part of the day on your feet or exercising for about 3o minutes.</font></p>
+
+<p><b><font color="black">Moderately Active:</font></b><font color="black"> Daily exercise for about 45 minutes to 1 hour or Short duration high intensity exercises for 30 minutes.</font></p>
+<p><b><font color="black">Highly Active:</font></b><font color="black">Spending most of the day doing heavy physical activity or engaging in 2- 4 hours of vigorous exercises.</font></p>
+
+]]></string>
+
+
+    <string name="title_activity_full_screen_sucess">FullScreenSucess</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="select_monthss">Select Measurement</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="ftinch">Feet &amp; Inch</string>
+</resources>

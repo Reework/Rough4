@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPremiumWhite"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context=".reework.fragment.HealthParameters2Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+
+            style="@style/TextStyle.CoolveticaRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Your Food Preference"
+            android:textColor="@color/colorPremiumBlack" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Food"
+                android:visibility="gone"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <Spinner
+                android:id="@+id/spinnerFoodPreferences"
+                style="@style/MySpinner"
+                android:layout_width="match_parent"
+                android:gravity="start"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/bkgr_view_line" />
+
+        </LinearLayout>
+
+        <TextView
+
+            style="@style/TextStyle.CoolveticaRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Select Your Food Culture"
+            android:textColor="@color/colorPremiumBlack" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Food Culture"
+                android:visibility="gone"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <Spinner
+                android:id="@+id/spinnerFoodCulture"
+                style="@style/MySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/bkgr_view_line" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_actvity_status_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                style="@style/TextStyle.CoolveticaRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Select Your Activity Status"
+                android:textColor="@color/colorPremiumBlack" />
+            <ImageView
+                android:id="@+id/act_main"
+                android:layout_width="@dimen/size18"
+                android:layout_height="@dimen/size18"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:scaleType="fitXY"
+
+                android:src="@drawable/info"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/RadioGroupBodyShape"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <RadioButton
+        android:id="@+id/radioButtonSecondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sedentary"
+        />
+    <ImageView
+        android:id="@+id/act_1"
+        android:layout_width="@dimen/size18"
+        android:layout_height="@dimen/size18"
+        android:layout_gravity="center"
+        android:layout_marginLeft="4dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+
+        android:src="@drawable/info"/>
+
+
+</LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonMildlyActive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mildly Active" />
+                    <ImageView
+                        android:id="@+id/act_2"
+                        android:layout_width="@dimen/size18"
+                        android:layout_height="@dimen/size18"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="4dp"
+                        android:scaleType="fitXY"
+                        android:visibility="gone"
+
+                        android:src="@drawable/info"/>
+
+                </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:id="@+id/radioButtonModeratelyActive"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Moderately Active" />
+                        <ImageView
+                            android:id="@+id/act_3"
+                            android:layout_width="@dimen/size18"
+                            android:layout_height="@dimen/size18"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="4dp"
+                            android:scaleType="fitXY"
+                            android:visibility="gone"
+
+                            android:src="@drawable/info"/>
+                    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RadioButton
+        android:id="@+id/radioButtonHighlyActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Highly Active" />
+    <ImageView
+        android:id="@+id/act_4"
+        android:layout_width="@dimen/size18"
+        android:layout_height="@dimen/size18"
+        android:layout_gravity="center"
+        android:layout_marginLeft="4dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+
+        android:src="@drawable/info"/>
+</LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/ll_bodytype"
+            android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TextStyle.CoolveticaRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size10"
+            android:id="@+id/txt_body_type_tooltip"
+            android:text="Select Your Body Type "
+            android:textColor="@color/colorPremiumBlack" />
+            <ImageView
+                android:layout_width="@dimen/size18"
+                android:layout_height="@dimen/size18"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:layout_marginTop="@dimen/size5"
+
+                android:src="@drawable/info"/>
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/RadioGroupBodyType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonMesomorph"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTransparent"
+                android:button="@null"
+                android:drawableTop="@drawable/custom_btn_radio_mesomorph"
+                android:gravity="center"
+                android:text="Mesomorph" />
+
+            <RadioButton
+                android:id="@+id/radioButtonEctomorph"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTransparent"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/custom_btn_radio_ectomorph"
+                android:gravity="center"
+                android:text="Ectomorph" />
+
+            <RadioButton
+                android:id="@+id/radioButtonEndomorph"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTransparent"
+                android:button="@null"
+                android:drawableTop="@drawable/custom_btn_radio_endomorph"
+                android:gravity="center"
+                android:text="Endomorph" />
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+</ScrollView>

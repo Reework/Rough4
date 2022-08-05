@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shamrock.iml" filepath="$PROJECT_DIR$/.idea/modules/shamrock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/shamrock.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/shamrock.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/horizonal/shamrock.app.horizonal.iml" filepath="$PROJECT_DIR$/.idea/modules/app/horizonal/shamrock.app.horizonal.iml" />
+    </modules>
+  </component>
+</project>

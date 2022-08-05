@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/counterPanel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/counterValuePanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivBell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/ic_notification" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignTop="@+id/ivBell"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="-12dp"
+            android:layout_marginTop="-13dp"
+            android:layout_toRightOf="@+id/ivBell"
+            android:background="@drawable/rounded_textview"
+            android:gravity="center"
+            android:textColor="@color/colorPremiumBlack"
+            android:textSize="@dimen/text_tiny" />
+    </RelativeLayout>
+</FrameLayout>
